@@ -191,6 +191,10 @@ input:focus, textarea:focus, select:focus {
   width: 100%;
 }
 
+/* ---- PAGE TITLES ---- */
+.page-title { font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); margin-bottom: var(--spacing-xs); }
+.page-subtitle { font-size: var(--font-size-sm); color: var(--color-text-tertiary); margin-bottom: var(--spacing-2xl); }
+
 /* ---- SCROLLBAR ---- */
 ::-webkit-scrollbar {
   width: 6px;
