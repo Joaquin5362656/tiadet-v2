@@ -166,11 +166,11 @@ export const TFI_ENUNCIADO = {
 }
 
 export const EVENTOS = [
-  { id: 1, titulo: 'Vence: Microvideo educativo', fecha: '2025-06-20', tipo: 'entrega' },
-  { id: 2, titulo: 'Primer parcial integrador', fecha: '2025-06-25', tipo: 'examen' },
-  { id: 3, titulo: 'Clase sincronica — Modulo 4', fecha: '2025-06-26', tipo: 'clase' },
-  { id: 4, titulo: 'Clase sincronica — Modulo 5', fecha: '2025-07-03', tipo: 'clase' },
-  { id: 5, titulo: 'Vence: Entrega TFI escrito', fecha: '2025-07-15', tipo: 'entrega' },
-  { id: 6, titulo: 'Presentaciones orales TFI', fecha: '2025-07-22', tipo: 'examen' },
-  { id: 7, titulo: 'Cierre del taller', fecha: '2025-07-25', tipo: 'clase' },
+  { id: 1, titulo: 'Vence: Microvideo educativo', fecha: '2026-06-20', tipo: 'entrega' },
+  { id: 2, titulo: 'Primer parcial integrador', fecha: '2026-06-25', tipo: 'examen' },
+  { id: 3, titulo: 'Clase sincronica — Modulo 4', fecha: '2026-06-26', tipo: 'clase' },
+  { id: 4, titulo: 'Clase sincronica — Modulo 5', fecha: '2026-07-03', tipo: 'clase' },
+  { id: 5, titulo: 'Vence: Entrega TFI escrito', fecha: '2026-07-15', tipo: 'entrega' },
+  { id: 6, titulo: 'Presentaciones orales TFI', fecha: '2026-07-22', tipo: 'examen' },
+  { id: 7, titulo: 'Cierre del taller', fecha: '2026-07-25', tipo: 'clase' },
 ]

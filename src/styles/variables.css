@@ -1,41 +1,43 @@
 :root {
   /* ---- COLORS ---- */
-  --color-primary:        #0066B3;
-  --color-primary-dark:   #004C85;
-  --color-primary-light:  #E8F0FB;
+  --color-primary:        #1E3A5F;
+  --color-primary-dark:   #142A47;
+  --color-primary-light:  #EDF2F7;
   
-  --color-accent:         #1BA098;
-  --color-accent-light:   #E8F5F4;
+  --color-accent:         #C99528;
+  --color-accent-light:   #FDF6E8;
   
-  --color-success:        #1B7A4A;
-  --color-success-light:  #E6F4EC;
+  --color-success:        #2D6A4F;
+  --color-success-light:  #E8F5EE;
   
-  --color-warning:        #A05C00;
-  --color-warning-light:  #FEF3E2;
+  --color-warning:        #B8860B;
+  --color-warning-light:  #FEF7E6;
   
-  --color-danger:         #B91C1C;
-  --color-danger-light:   #FEF2F2;
+  --color-danger:         #9B2226;
+  --color-danger-light:   #FDF0F0;
   
-  --color-bg:             #F5F6F8;
+  --color-bg:             #F7F5F2;
   --color-surface:        #FFFFFF;
-  --color-border:         #E1E4EA;
-  --color-border-dark:    #C8CDD8;
+  --color-border:         #E2DCD4;
+  --color-border-dark:    #C9C0B5;
   
   --color-text-primary:   #1A1D23;
-  --color-text-secondary: #454C5E;
-  --color-text-tertiary:  #8B92A5;
-  
+  --color-text-secondary: #4A5568;
+  --color-text-tertiary:  #88909F;
+
   /* ---- TYPOGRAPHY ---- */
-  --font-family:          'Inter', system-ui, sans-serif;
+  --font-family:          'Source Sans 3', system-ui, sans-serif;
+  --font-heading:         'Lora', Georgia, serif;
+  
   --font-size-xs:         12px;
   --font-size-sm:         13px;
-  --font-size-base:       14px;
-  --font-size-lg:         15px;
-  --font-size-xl:         16px;
-  --font-size-2xl:        18px;
-  --font-size-3xl:        20px;
-  --font-size-4xl:        24px;
-  --font-size-5xl:        28px;
+  --font-size-base:       15px;
+  --font-size-lg:         16px;
+  --font-size-xl:         18px;
+  --font-size-2xl:        22px;
+  --font-size-3xl:        26px;
+  --font-size-4xl:        32px;
+  --font-size-5xl:        40px;
   
   --font-weight-normal:   400;
   --font-weight-medium:   500;
@@ -59,9 +61,9 @@
   --radius-xl:            10px;
   
   /* ---- SHADOWS ---- */
-  --shadow-sm:            0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md:            0 1px 4px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-lg:            0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-sm:            0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md:            0 2px 6px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-lg:            0 4px 12px rgba(0, 0, 0, 0.08);
   
   /* ---- LAYOUT ---- */
   --navbar-height:        56px;

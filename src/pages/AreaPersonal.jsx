@@ -1,16 +1,48 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import Navbar from '../components/Navbar'
 import { useAuth } from '../components/AuthContext'
 import { EVENTOS, ACTIVIDADES_INICIALES } from '../data/datos'
 import './AreaPersonal.css'
 
+const DIAS      = ['Lu','Ma','Mi','Ju','Vi','Sa','Do']
+const MESES     = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre']
+const TIPO_LBL  = { entrega: 'Entrega', examen: 'Examen', clase: 'Clase' }
+
+function useCalendarEvents() {
+  return useMemo(() => {
+    const map = {}
+    EVENTOS.forEach(evt => {
+      const k = evt.fecha.slice(0, 10)
+      if (!map[k]) map[k] = []
+      map[k].push(evt)
+    })
+    return map
+  }, [])
+}
+
 export default function AreaPersonal() {
   const { usuario, actualizarFoto } = useAuth()
   const [fotoRef, setFotoRef]       = useState(null)
+  const eventsByDate                = useCalendarEvents()
   const completadas                 = ACTIVIDADES_INICIALES.filter(a=>a.estado==='completada').length
   const pendientes                  = ACTIVIDADES_INICIALES.filter(a=>a.estado==='pendiente').length
   const activas                     = ACTIVIDADES_INICIALES.filter(a=>a.estado!=='proximo')
   const pct                         = Math.round((completadas / activas.length) * 100) || 0
+
+  const hoy     = useMemo(() => new Date(), [])
+  const [view,  setView]  = useState(() => new Date(hoy.getFullYear(), hoy.getMonth(), 1))
+  const [sel,   setSel]   = useState(null)
+
+  const yy        = view.getFullYear()
+  const mm        = view.getMonth()
+  const diasMes   = new Date(yy, mm + 1, 0).getDate()
+  const primerDia = new Date(yy, mm, 1).getDay()
+  const offset    = primerDia === 0 ? 6 : primerDia - 1
+
+  function prev() { setView(new Date(yy, mm - 1, 1)); setSel(null) }
+  function next() { setView(new Date(yy, mm + 1, 1)); setSel(null) }
+
+  function pad(n) { return String(n).padStart(2, '0') }
 
   function handleFotoChange(e) {
     const f = e.target.files[0]
@@ -23,6 +55,45 @@ export default function AreaPersonal() {
       }
       reader.readAsDataURL(f)
     }
+  }
+
+  const eventosDia = sel
+    ? (eventsByDate[`${yy}-${pad(mm+1)}-${pad(sel)}`] || [])
+    : []
+
+  const proximos = EVENTOS.filter(e => e.fecha >= `${yy}-${pad(mm+1)}-${pad(1)}`).slice(0, 5)
+
+  function renderDias() {
+    const celdas = []
+    for (let i = 0; i < offset; i++)
+      celdas.push(<div key={`e${i}`} className="cal-dia cal-vacio" />)
+
+    for (let d = 1; d <= diasMes; d++) {
+      const fechaStr = `${yy}-${pad(mm+1)}-${pad(d)}`
+      const eventos  = eventsByDate[fechaStr]
+      const esHoy    = hoy.getFullYear() === yy && hoy.getMonth() === mm && hoy.getDate() === d
+      const esSel    = sel === d
+      const cls = [
+        'cal-dia',
+        esHoy && 'cal-hoy',
+        esSel && 'cal-sel',
+        eventos && 'cal-con-evt',
+      ].filter(Boolean).join(' ')
+
+      celdas.push(
+        <div key={d} className={cls} onClick={() => setSel(esSel ? null : d)}>
+          <span className="cal-num">{d}</span>
+          {eventos && (
+            <div className="cal-puntos">
+              {eventos.map((evt, j) => (
+                <span key={j} className={`cal-punto cal-punto-${evt.tipo}`} />
+              ))}
+            </div>
+          )}
+        </div>
+      )
+    }
+    return celdas
   }
 
   return (
@@ -101,18 +172,49 @@ export default function AreaPersonal() {
 
           <aside className="ap-aside">
             {/* Calendario */}
-            <div className="card">
-              <h2 className="section-label">Proximas fechas</h2>
-              <div className="calendario-lista">
-                {EVENTOS.slice(0,6).map(evt=>(
-                  <div key={evt.id} className={`calendario-item calendario-${evt.tipo}`}>
-                    <span className="cal-fecha">{new Date(evt.fecha).toLocaleDateString('es-AR',{month:'short',day:'numeric'})}</span>
-                    <div className="cal-info">
-                      <p className="cal-titulo">{evt.titulo}</p>
-                      <span className="cal-tipo">{evt.tipo==='entrega'?'Entrega':evt.tipo==='examen'?'Examen':'Clase'}</span>
+            <div className="card cal-card">
+              <div className="cal-nav">
+                <button className="cal-nav-btn" onClick={prev} aria-label="Mes anterior">&lsaquo;</button>
+                <h3 className="cal-titulo">{MESES[mm]} <span className="cal-ano">{yy}</span></h3>
+                <button className="cal-nav-btn" onClick={next} aria-label="Mes siguiente">&rsaquo;</button>
+              </div>
+
+              <div className="cal-parrilla">
+                {DIAS.map(d => <div key={d} className="cal-cab-dia">{d}</div>)}
+                {renderDias()}
+              </div>
+
+              <div className="cal-leyenda">
+                <span className="cal-ley-item"><span className="cal-punto cal-punto-entrega" /> Entrega</span>
+                <span className="cal-ley-item"><span className="cal-punto cal-punto-examen" /> Examen</span>
+                <span className="cal-ley-item"><span className="cal-punto cal-punto-clase" /> Clase</span>
+              </div>
+
+              <div className="cal-eventos">
+                {sel ? (
+                  eventosDia.length > 0 ? (
+                    eventosDia.map(evt => (
+                      <div key={evt.id} className={`cal-evento cal-${evt.tipo}`}>
+                        <span className="cal-evo-tipo">{TIPO_LBL[evt.tipo]}</span>
+                        <span className="cal-evo-tit">{evt.titulo}</span>
+                      </div>
+                    ))
+                  ) : (
+                    <p className="cal-sin-evt">Sin eventos este día</p>
+                  )
+                ) : proximos.length > 0 ? (
+                  <>
+                    <p className="cal-prox-lbl">Próximas fechas</p>
+                    <div className="cal-prox-lista">
+                      {proximos.map(evt => (
+                        <div key={evt.id} className={`cal-evento cal-${evt.tipo}`}>
+                          <span className="cal-evo-fecha">{new Date(evt.fecha).toLocaleDateString('es-AR',{day:'numeric',month:'short'})}</span>
+                          <span className="cal-evo-tit">{evt.titulo}</span>
+                        </div>
+                      ))}
                     </div>
-                  </div>
-                ))}
+                  </>
+                ) : <p className="cal-sin-evt">No hay eventos próximos</p>}
               </div>
             </div>
 
