@@ -205,7 +205,7 @@ export default function Login() {
           )}
 
           <p className="login-demo">
-            Demo: alumno <code>12345678</code> / <code>1234</code> · docente <code>prof001</code> / <code>prof</code>
+            Demo: alumno <code>12345678</code> / <code>1234</code>
           </p>
         </div>
       </div>
