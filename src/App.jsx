@@ -41,7 +41,7 @@ function AppRoutes() {
 export default function App() {
   return (
     <AuthProvider>
-      <BrowserRouter basename="/tiadet-v2/">
+      <BrowserRouter basename="/">
         <AppRoutes />
       </BrowserRouter>
     </AuthProvider>
