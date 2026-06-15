@@ -12,3 +12,11 @@
 section {
   margin-bottom: var(--spacing-3xl);
 }
+
+.card.modulo-card {
+  background-color: #a8c8cd1a;
+  transition: border-color .15s;
+}
+.card.modulo-card:hover {
+  border-color: var(--color-primary);
+}

@@ -48,7 +48,7 @@ export default function Home() {
             {MODULOS.map(m => (
               <div
                 key={m.id}
-                className="card"
+                className="card modulo-card"
                 onClick={() => m.estado !== 'bloqueado' && navigate(`/modulos/${m.id}`)}
                 style={{
                   cursor: m.estado !== 'bloqueado' ? 'pointer' : 'not-allowed',
