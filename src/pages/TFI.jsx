@@ -7,6 +7,7 @@ export default function TFI() {
   const [archivo, setArchivo]  = useState(null)
   const [link, setLink]        = useState('')
   const [enviado, setEnviado]  = useState(false)
+  const [rubricaAbierta, setRubricaAbierta] = useState(false)
   const tfi                    = TFI_ENUNCIADO
 
   function handleEnvio() {
@@ -50,6 +51,25 @@ export default function TFI() {
 
               <hr className="divider" />
 
+              <h2 className="section-label">Sistema de evaluación</h2>
+              <div className="tfi-sistema-eval">
+                <div className="tfi-eval-item">
+                  <span className="badge badge-primary">{tfi.sistema_evaluacion.evaluacion_continua.peso}</span>
+                  <span>{tfi.sistema_evaluacion.evaluacion_continua.descripcion}</span>
+                </div>
+                <div className="tfi-eval-item">
+                  <span className="badge badge-primary">{tfi.sistema_evaluacion.portafolio_docente.peso}</span>
+                  <span>{tfi.sistema_evaluacion.portafolio_docente.descripcion}</span>
+                </div>
+                <div className="tfi-eval-item">
+                  <span className="badge badge-primary">{tfi.sistema_evaluacion.proyecto_integrador.peso}</span>
+                  <span>{tfi.sistema_evaluacion.proyecto_integrador.descripcion}</span>
+                </div>
+                <p className="tfi-asistencia">Asistencia obligatoria: <strong>{tfi.sistema_evaluacion.asistencia_obligatoria}</strong></p>
+              </div>
+
+              <hr className="divider" />
+
               <h2 className="section-label">Criterios de evaluacion</h2>
               <div className="tfi-criterios">
                 {tfi.criterios.map((c,i)=>(
@@ -59,6 +79,54 @@ export default function TFI() {
                   </div>
                 ))}
               </div>
+
+              {tfi.rubrica && (
+                <div className="tfi-rubrica-section">
+                  <button className="btn-secondary tfi-rubrica-toggle" onClick={() => setRubricaAbierta(!rubricaAbierta)}>
+                    {rubricaAbierta ? 'Ocultar' : 'Ver'} rúbrica completa (6 criterios × 4 niveles)
+                  </button>
+
+                  {rubricaAbierta && (
+                    <div className="tfi-rubrica-tabla-wrapper">
+                      <table className="tfi-rubrica-tabla">
+                        <thead>
+                          <tr>
+                            <th>Criterio</th>
+                            <th>Excelente</th>
+                            <th>Competente</th>
+                            <th>En Desarrollo</th>
+                            <th>Insuficiente</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {tfi.rubrica.map((r, i) => (
+                            <tr key={i}>
+                              <td className="tfi-rubrica-criterio">{r.criterio}</td>
+                              {r.niveles.map((n, j) => (
+                                <td key={j} className="tfi-rubrica-desc">{n.descripcion}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {tfi.acreditacion && (
+                <div className="tfi-acreditacion-section">
+                  <h2 className="section-label">Niveles de acreditación</h2>
+                  <div className="tfi-acreditacion-lista">
+                    {tfi.acreditacion.map((a, i) => (
+                      <div key={i} className="tfi-acred-item">
+                        <span className="tfi-acred-nivel">{a.nivel}</span>
+                        <span className="tfi-acred-desc">{a.descripcion}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 

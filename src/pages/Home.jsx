@@ -13,8 +13,8 @@ export default function Home() {
     <>
       <Navbar />
       <div className="page-content">
-        <h1>Inicio</h1>
-        <p>Bienvenido, {usuario?.nombre}</p>
+        <h1>Taller Interactivo Avanzado en Enseñanza a Distancia con Tecnologías</h1>
+        <p>Bienvenido, {usuario?.nombre} — una experiencia formativa con visión <strong>MAS-TEIDE-LANIN</strong></p>
 
         {!esInvitado && (
           <section style={{ marginTop: 32 }}>
