@@ -41,3 +41,7 @@
 .file-upload-area:hover { border-color:var(--color-primary); }
 .file-placeholder { font-size:13px; color:var(--color-text-tertiary); }
 .file-chosen { font-size:13px; color:var(--color-primary); font-weight:500; }
+.retro-blk { background:var(--color-bg); border-left:3px solid var(--color-primary); border-radius:var(--radius-md); padding:12px 16px; display:flex; flex-direction:column; gap:6px; }
+.retro-label { font-size:12px; font-weight:600; color:var(--color-primary); text-transform:uppercase; letter-spacing:.04em; }
+.retro-texto { font-size:13px; color:var(--color-text-secondary); line-height:1.6; margin:0; }
+.retro-firma { font-size:11px; color:var(--color-text-tertiary); font-style:italic; }

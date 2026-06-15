@@ -7,12 +7,19 @@ import './AreaPersonal.css'
 const DIAS      = ['Lu','Ma','Mi','Ju','Vi','Sa','Do']
 const MESES     = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre']
 const TIPO_LBL  = { entrega: 'Entrega', examen: 'Examen', clase: 'Clase' }
+const MES_ABR   = { '01':'ene','02':'feb','03':'mar','04':'abr','05':'may','06':'jun','07':'jul','08':'ago','09':'sep','10':'oct','11':'nov','12':'dic' }
+
+function parseLocalDate(iso) {
+  const [y, m, d] = iso.split('-').map(Number)
+  return { y, m, d, dia: new Date(y, m - 1, d).getDay() }
+}
 
 function useCalendarEvents() {
   return useMemo(() => {
     const map = {}
     EVENTOS.forEach(evt => {
-      const k = evt.fecha.slice(0, 10)
+      const { y, m, d } = parseLocalDate(evt.fecha)
+      const k = `${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`
       if (!map[k]) map[k] = []
       map[k].push(evt)
     })
@@ -29,7 +36,7 @@ export default function AreaPersonal() {
   const activas                     = ACTIVIDADES_INICIALES.filter(a=>a.estado!=='proximo')
   const pct                         = Math.round((completadas / activas.length) * 100) || 0
 
-  const hoy     = useMemo(() => new Date(), [])
+  const hoy     = useMemo(() => { const n=new Date(); return new Date(n.getFullYear(),n.getMonth(),n.getDate()) }, [])
   const [view,  setView]  = useState(() => new Date(hoy.getFullYear(), hoy.getMonth(), 1))
   const [sel,   setSel]   = useState(null)
 
@@ -61,7 +68,12 @@ export default function AreaPersonal() {
     ? (eventsByDate[`${yy}-${pad(mm+1)}-${pad(sel)}`] || [])
     : []
 
-  const proximos = EVENTOS.filter(e => e.fecha >= `${yy}-${pad(mm+1)}-${pad(1)}`).slice(0, 5)
+  const eventosMes = useMemo(() => {
+    return EVENTOS.filter(e => {
+      const { y, m } = parseLocalDate(e.fecha)
+      return y === yy && m === mm + 1
+    }).slice(0, 8)
+  }, [yy, mm])
 
   function renderDias() {
     const celdas = []
@@ -202,36 +214,22 @@ export default function AreaPersonal() {
                   ) : (
                     <p className="cal-sin-evt">Sin eventos este día</p>
                   )
-                ) : proximos.length > 0 ? (
+                ) : eventosMes.length > 0 ? (
                   <>
-                    <p className="cal-prox-lbl">Próximas fechas</p>
+                    <p className="cal-prox-lbl">Eventos del mes</p>
                     <div className="cal-prox-lista">
-                      {proximos.map(evt => (
-                        <div key={evt.id} className={`cal-evento cal-${evt.tipo}`}>
-                          <span className="cal-evo-fecha">{new Date(evt.fecha).toLocaleDateString('es-AR',{day:'numeric',month:'short'})}</span>
-                          <span className="cal-evo-tit">{evt.titulo}</span>
-                        </div>
-                      ))}
+                      {eventosMes.map(evt => {
+                        const { d, m } = parseLocalDate(evt.fecha)
+                        return (
+                          <div key={evt.id} className={`cal-evento cal-${evt.tipo}`}>
+                            <span className="cal-evo-fecha">{d} {MES_ABR[String(m).padStart(2,'0')]}</span>
+                            <span className="cal-evo-tit">{evt.titulo}</span>
+                          </div>
+                        )
+                      })}
                     </div>
                   </>
-                ) : <p className="cal-sin-evt">No hay eventos próximos</p>}
-              </div>
-            </div>
-
-            {/* Notificaciones */}
-            <div className="card" style={{marginTop:14}}>
-              <h2 className="section-label">Notificaciones</h2>
-              <div className="notif-item notif-info">
-                <span className="notif-icon">i</span>
-                <span className="notif-texto">Falta 1 semana para el TFI</span>
-              </div>
-              <div className="notif-item notif-warn">
-                <span className="notif-icon">!</span>
-                <span className="notif-texto">Tenes 1 actividad pendiente</span>
-              </div>
-              <div className="notif-item notif-success">
-                <span className="notif-icon">OK</span>
-                <span className="notif-texto">Completaste el Modulo 2</span>
+                ) : <p className="cal-sin-evt">Sin eventos este mes</p>}
               </div>
             </div>
           </aside>

@@ -27,7 +27,7 @@ export const USUARIOS_INICIALES = [
 
 export const ANUNCIOS = [
   { id: 1, tipo: 'info', texto: 'Bienvenidos al Taller Interactivo Avanzado en EaD con Tecnologías. Este taller sigue la visión MAS-TEIDE-LANIN.' },
-  { id: 2, tipo: 'warning', texto: 'En 1 semana vence la mini-narrativa LANIN del Módulo 2. Revisá los requisitos en la guía.' },
+  { id: 2, tipo: 'warning', texto: 'Próxima semana vence la mini-narrativa LANIN del Módulo 2. Revisá los requisitos en la guía del taller.' },
   { id: 3, tipo: 'success', texto: 'Nuevo material disponible en Módulo 3: guía de herramientas XR y gamificación.' },
   { id: 4, tipo: 'danger', texto: 'Recordá que el 80% de asistencia a sincrónicos es obligatorio para aprobar el taller.' },
 ]
@@ -212,73 +212,72 @@ export const MODULOS = [
 ]
 
 export const ACTIVIDADES_INICIALES = [
-  { id: 1, titulo: 'Reflexión guiada sobre experiencia docente en EaD', tipo: 'tarea', modulo: 1, vencimiento: '2026-07-05', estado: 'completada', puntaje: 9, puntajeMax: 10, descripcion: 'Ensayo breve (400-600 palabras) reflexionando sobre tu experiencia previa en educación a distancia. Identificá fortalezas, debilidades y expectativas para el taller.' },
-  { id: 2, titulo: 'Análisis de caso: HarvardX', tipo: 'tarea', modulo: 1, vencimiento: '2026-07-08', estado: 'completada', puntaje: 8, puntajeMax: 10, descripcion: 'Analizá un caso de éxito en educación a distancia (HarvardX u otro) identificando los estándares de calidad aplicados y cómo podrían transferirse a la METT.' },
-  { id: 3, titulo: 'Mini-narrativa LANIN: caso clínico de ETT', tipo: 'tarea', modulo: 2, vencimiento: '2026-07-15', estado: 'completada', puntaje: 9, puntajeMax: 10, descripcion: 'Creá una mini-narrativa para un caso clínico de una enfermedad tropical transmisible aplicando la metodología LANIN. Extensión: 500-800 palabras.' },
-  { id: 4, titulo: 'Diseño de rúbrica formativa', tipo: 'tarea', modulo: 2, vencimiento: '2026-07-18', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Diseñá una rúbrica analítica para evaluar una actividad de tu especialidad, incorporando criterios LANIN y TEIDE.' },
-  { id: 5, titulo: 'Diseño de recurso gamificado', tipo: 'tarea', modulo: 3, vencimiento: '2026-07-25', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Diseñá colaborativamente un recurso gamificado para una temática de enfermedades tropicales transmisibles. Podés usar Genially, Kahoot u otra herramienta.' },
-  { id: 6, titulo: 'Encuesta de experiencia inmersiva', tipo: 'encuesta', modulo: 3, vencimiento: '2026-07-26', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Evaluá tu experiencia con la simulación XR y los recursos gamificados del módulo.', preguntas: [
+  { id: 1, titulo: 'Reflexión guiada sobre experiencia docente en EaD', tipo: 'tarea', modulo: 1, vencimiento: '2026-06-15', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Ensayo breve (400-600 palabras) reflexionando sobre tu experiencia previa en educación a distancia. Identificá fortalezas, debilidades y expectativas para el taller.' },
+  { id: 2, titulo: 'Mini-narrativa LANIN: caso clínico de ETT', tipo: 'tarea', modulo: 2, vencimiento: '2026-06-22', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Creá una mini-narrativa para un caso clínico de una enfermedad tropical transmisible aplicando la metodología LANIN. Extensión: 500-800 palabras.' },
+  { id: 3, titulo: 'Diseño de recurso gamificado', tipo: 'tarea', modulo: 3, vencimiento: '2026-06-29', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Diseñá colaborativamente un recurso gamificado para una temática de enfermedades tropicales transmisibles. Podés usar Genially, Kahoot u otra herramienta.' },
+  { id: 4, titulo: 'Encuesta de experiencia inmersiva', tipo: 'encuesta', modulo: 3, vencimiento: '2026-07-16', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Evaluá tu experiencia con la simulación XR y los recursos gamificados del módulo.', preguntas: [
     { id: 'q1', texto: '¿Qué tan útiles considerás las tecnologías XR para la enseñanza de enfermedades tropicales?', opciones: ['Muy útiles','Útiles','Poco útiles','No son útiles'], respuestaCorrecta: null },
     { id: 'q2', texto: '¿Qué herramienta te resultó más interesante?', opciones: ['Realidad Virtual','Realidad Aumentada','Video 360°','Gamificación'], respuestaCorrecta: null },
   ]},
-  { id: 7, titulo: 'Testeo con lector de pantalla', tipo: 'tarea', modulo: 4, vencimiento: '2026-08-02', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Probá un recurso educativo propio con un lector de pantalla (NVDA o VoiceOver) y documentá los problemas de accesibilidad encontrados.' },
-  { id: 8, titulo: 'Plan de accesibilidad integral', tipo: 'tarea', modulo: 4, vencimiento: '2026-08-05', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Diseñá un plan de accesibilidad integral para un módulo específico de la METT, incluyendo subtítulos, audiodescripción y alternativas táctiles.' },
-  { id: 9, titulo: 'Experimento con IA Generativa', tipo: 'tarea', modulo: 5, vencimiento: '2026-08-12', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Usá una herramienta de IA Gen (ChatGPT, Claude, Gemini) para generar un plan de clase o material educativo. Reflexioná sobre los resultados obtenidos.' },
-  { id: 10, titulo: 'Diseño conceptual de asistente IA', tipo: 'tarea', modulo: 5, vencimiento: '2026-08-15', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Diseñá conceptualmente un asistente docente basado en IA para una asignatura de la METT. Incluí funcionalidades, limitaciones y consideraciones éticas.' },
-  { id: 11, titulo: 'Proyecto Integrador Final (avance)', tipo: 'tarea', modulo: null, vencimiento: '2026-08-22', estado: 'pendiente', puntaje: null, puntajeMax: 100, descripcion: 'Rediseño completo de un módulo de la METT integrando: gamificación/XR + accesibilidad + IA + narrativas LANIN. Este es el avance escrito. La defensa oral será sincrónica.' },
+  { id: 5, titulo: 'Plan de accesibilidad integral', tipo: 'tarea', modulo: 4, vencimiento: '2026-07-06', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Diseñá un plan de accesibilidad integral para un módulo específico de la METT, incluyendo subtítulos, audiodescripción y alternativas táctiles.' },
+  { id: 6, titulo: 'Experimento con IA Generativa', tipo: 'tarea', modulo: 5, vencimiento: '2026-07-13', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Usá una herramienta de IA Gen (ChatGPT, Claude, Gemini) para generar un plan de clase o material educativo. Reflexioná sobre los resultados obtenidos.' },
+  { id: 7, titulo: 'Proyecto Integrador Final', tipo: 'tarea', modulo: null, vencimiento: '2026-08-07', estado: 'pendiente', puntaje: null, puntajeMax: 100, descripcion: 'Rediseño completo de un módulo de la METT integrando: gamificación/XR + accesibilidad + IA + narrativas LANIN. Incluye defensa oral sincrónica.' },
+  { id: 8, titulo: 'Análisis de caso: HarvardX', tipo: 'tarea', modulo: 1, vencimiento: '2026-06-12', estado: 'completada', puntaje: 8, puntajeMax: 10, descripcion: 'Analizá un caso de éxito en educación a distancia identificando los estándares de calidad aplicados y cómo podrían transferirse a la METT.', retroalimentacion: 'Muy buen análisis. Identificaste correctamente los estándares Quality Matters. Para profundizar, sugiero revisar cómo alinear esos estándares con el contexto específico del NOA/NEA.' },
+  { id: 9, titulo: 'Diseño de rúbrica formativa', tipo: 'tarea', modulo: 2, vencimiento: '2026-06-14', estado: 'completada', puntaje: 9, puntajeMax: 10, descripcion: 'Diseñá una rúbrica analítica para evaluar una actividad de tu especialidad, incorporando criterios LANIN y TEIDE.', retroalimentacion: 'Excelente rúbrica. Los criterios LANIN están bien integrados y los niveles de desempeño son claros. Te recomiendo agregar un nivel "ejemplar" para incentivar la excelencia por encima del estándar.' },
+  { id: 10, titulo: 'Testeo con lector de pantalla', tipo: 'tarea', modulo: 4, vencimiento: '2026-06-14', estado: 'completada', puntaje: 7, puntajeMax: 10, descripcion: 'Probá un recurso educativo propio con un lector de pantalla (NVDA o VoiceOver) y documentá los problemas de accesibilidad encontrados.', retroalimentacion: 'Buen trabajo inicial. El informe documenta los problemas principales, pero faltó incluir soluciones concretas para cada barrera identificada. Revisá la guía WCAG 2.1 para proponer alternativas viables.' },
 ]
 
 export const FOROS_INICIALES = [
   { id: 'general', titulo: 'Foro General', descripcion: 'Espacio abierto para consultas, intercambios y comentarios generales del taller.', tipo: 'general', acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '1 jul', texto: 'Bienvenidos al Taller Interactivo Avanzado en EaD con Tecnologías. En este recorrido exploraremos la visión MAS-TEIDE-LANIN para transformar la educación a distancia en el ámbito de las enfermedades tropicales transmisibles. Este espacio es de todos — úsenlo para cualquier consulta o intercambio.' },
-    { id: 2, autor: 'María García', avatar: 'MG', fecha: '2 jul', texto: 'Gracias! Una pregunta: los materiales quedan disponibles despues de que cierra cada modulo?' },
-    { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '2 jul', texto: 'Si, todo el material queda accesible durante todo el cuatrimestre y 30 dias despues del cierre del taller.' },
+    { id: 1, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '8 jun', texto: 'Bienvenidos al Taller Interactivo Avanzado en EaD con Tecnologías. En este recorrido exploraremos la visión MAS-TEIDE-LANIN para transformar la educación a distancia en el ámbito de las enfermedades tropicales transmisibles. Este espacio es de todos — úsenlo para cualquier consulta o intercambio.' },
+    { id: 2, autor: 'María García', avatar: 'MG', fecha: '9 jun', texto: 'Gracias! Una pregunta: los materiales quedan disponibles despues de que cierra cada modulo?' },
+    { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '9 jun', texto: 'Si, todo el material queda accesible durante todo el cuatrimestre y 30 dias despues del cierre del taller.' },
   ]},
   { id: 'mod1', titulo: 'Foro Módulo 1', descripcion: 'Discusión sobre el rol del docente virtual, estándares de calidad y marco TEIDE.', tipo: 'modulo', moduloId: 1, acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Carlos Lopez', avatar: 'CL', fecha: '3 jul', texto: 'Me parece muy interesante el concepto de "brújula cognitiva" vs "mapa". En mi práctica actual soy más mapa que brújula. Como empiezo a cambiar eso?' },
-    { id: 2, autor: 'Paula Fernandez', avatar: 'PF', fecha: '3 jul', texto: 'Creo que el primer paso es diseñar actividades que obliguen al estudiante a tomar decisiones, no solo consumir contenido. Los estándares Quality Matters dan buena guía para eso.' },
-    { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '4 jul', texto: 'Exacto, Paula. Quality Matters proporciona un marco concreto. En el Módulo 2 veremos cómo las narrativas LANIN pueden ayudar a construir esa brújula.' },
+    { id: 1, autor: 'Carlos Lopez', avatar: 'CL', fecha: '12 jun', texto: 'Me parece muy interesante el concepto de "brújula cognitiva" vs "mapa". En mi práctica actual soy más mapa que brújula. Como empiezo a cambiar eso?' },
+    { id: 2, autor: 'Paula Fernandez', avatar: 'PF', fecha: '12 jun', texto: 'Creo que el primer paso es diseñar actividades que obliguen al estudiante a tomar decisiones, no solo consumir contenido. Los estándares Quality Matters dan buena guía para eso.' },
+    { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '13 jun', texto: 'Exacto, Paula. Quality Matters proporciona un marco concreto. En el Módulo 2 veremos cómo las narrativas LANIN pueden ayudar a construir esa brújula.' },
   ]},
   { id: 'mod2', titulo: 'Foro Módulo 2', descripcion: 'Debate sobre evaluación formativa, rúbricas y narrativas LANIN en ETT.', tipo: 'modulo', moduloId: 2, acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Roberto Rodriguez', avatar: 'RR', fecha: '8 jul', texto: 'La estrategia LANIN me parece poderosa para conectar la teoría con la realidad del Impenetrable. Estoy pensando en una narrativa sobre un brote de dengue en una comunidad rural.' },
-    { id: 2, autor: 'Maria Garcia', avatar: 'MG', fecha: '8 jul', texto: 'Me pregunto cómo evaluar las narrativas de manera objetiva. Una rúbrica bien diseñada sería clave para eso.' },
-    { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '9 jul', texto: 'Buena observación, Maria. En la actividad de diseño de rúbrica vamos justamente a trabajar eso: criterios claros para evaluar narrativas LANIN.' },
+    { id: 1, autor: 'Roberto Rodriguez', avatar: 'RR', fecha: '19 jun', texto: 'La estrategia LANIN me parece poderosa para conectar la teoría con la realidad del Impenetrable. Estoy pensando en una narrativa sobre un brote de dengue en una comunidad rural.' },
+    { id: 2, autor: 'Maria Garcia', avatar: 'MG', fecha: '19 jun', texto: 'Me pregunto cómo evaluar las narrativas de manera objetiva. Una rúbrica bien diseñada sería clave para eso.' },
+    { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '20 jun', texto: 'Buena observación, Maria. En la actividad de diseño de rúbrica vamos justamente a trabajar eso: criterios claros para evaluar narrativas LANIN.' },
   ]},
   { id: 'mod3', titulo: 'Foro Módulo 3', descripcion: 'Intercambio sobre gamificación, VR, AR y XR aplicados a la enseñanza médica.', tipo: 'modulo', moduloId: 3, acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Ana Gomez', avatar: 'AG', fecha: '10 jul', texto: 'Probé CoSpaces para modelar el ciclo del vector del dengue. La visualización en 3D ayuda mucho a entender la transmisión. Alguien más lo probo?' },
-    { id: 2, autor: 'Jorge Perez', avatar: 'JP', fecha: '11 jul', texto: 'Todavia no, pero me interesa. Que tal es la curva de aprendizaje de CoSpaces?' },
-    { id: 3, autor: 'Ana Gomez', avatar: 'AG', fecha: '11 jul', texto: 'Es bastante intuitivo. En una tarde ya tenes algo funcional. Lo recomiendo.' },
+    { id: 1, autor: 'Ana Gomez', avatar: 'AG', fecha: '26 jun', texto: 'Probé CoSpaces para modelar el ciclo del vector del dengue. La visualización en 3D ayuda mucho a entender la transmisión. Alguien más lo probo?' },
+    { id: 2, autor: 'Jorge Perez', avatar: 'JP', fecha: '27 jun', texto: 'Todavia no, pero me interesa. Que tal es la curva de aprendizaje de CoSpaces?' },
+    { id: 3, autor: 'Ana Gomez', avatar: 'AG', fecha: '27 jun', texto: 'Es bastante intuitivo. En una tarde ya tenes algo funcional. Lo recomiendo.' },
   ]},
   { id: 'mod4', titulo: 'Foro Módulo 4', descripcion: 'Discusión sobre accesibilidad WCAG, tecnologías asistivas y DUA.', tipo: 'modulo', moduloId: 4, acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Laura Martinez', avatar: 'LM', fecha: '28 jul', texto: 'Nunca habia usado un lector de pantalla. Probar NVDA con mis propios materiales fue revelador — casi nada es accesible. Por donde arrancar?' },
-    { id: 2, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '29 jul', texto: 'Arrancá por lo básico: estructura de encabezados, textos alternativos en imágenes y subtitulado de videos. WCAG 2.1 nivel A es un buen primer objetivo.' },
+    { id: 1, autor: 'Laura Martinez', avatar: 'LM', fecha: '3 jul', texto: 'Nunca habia usado un lector de pantalla. Probar NVDA con mis propios materiales fue revelador — casi nada es accesible. Por donde arrancar?' },
+    { id: 2, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '4 jul', texto: 'Arrancá por lo básico: estructura de encabezados, textos alternativos en imágenes y subtitulado de videos. WCAG 2.1 nivel A es un buen primer objetivo.' },
   ]},
   { id: 'mod5', titulo: 'Foro Módulo 5', descripcion: 'Debate sobre IA Generativa en educación: aplicaciones, ética y sesgos.', tipo: 'modulo', moduloId: 5, acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Federico Flores', avatar: 'FF', fecha: '7 ago', texto: 'Usé ChatGPT para generar un plan de clase sobre malaria. El resultado fue bueno pero note algunos datos imprecisos. La supervisión humana es indispensable.' },
-    { id: 2, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '8 ago', texto: 'Totalmente, Federico. La IA es una herramienta, no un reemplazo. La ética y la verificación crítica son parte central de este módulo.' },
+    { id: 1, autor: 'Federico Flores', avatar: 'FF', fecha: '10 jul', texto: 'Usé ChatGPT para generar un plan de clase sobre malaria. El resultado fue bueno pero note algunos datos imprecisos. La supervisión humana es indispensable.' },
+    { id: 2, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '11 jul', texto: 'Totalmente, Federico. La IA es una herramienta, no un reemplazo. La ética y la verificación crítica son parte central de este módulo.' },
   ]},
   { id: 'tfi-general', titulo: 'TFI — General', descripcion: 'Espacio de consultas generales sobre el Trabajo Final Integrador.', tipo: 'tfi', acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '5 jul', texto: 'El TFI consiste en el rediseño completo de un módulo de la METT integrando gamificación/XR + accesibilidad + IA + narrativas LANIN. La rúbrica con 6 criterios y 4 niveles ya está disponible. Cualquier consulta, acá o en el foro privado.' },
-    { id: 2, autor: 'Jorge Perez', avatar: 'JP', fecha: '6 jul', texto: 'Puede ser sobre cualquier enfermedad tropical o tiene que ser una en particular?' },
-    { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '6 jul', texto: 'Puede ser cualquier enfermedad tropical transmisible que se aborda en la METT. Lo importante es que integre los 4 ejes del taller: XR/gamificación, accesibilidad, IA y narrativas LANIN.' },
+    { id: 1, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '1 jul', texto: 'El TFI consiste en el rediseño completo de un módulo de la METT integrando gamificación/XR + accesibilidad + IA + narrativas LANIN. La rúbrica con 6 criterios y 4 niveles ya está disponible. Cualquier consulta, acá o en el foro privado.' },
+    { id: 2, autor: 'Jorge Perez', avatar: 'JP', fecha: '2 jul', texto: 'Puede ser sobre cualquier enfermedad tropical o tiene que ser una en particular?' },
+    { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '2 jul', texto: 'Puede ser cualquier enfermedad tropical transmisible que se aborda en la METT. Lo importante es que integre los 4 ejes del taller: XR/gamificación, accesibilidad, IA y narrativas LANIN.' },
   ]},
   { id: 'tfi-grupos', titulo: 'TFI — Mi Grupo', descripcion: 'Coordinacion interna del grupo de trabajo para el TFI.', tipo: 'tfi-grupo', acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Maria Garcia', avatar: 'MG', fecha: '7 jul', texto: 'Hola grupo! Arrancamos con una reunion por Zoom esta semana para definir qué modulo de la METT vamos a rediseñar?' },
-    { id: 2, autor: 'Carlos Lopez', avatar: 'CL', fecha: '7 jul', texto: 'Me parece bien. Propongo el jueves 12 a las 19hs. Les queda?' },
+    { id: 1, autor: 'Maria Garcia', avatar: 'MG', fecha: '12 jun', texto: 'Hola grupo! Arrancamos con una reunion por Zoom esta semana para definir qué modulo de la METT vamos a rediseñar?' },
+    { id: 2, autor: 'Carlos Lopez', avatar: 'CL', fecha: '12 jun', texto: 'Me parece bien. Propongo el jueves 12 a las 19hs. Les queda?' },
   ]},
   { id: 'tfi-privado', titulo: 'TFI — Consulta Privada', descripcion: 'Canal privado entre vos y la docente para consultas sobre tu TFI.', tipo: 'tfi-privado', acceso: 'privado', mensajes: [
-    { id: 1, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '4 jul', texto: 'Este espacio es tuyo para consultas privadas sobre el TFI. En qué módulo de la METT pensás basar tu rediseño?' },
+    { id: 1, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '9 jun', texto: 'Este espacio es tuyo para consultas privadas sobre el TFI. En qué módulo de la METT pensás basar tu rediseño?' },
   ]},
   { id: 'extras', titulo: 'Foro de Extras', descripcion: 'Recursos, links y temas de interes por fuera de los modulos obligatorios.', tipo: 'extra', acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Laura Martinez', avatar: 'LM', fecha: '5 jul', texto: 'Comparto este articulo sobre el impacto de la IA en diagnostico medico, muy relevante para el Módulo 5: https://www.thelancet.com' },
-    { id: 2, autor: 'Jorge Perez', avatar: 'JP', fecha: '5 jul', texto: 'Gracias Laura! Tambien recomiendo el simulador de brotes epidemicos de la OPS, muy util para pensar narrativas LANIN: https://www.paho.org' },
+    { id: 1, autor: 'Laura Martinez', avatar: 'LM', fecha: '10 jun', texto: 'Comparto este articulo sobre el impacto de la IA en diagnostico medico, muy relevante para el Módulo 5: https://www.thelancet.com' },
+    { id: 2, autor: 'Jorge Perez', avatar: 'JP', fecha: '10 jun', texto: 'Gracias Laura! Tambien recomiendo el simulador de brotes epidemicos de la OPS, muy util para pensar narrativas LANIN: https://www.paho.org' },
   ]},
 ]
 
 export const TFI_ENUNCIADO = {
   titulo: 'Trabajo Final Integrador — TIADET 2026',
   subtitulo: 'Rediseño de un módulo de la METT con enfoque MAS-TEIDE-LANIN',
-  fecha_entrega: '22 de agosto de 2026',
+  fecha_entrega: '7 de agosto de 2026',
   descripcion: 'El Trabajo Final Integrador consiste en el rediseño completo de un módulo de la Maestría en Enfermedades Tropicales Transmisibles (METT), integrando todos los elementos del taller:\n\n• Gamificación y/o Realidad Extendida (XR)\n• Accesibilidad universal (WCAG 2.1/2.2)\n• IA Generativa para diseño pedagógico\n• Narrativas LANIN para aprendizaje significativo\n\nEl trabajo debe demostrar la capacidad de transitar desde un rol de "mapa" al de "brújula cognitiva", integrando la Misión-Acción-Servicio (MAS) con tecnologías disruptivas en el campo de las Enfermedades Tropicales Transmisibles.',
   sistema_evaluacion: {
     asistencia_obligatoria: '80% de los encuentros sincrónicos',
@@ -367,21 +366,26 @@ export const TFI_ENUNCIADO = {
 }
 
 export const EVENTOS = [
-  { id: 1, titulo: 'Encuentro sincrónico — Módulo 1', fecha: '2026-07-02', tipo: 'clase' },
-  { id: 2, titulo: 'Vence: Reflexión guiada EaD', fecha: '2026-07-05', tipo: 'entrega' },
-  { id: 3, titulo: 'Vence: Análisis de caso HarvardX', fecha: '2026-07-08', tipo: 'entrega' },
-  { id: 4, titulo: 'Encuentro sincrónico — Módulo 2', fecha: '2026-07-09', tipo: 'clase' },
-  { id: 5, titulo: 'Vence: Mini-narrativa LANIN', fecha: '2026-07-15', tipo: 'entrega' },
-  { id: 6, titulo: 'Vence: Diseño de rúbrica formativa', fecha: '2026-07-18', tipo: 'entrega' },
-  { id: 7, titulo: 'Encuentro sincrónico — Módulo 3', fecha: '2026-07-19', tipo: 'clase' },
-  { id: 8, titulo: 'Vence: Recurso gamificado', fecha: '2026-07-25', tipo: 'entrega' },
-  { id: 9, titulo: 'Encuentro sincrónico — Módulo 4', fecha: '2026-07-26', tipo: 'clase' },
-  { id: 10, titulo: 'Vence: Testeo con lector de pantalla', fecha: '2026-08-02', tipo: 'entrega' },
-  { id: 11, titulo: 'Vence: Plan de accesibilidad integral', fecha: '2026-08-05', tipo: 'entrega' },
-  { id: 12, titulo: 'Encuentro sincrónico — Módulo 5', fecha: '2026-08-06', tipo: 'clase' },
-  { id: 13, titulo: 'Vence: Experimento con IA Gen', fecha: '2026-08-12', tipo: 'entrega' },
-  { id: 14, titulo: 'Vence: Diseño conceptual asistente IA', fecha: '2026-08-15', tipo: 'entrega' },
-  { id: 15, titulo: 'Vence: Entrega TFI escrito', fecha: '2026-08-22', tipo: 'entrega' },
-  { id: 16, titulo: 'Defensas orales sincrónicas TFI', fecha: '2026-08-29', tipo: 'examen' },
-  { id: 17, titulo: 'Cierre del taller', fecha: '2026-08-31', tipo: 'clase' },
+  // --- Semana 2: Jun 8-12 ---
+  { id: 1, titulo: 'Sesión de bienvenida y orientación', fecha: '2026-06-08', tipo: 'clase' },
+  { id: 2, titulo: 'Encuentro sincrónico — Módulo 1: Fundamentos y Rol Docente', fecha: '2026-06-11', tipo: 'clase' },
+  // --- Semana 3: Jun 15-19 ---
+  { id: 3, titulo: 'Vence: Reflexión guiada EaD', fecha: '2026-06-15', tipo: 'entrega' },
+  { id: 4, titulo: 'Encuentro sincrónico — Módulo 2: Evaluación y Narrativas', fecha: '2026-06-18', tipo: 'clase' },
+  // --- Semana 4: Jun 22-26 ---
+  { id: 5, titulo: 'Vence: Mini-narrativa LANIN', fecha: '2026-06-22', tipo: 'entrega' },
+  { id: 6, titulo: 'Encuentro sincrónico — Módulo 3: Gamificación y XR', fecha: '2026-06-25', tipo: 'clase' },
+  // --- Semana 5: Jun 29-Jul 3 ---
+  { id: 7, titulo: 'Vence: Diseño de recurso gamificado', fecha: '2026-06-29', tipo: 'entrega' },
+  { id: 8, titulo: 'Encuentro sincrónico — Módulo 4: Accesibilidad', fecha: '2026-07-02', tipo: 'clase' },
+  // --- Semana 6: Jul 6-10 ---
+  { id: 9, titulo: 'Vence: Plan de accesibilidad integral', fecha: '2026-07-06', tipo: 'entrega' },
+  { id: 10, titulo: 'Encuentro sincrónico — Módulo 5: IA Generativa', fecha: '2026-07-09', tipo: 'clase' },
+  // --- Semana 7: Jul 13-17 ---
+  { id: 11, titulo: 'Vence: Experimento con IA Gen', fecha: '2026-07-13', tipo: 'entrega' },
+  { id: 12, titulo: 'Vence: Encuesta experiencia inmersiva', fecha: '2026-07-16', tipo: 'entrega' },
+  // --- Agosto ---
+  { id: 13, titulo: 'Vence: Entrega TFI escrito', fecha: '2026-08-07', tipo: 'entrega' },
+  { id: 14, titulo: 'Defensas orales sincrónicas TFI', fecha: '2026-08-28', tipo: 'examen' },
+  { id: 15, titulo: 'Cierre del taller', fecha: '2026-08-31', tipo: 'clase' },
 ]

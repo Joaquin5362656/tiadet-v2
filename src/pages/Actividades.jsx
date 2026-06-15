@@ -163,6 +163,13 @@ export default function Actividades() {
                         <span className="nota-num">{a.puntaje}/{a.puntajeMax}</span>
                       </div>
                     )}
+                    {a.estado==='completada' && a.retroalimentacion && (
+                      <div className="retro-blk">
+                        <span className="retro-label">Retroalimentación del docente</span>
+                        <p className="retro-texto">{a.retroalimentacion}</p>
+                        <span className="retro-firma">— Dra. Ana Méndez</span>
+                      </div>
+                    )}
 
                     {a.estado==='proximo' && <p className="act-proximo-msg">Esta actividad aun no esta disponible.</p>}
 

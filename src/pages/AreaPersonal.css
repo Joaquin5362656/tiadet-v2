@@ -47,7 +47,10 @@
 .cal-sel { background:var(--color-primary-light) !important; }
 .cal-sel .cal-num { color:var(--color-primary); font-weight:700; }
 .cal-num { font-size:12px; font-weight:500; color:var(--color-text-primary); line-height:1; }
-.cal-con-evt .cal-num { font-weight:600; }
+.cal-con-evt { background:var(--color-accent-light) !important; border-radius:var(--radius-sm); }
+.cal-con-evt .cal-num { font-weight:700; color:var(--color-accent); }
+.cal-con-evt.cal-sel { background:var(--color-primary-light) !important; }
+.cal-con-evt.cal-hoy .cal-num { color:#fff; }
 .cal-puntos { display:flex; gap:3px; justify-content:center; margin-top:4px; min-height:6px; }
 .cal-punto { width:5px; height:5px; border-radius:50%; }
 .cal-punto-entrega { background:var(--color-warning); }
