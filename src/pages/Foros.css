@@ -1,44 +1,44 @@
 .foros-filtros { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:18px; }
-.foro-filtro-btn { font-size:12px; padding:5px 14px; border-radius:20px; background:var(--color-surface); border:1px solid var(--color-border); color:var(--color-text-secondary); cursor:pointer; font-family:inherit; transition:all .12s; }
+.foro-filtro-btn { font-size:13px; padding:5px 14px; border-radius:20px; background:var(--color-surface); border:1px solid var(--color-border); color:var(--color-text-secondary); cursor:pointer; font-family:inherit; transition:all .12s; }
 .foro-filtro-btn:hover { border-color:var(--color-primary); color:var(--color-primary); }
 .foro-filtro-active { background:var(--color-primary-light); border-color:var(--color-primary); color:var(--color-primary); font-weight:600; }
 .foros-lista { display:flex; flex-direction:column; gap:8px; }
 .foro-row { display:flex; align-items:center; gap:16px; padding:16px 20px; cursor:pointer; transition:border-color .15s; }
 .foro-row:hover { border-color:var(--color-primary); }
 .foro-row.card { background-color:#a8c8cd1a; }
-.foro-icono-big { font-size:16px; font-weight:700; color:var(--color-primary); flex-shrink:0; width:42px; height:42px; background:var(--color-bg); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; }
+.foro-icono-big { font-size:17px; font-weight:700; color:var(--color-primary); flex-shrink:0; width:42px; height:42px; background:var(--color-bg); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; }
 .foro-info { flex:1; display:flex; flex-direction:column; gap:3px; }
 .foro-row-head { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
-.foro-row-titulo { font-size:14px; font-weight:600; }
-.foro-row-desc { font-size:13px; color:var(--color-text-secondary); }
-.foro-ultimo { font-size:12px; color:var(--color-text-tertiary); }
+.foro-row-titulo { font-size:15px; font-weight:600; }
+.foro-row-desc { font-size:14px; color:var(--color-text-secondary); }
+.foro-ultimo { font-size:13px; color:var(--color-text-tertiary); }
 .foro-stats { display:flex; flex-direction:column; align-items:center; gap:2px; flex-shrink:0; }
-.foro-count { font-size:18px; font-weight:700; color:var(--color-text-secondary); line-height:1; }
-.foro-count-lbl { font-size:10px; color:var(--color-text-tertiary); text-transform:uppercase; }
-.foro-arrow-btn { color:var(--color-text-tertiary); font-size:22px; flex-shrink:0; }
+.foro-count { font-size:19px; font-weight:700; color:var(--color-text-secondary); line-height:1; }
+.foro-count-lbl { font-size:13px; color:var(--color-text-tertiary); text-transform:uppercase; }
+.foro-arrow-btn { color:var(--color-text-tertiary); font-size:23px; flex-shrink:0; }
 .hilo-grid { display:grid; grid-template-columns:1fr 240px; gap:22px; align-items:start; }
 .hilo-main { display:flex; flex-direction:column; gap:16px; }
 .hilo-header { display:flex; align-items:flex-start; gap:16px; }
-.hilo-icono-inicial { font-size:22px; font-weight:700; color:var(--color-primary); width:42px; height:42px; background:var(--color-primary-light); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-.hilo-titulo { font-size:18px; font-weight:700; margin-bottom:4px; }
-.hilo-desc { font-size:13px; color:var(--color-text-secondary); }
+.hilo-icono-inicial { font-size:23px; font-weight:700; color:var(--color-primary); width:42px; height:42px; background:var(--color-primary-light); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.hilo-titulo { font-size:19px; font-weight:700; margin-bottom:4px; }
+.hilo-desc { font-size:14px; color:var(--color-text-secondary); }
 .mensajes-lista { display:flex; flex-direction:column; gap:14px; }
 .msg-row { display:flex; gap:10px; align-items:flex-start; }
 .msg-mio { flex-direction:row-reverse; }
-.msg-av { width:34px; height:34px; border-radius:50%; background:var(--color-primary); color:#fff; font-size:12px; font-weight:600; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-.msg-av.small { width:26px; height:26px; font-size:10px; }
+.msg-av { width:34px; height:34px; border-radius:50%; background:var(--color-primary); color:#fff; font-size:13px; font-weight:600; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.msg-av.small { width:26px; height:26px; font-size:13px; }
 .msg-burbuja { background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-md); padding:10px 14px; max-width:78%; }
 .msg-mio .msg-burbuja { background:var(--color-primary-light); border-color:rgba(0,102,179,.2); }
-.msg-meta { display:flex; align-items:center; gap:8px; margin-bottom:5px; font-size:13px; }
-.msg-fecha { font-size:11px; color:var(--color-text-tertiary); font-weight:400; }
-.msg-texto { font-size:14px; color:var(--color-text-primary); line-height:1.6; }
+.msg-meta { display:flex; align-items:center; gap:8px; margin-bottom:5px; font-size:14px; }
+.msg-fecha { font-size:13px; color:var(--color-text-tertiary); font-weight:400; }
+.msg-texto { font-size:15px; color:var(--color-text-primary); line-height:1.6; }
 .reply-box { padding:14px; }
 .reply-ta { resize:vertical; min-height:72px; margin-bottom:10px; }
 .reply-foot { display:flex; align-items:center; justify-content:space-between; gap:12px; }
-.reply-hint { font-size:12px; color:var(--color-text-tertiary); flex:1; }
+.reply-hint { font-size:13px; color:var(--color-text-tertiary); flex:1; }
 .hilo-aside { position:sticky; top:66px; display:flex; flex-direction:column; gap:0; }
 .part-row { display:flex; align-items:center; gap:8px; padding:5px 0; border-bottom:1px solid var(--color-border); }
 .part-row:last-child { border-bottom:none; }
-.part-nombre { font-size:13px; color:var(--color-text-secondary); }
-.otro-foro-btn { display:flex; align-items:center; gap:7px; width:100%; background:transparent; border:none; border-radius:var(--radius-md); padding:6px 8px; font-size:12px; color:var(--color-text-secondary); cursor:pointer; font-family:inherit; text-align:left; transition:background .12s; margin-bottom:2px; }
+.part-nombre { font-size:14px; color:var(--color-text-secondary); }
+.otro-foro-btn { display:flex; align-items:center; gap:7px; width:100%; background:transparent; border:none; border-radius:var(--radius-md); padding:6px 8px; font-size:13px; color:var(--color-text-secondary); cursor:pointer; font-family:inherit; text-align:left; transition:background .12s; margin-bottom:2px; }
 .otro-foro-btn:hover { background:var(--color-bg); color:var(--color-primary); }

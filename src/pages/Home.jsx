@@ -60,7 +60,7 @@ export default function Home() {
                 }}
               >
                 <strong>{m.numero}. {m.titulo}</strong>
-                <p style={{ fontSize: 13, color: 'var(--color-text-tertiary)', margin: '4px 0 0' }}>{m.descripcion}</p>
+                <p style={{ fontSize: 14, color: 'var(--color-text-tertiary)', margin: '4px 0 0' }}>{m.descripcion}</p>
               </div>
             ))}
           </div>

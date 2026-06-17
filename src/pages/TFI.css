@@ -2,39 +2,39 @@
 .tfi-main { display:flex; flex-direction:column; }
 .tfi-enunciado-card { padding:24px; }
 .tfi-header { margin-bottom:0; }
-.tfi-titulo { font-size:20px; font-weight:700; margin-bottom:4px; }
-.tfi-subtitulo { font-size:13px; color:var(--color-text-secondary); }
+.tfi-titulo { font-size:21px; font-weight:700; margin-bottom:4px; }
+.tfi-subtitulo { font-size:14px; color:var(--color-text-secondary); }
 .tfi-fecha-badge { margin-top:12px; }
-.tfi-p { font-size:14px; color:var(--color-text-secondary); line-height:1.75; margin-bottom:14px; }
+.tfi-p { font-size:15px; color:var(--color-text-secondary); line-height:1.75; margin-bottom:14px; }
 .tfi-p:last-child { margin-bottom:0; }
 .tfi-requisitos { list-style:none; display:flex; flex-direction:column; gap:10px; }
-.tfi-req-item { display:flex; align-items:flex-start; gap:12px; font-size:13px; color:var(--color-text-secondary); line-height:1.6; }
+.tfi-req-item { display:flex; align-items:flex-start; gap:12px; font-size:14px; color:var(--color-text-secondary); line-height:1.6; }
 .tfi-req-num { font-weight:700; color:var(--color-primary); min-width:26px; flex-shrink:0; }
 .tfi-criterios { display:flex; flex-direction:column; gap:10px; }
 .tfi-criterio-row { display:flex; align-items:center; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--color-border); }
 .tfi-criterio-row:last-child { border-bottom:none; }
-.tfi-crit-nombre { font-size:13px; color:var(--color-text-primary); }
+.tfi-crit-nombre { font-size:14px; color:var(--color-text-primary); }
 .tfi-aside { position:sticky; top:66px; display:flex; flex-direction:column; gap:0; }
 .tfi-enviado { text-align:center; padding:16px 0; }
-.tfi-enviado-icon { display:block; font-size:24px; font-weight:700; color:var(--color-success); margin-bottom:8px; }
-.tfi-enviado-txt { font-size:13px; font-weight:600; color:var(--color-success); }
-.tfi-recurso-link { display:block; padding:8px 0; font-size:13px; color:var(--color-primary); text-decoration:none; border-bottom:1px solid var(--color-border); }
+.tfi-enviado-icon { display:block; font-size:25px; font-weight:700; color:var(--color-success); margin-bottom:8px; }
+.tfi-enviado-txt { font-size:14px; font-weight:600; color:var(--color-success); }
+.tfi-recurso-link { display:block; padding:8px 0; font-size:14px; color:var(--color-primary); text-decoration:none; border-bottom:1px solid var(--color-border); }
 .tfi-recurso-link:hover { text-decoration:underline; }
 .tfi-recurso-link:last-child { border-bottom:none; }
 .tfi-sistema-eval { display:flex; flex-direction:column; gap:10px; }
-.tfi-eval-item { display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-text-secondary); line-height:1.6; }
-.tfi-asistencia { font-size:13px; color:var(--color-text-secondary); margin-top:8px; padding-top:8px; border-top:1px solid var(--color-border); }
+.tfi-eval-item { display:flex; align-items:flex-start; gap:10px; font-size:14px; color:var(--color-text-secondary); line-height:1.6; }
+.tfi-asistencia { font-size:14px; color:var(--color-text-secondary); margin-top:8px; padding-top:8px; border-top:1px solid var(--color-border); }
 .tfi-rubrica-section { margin-top:16px; }
-.tfi-rubrica-toggle { width:100%; font-size:13px; text-align:center; padding:10px; }
+.tfi-rubrica-toggle { width:100%; font-size:14px; text-align:center; padding:10px; }
 .tfi-rubrica-tabla-wrapper { overflow-x:auto; margin-top:12px; }
-.tfi-rubrica-tabla { width:100%; border-collapse:collapse; font-size:12px; }
+.tfi-rubrica-tabla { width:100%; border-collapse:collapse; font-size:13px; }
 .tfi-rubrica-tabla th,
 .tfi-rubrica-tabla td { border:1px solid var(--color-border); padding:8px 10px; text-align:left; vertical-align:top; }
 .tfi-rubrica-tabla th { background:var(--color-bg-secondary); font-weight:600; color:var(--color-text-primary); white-space:nowrap; }
 .tfi-rubrica-criterio { font-weight:600; color:var(--color-primary); min-width:180px; }
-.tfi-rubrica-desc { color:var(--color-text-secondary); line-height:1.5; font-size:11px; }
+.tfi-rubrica-desc { color:var(--color-text-secondary); line-height:1.5; font-size:12px; }
 .tfi-acreditacion-section { margin-top:20px; }
 .tfi-acreditacion-lista { display:flex; flex-direction:column; gap:10px; }
 .tfi-acred-item { display:flex; flex-direction:column; gap:4px; padding:10px 12px; border:1px solid var(--color-border); border-radius:6px; }
-.tfi-acred-nivel { font-weight:600; font-size:13px; color:var(--color-primary); }
-.tfi-acred-desc { font-size:12px; color:var(--color-text-secondary); line-height:1.5; }
+.tfi-acred-nivel { font-weight:600; font-size:14px; color:var(--color-primary); }
+.tfi-acred-desc { font-size:13px; color:var(--color-text-secondary); line-height:1.5; }

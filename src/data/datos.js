@@ -30,10 +30,9 @@ export const USUARIOS_INICIALES = [
 ]
 
 export const ANUNCIOS = [
-  { id: 1, tipo: 'info', texto: 'Bienvenidos al Taller Interactivo Avanzado en EaD con Tecnologías. Este taller sigue la visión MAS-TEIDE-LANIN.' },
-  { id: 2, tipo: 'warning', texto: 'Próxima semana vence la mini-narrativa LANIN del Módulo 2. Revisá los requisitos en la guía del taller.' },
-  { id: 3, tipo: 'success', texto: 'Nuevo material disponible en Módulo 3: guía de herramientas XR y gamificación.' },
-  { id: 4, tipo: 'danger', texto: 'Recordá que el 80% de asistencia a sincrónicos es obligatorio para aprobar el taller.' },
+  { id: 1, tipo: 'warning', texto: 'Próxima semana vence la mini-narrativa LANIN del Módulo 2. Revisá los requisitos en la guía del taller.' },
+  { id: 2, tipo: 'success', texto: 'Nuevo material disponible en Módulo 3: guía de herramientas XR y gamificación.' },
+  { id: 3, tipo: 'danger', texto: 'Recordá que el 80% de asistencia a sincrónicos es obligatorio para aprobar el taller.' },
 ]
 
 export const NOVEDADES = [

@@ -35,14 +35,14 @@ export default function Foros() {
             <div className="hilo-header card">
               <span className="hilo-icono-inicial">{foro.titulo.charAt(0)}</span>
               <div>
-                <h1 style={{fontSize:18,fontWeight:700,marginBottom:4}}>{foro.titulo}</h1>
+                <h1 style={{fontSize:19,fontWeight:700,marginBottom:4}}>{foro.titulo}</h1>
                 <p className="hilo-desc">{foro.descripcion}</p>
                 {foro.tipo==='tfi-privado' && <span className="badge badge-warning" style={{marginTop:6}}>Privado — solo vos y la docente</span>}
               </div>
             </div>
 
             <div style={{display:'flex',gap:10,marginBottom:4}}>
-              <button className="btn-secondary" style={{fontSize:13}} onClick={()=>setForoId(null)}>← Volver a foros</button>
+              <button className="btn-secondary" style={{fontSize:14}} onClick={()=>setForoId(null)}>← Volver a foros</button>
             </div>
 
             <div className="mensajes-lista">
@@ -81,7 +81,7 @@ export default function Foros() {
                   <span className="part-nombre">{a}</span>
                 </div>
               ))}
-              {foro.mensajes.length===0 && <p style={{fontSize:12,color:'var(--color-text-tertiary)'}}>Sin participantes aun.</p>}
+              {foro.mensajes.length===0 && <p style={{fontSize:14,color:'var(--color-text-tertiary)'}}>Sin participantes aun.</p>}
             </div>
             <div className="card" style={{marginTop:14}}>
               <h2 className="section-label">Otros foros</h2>
