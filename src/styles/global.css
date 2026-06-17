@@ -141,11 +141,11 @@ input:focus, textarea:focus, select:focus {
 
 /* ---- UTILITIES ---- */
 .section-label {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-base);
   font-weight: var(--font-weight-semibold);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-text-tertiary);
+  color: var(--color-text-secondary);
   margin-bottom: var(--spacing-md);
   display: block;
 }
