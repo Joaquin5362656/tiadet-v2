@@ -138,9 +138,9 @@ export default function Actividades() {
                     {a.tipo==='tarea' && a.estado==='pendiente' && (
                       <div className="entrega-blk">
                         <h4 className="section-label">Entregar actividad</h4>
-                        <label style={{fontSize:12,fontWeight:600,color:'var(--color-text-secondary)',display:'block',marginBottom:6}}>Link (Google Drive, YouTube, etc.)</label>
+                        <label style={{fontSize:13,fontWeight:600,color:'var(--color-text-secondary)',display:'block',marginBottom:6}}>Link (Google Drive, YouTube, etc.)</label>
                         <input type="url" placeholder="https://..." value={linkEntrega[a.id]||''} onChange={e=>setLinkEntrega(p=>({...p,[a.id]:e.target.value}))} />
-                        <label style={{fontSize:12,fontWeight:600,color:'var(--color-text-secondary)',display:'block',margin:'12px 0 6px'}}>O subir archivo</label>
+                        <label style={{fontSize:13,fontWeight:600,color:'var(--color-text-secondary)',display:'block',margin:'12px 0 6px'}}>O subir archivo</label>
                         <label className="file-upload-area">
                           <input type="file" style={{display:'none'}} onChange={e=>handleArchivo(a.id,e)} />
                           {archivoNombre[a.id] ? <span className="file-chosen">Archivo: {archivoNombre[a.id]}</span> : <span className="file-placeholder">Selecciona un archivo (PDF, DOC...)</span>}

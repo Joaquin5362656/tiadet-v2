@@ -130,7 +130,7 @@ export default function AreaPersonal() {
                     <input type="file" accept="image/*" onChange={handleFotoChange} style={{display:'none'}} />
                     Cambiar foto
                   </label>
-                  {fotoRef && <p style={{fontSize:11,color:'var(--color-text-tertiary)',marginTop:4}}>OK Foto actualizada</p>}
+                  {fotoRef && <p style={{fontSize:12,color:'var(--color-text-tertiary)',marginTop:4}}>OK Foto actualizada</p>}
                 </div>
                 <div className="perfil-info">
                   <div className="perfil-item">

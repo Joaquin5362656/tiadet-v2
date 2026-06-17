@@ -137,17 +137,17 @@ export default function TFI() {
                 <div className="tfi-enviado">
                   <span className="tfi-enviado-icon">OK</span>
                   <p className="tfi-enviado-txt">Tu TFI fue enviado correctamente.</p>
-                  <p style={{fontSize:12,color:'var(--color-text-tertiary)',marginTop:6}}>La docente recibira una notificacion.</p>
-                  <button className="btn-secondary" style={{marginTop:12,width:'100%',fontSize:13}} onClick={()=>setEnviado(false)}>
+                  <p style={{fontSize:14,color:'var(--color-text-tertiary)',marginTop:6}}>La docente recibira una notificacion.</p>
+                  <button className="btn-secondary" style={{marginTop:12,width:'100%',fontSize:14}} onClick={()=>setEnviado(false)}>
                     Reemplazar entrega
                   </button>
                 </div>
               ) : (
                 <>
-                  <label style={{fontSize:12,fontWeight:600,color:'var(--color-text-secondary)',display:'block',marginBottom:6}}>Link (Google Drive, GitHub, etc.)</label>
+                  <label style={{fontSize:14,fontWeight:600,color:'var(--color-text-secondary)',display:'block',marginBottom:6}}>Link (Google Drive, GitHub, etc.)</label>
                   <input type="url" placeholder="https://drive.google.com/..." value={link} onChange={e=>setLink(e.target.value)} />
 
-                  <label style={{fontSize:12,fontWeight:600,color:'var(--color-text-secondary)',display:'block',margin:'14px 0 6px'}}>Subir archivo (PDF, ZIP...)</label>
+                  <label style={{fontSize:14,fontWeight:600,color:'var(--color-text-secondary)',display:'block',margin:'14px 0 6px'}}>Subir archivo (PDF, ZIP...)</label>
                   <label className="file-upload-area">
                     <input type="file" style={{display:'none'}} accept=".pdf,.doc,.docx,.zip" onChange={e=>setArchivo(e.target.files[0])} />
                     {archivo
@@ -166,7 +166,7 @@ export default function TFI() {
                   </button>
 
                   {!link && !archivo && (
-                    <p style={{fontSize:12,color:'var(--color-text-tertiary)',marginTop:8,textAlign:'center'}}>
+                    <p style={{fontSize:14,color:'var(--color-text-tertiary)',marginTop:8,textAlign:'center'}}>
                       Adjunta un link o un archivo para enviar.
                     </p>
                   )}

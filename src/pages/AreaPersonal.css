@@ -7,46 +7,46 @@
 .ap-perfil { padding:20px; }
 .perfil-row { display:flex; gap:18px; }
 .perfil-foto-blk { display:flex; flex-direction:column; align-items:center; }
-.perfil-avatar-grande { width:80px; height:80px; border-radius:50%; background:var(--color-primary); color:#fff; font-size:28px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0; overflow:hidden; margin-bottom:8px; }
+.perfil-avatar-grande { width:80px; height:80px; border-radius:50%; background:var(--color-primary); color:#fff; font-size:29px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0; overflow:hidden; margin-bottom:8px; }
 .perfil-avatar-grande img { width:100%; height:100%; object-fit:cover; }
-.perfil-foto-label { font-size:12px; color:var(--color-primary); cursor:pointer; transition:text-decoration .15s; }
+.perfil-foto-label { font-size:13px; color:var(--color-primary); cursor:pointer; transition:text-decoration .15s; }
 .perfil-foto-label:hover { text-decoration:underline; }
 .perfil-info { flex:1; display:flex; flex-direction:column; gap:12px; }
 .perfil-item { display:flex; flex-direction:column; gap:2px; }
-.perfil-label { font-size:11px; font-weight:600; color:var(--color-text-tertiary); text-transform:uppercase; letter-spacing:.05em; }
-.perfil-valor { font-size:13px; color:var(--color-text-primary); font-weight:500; }
+.perfil-label { font-size:12px; font-weight:600; color:var(--color-text-tertiary); text-transform:uppercase; letter-spacing:.05em; }
+.perfil-valor { font-size:14px; color:var(--color-text-primary); font-weight:500; }
 
 /* ---- PROGRESO ---- */
 .ap-progreso { padding:20px; }
 .progreso-big { display:flex; align-items:center; gap:20px; }
 .prog-circulo { width:100px; height:100px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
 .prog-circulo-inner { width:84px; height:84px; border-radius:50%; background:var(--color-surface); display:flex; align-items:center; justify-content:center; }
-.prog-pct { font-size:24px; font-weight:700; color:var(--color-primary); }
+.prog-pct { font-size:25px; font-weight:700; color:var(--color-primary); }
 .prog-stats { display:flex; flex-direction:column; gap:8px; }
 .prog-stat-item { display:flex; flex-direction:column; align-items:center; gap:2px; }
-.prog-stat-num { font-size:20px; font-weight:700; }
+.prog-stat-num { font-size:21px; font-weight:700; }
 .prog-stat-num.green { color:var(--color-success); }
 .prog-stat-num.warn { color:var(--color-warning); }
-.prog-stat-lbl { font-size:10px; color:var(--color-text-tertiary); text-transform:uppercase; }
+.prog-stat-lbl { font-size:11px; color:var(--color-text-tertiary); text-transform:uppercase; }
 
 /* ---- CALENDARIO ---- */
 .cal-card { padding:18px 16px 14px; }
 
 .cal-nav { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
-.cal-nav-btn { background:none; border:none; font-size:22px; color:var(--color-text-tertiary); cursor:pointer; width:30px; height:30px; display:flex; align-items:center; justify-content:center; border-radius:var(--radius-sm); transition:color .15s,background .15s; font-family:inherit; line-height:1; }
+.cal-nav-btn { background:none; border:none; font-size:23px; color:var(--color-text-tertiary); cursor:pointer; width:30px; height:30px; display:flex; align-items:center; justify-content:center; border-radius:var(--radius-sm); transition:color .15s,background .15s; font-family:inherit; line-height:1; }
 .cal-nav-btn:hover { color:var(--color-primary); background:var(--color-primary-light); }
-.cal-titulo { font-family:var(--font-heading); font-size:17px; font-weight:700; color:var(--color-text-primary); margin:0; }
-.cal-ano { font-weight:400; color:var(--color-text-tertiary); font-size:14px; }
+.cal-titulo { font-family:var(--font-heading); font-size:18px; font-weight:700; color:var(--color-text-primary); margin:0; }
+.cal-ano { font-weight:400; color:var(--color-text-tertiary); font-size:15px; }
 
 .cal-parrilla { display:grid; grid-template-columns:repeat(7,1fr); gap:1px; background:var(--color-border); border:1px solid var(--color-border); border-radius:var(--radius-md); overflow:hidden; }
-.cal-cab-dia { background:var(--color-bg); text-align:center; font-size:10px; font-weight:600; color:var(--color-text-tertiary); text-transform:uppercase; letter-spacing:.04em; padding:6px 0; }
+.cal-cab-dia { background:var(--color-bg); text-align:center; font-size:11px; font-weight:600; color:var(--color-text-tertiary); text-transform:uppercase; letter-spacing:.04em; padding:6px 0; }
 .cal-dia { background:var(--color-surface); text-align:center; padding:6px 2px 4px; cursor:pointer; position:relative; transition:background .12s; min-height:34px; display:flex; flex-direction:column; align-items:center; justify-content:center; }
 .cal-dia:hover { background:var(--color-primary-light); }
 .cal-vacio { background:var(--color-surface); cursor:default; }
-.cal-hoy .cal-num { background:var(--color-primary); color:#fff; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:12px; }
+.cal-hoy .cal-num { background:var(--color-primary); color:#fff; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:13px; }
 .cal-sel { background:var(--color-primary-light) !important; }
 .cal-sel .cal-num { color:var(--color-primary); font-weight:700; }
-.cal-num { font-size:12px; font-weight:500; color:var(--color-text-primary); line-height:1; }
+.cal-num { font-size:13px; font-weight:500; color:var(--color-text-primary); line-height:1; }
 .cal-con-evt { background:var(--color-accent-light) !important; border-radius:var(--radius-sm); }
 .cal-con-evt .cal-num { font-weight:700; color:var(--color-accent); }
 .cal-con-evt.cal-sel { background:var(--color-primary-light) !important; }
@@ -58,24 +58,24 @@
 .cal-punto-clase { background:var(--color-primary); }
 
 .cal-leyenda { display:flex; gap:12px; justify-content:center; margin-top:10px; flex-wrap:wrap; }
-.cal-ley-item { display:flex; align-items:center; gap:4px; font-size:10px; color:var(--color-text-tertiary); }
+.cal-ley-item { display:flex; align-items:center; gap:4px; font-size:11px; color:var(--color-text-tertiary); }
 .cal-ley-item .cal-punto { margin-right:2px; }
 
 .cal-eventos { margin-top:12px; padding-top:10px; border-top:1px solid var(--color-border); min-height:28px; }
-.cal-prox-lbl { font-size:10px; font-weight:600; color:var(--color-text-tertiary); text-transform:uppercase; letter-spacing:.05em; margin-bottom:8px; }
+.cal-prox-lbl { font-size:11px; font-weight:600; color:var(--color-text-tertiary); text-transform:uppercase; letter-spacing:.05em; margin-bottom:8px; }
 .cal-prox-lista { display:flex; flex-direction:column; gap:6px; }
-.cal-evento { display:flex; align-items:center; gap:8px; padding:7px 9px; border-radius:var(--radius-md); font-size:12px; }
+.cal-evento { display:flex; align-items:center; gap:8px; padding:7px 9px; border-radius:var(--radius-md); font-size:13px; }
 .cal-entrega { background:var(--color-warning-light); color:var(--color-warning); }
 .cal-examen { background:var(--color-danger-light); color:var(--color-danger); }
 .cal-clase { background:var(--color-primary-light); color:var(--color-primary); }
-.cal-evo-tipo { font-weight:600; font-size:10px; text-transform:uppercase; letter-spacing:.04em; min-width:44px; }
+.cal-evo-tipo { font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.04em; min-width:44px; }
 .cal-evo-tit { font-weight:500; line-height:1.3; }
-.cal-evo-fecha { font-weight:700; min-width:38px; font-size:11px; }
-.cal-sin-evt { font-size:12px; color:var(--color-text-tertiary); text-align:center; padding:6px 0; }
+.cal-evo-fecha { font-weight:700; min-width:38px; font-size:12px; }
+.cal-sin-evt { font-size:13px; color:var(--color-text-tertiary); text-align:center; padding:6px 0; }
 
 /* ---- NOTIFICACIONES ---- */
-.notif-item { display:flex; align-items:flex-start; gap:8px; padding:9px; border-radius:var(--radius-md); font-size:12px; line-height:1.4; margin-bottom:6px; }
-.notif-icon { font-size:14px; font-weight:700; flex-shrink:0; }
+.notif-item { display:flex; align-items:flex-start; gap:8px; padding:9px; border-radius:var(--radius-md); font-size:13px; line-height:1.4; margin-bottom:6px; }
+.notif-icon { font-size:15px; font-weight:700; flex-shrink:0; }
 .notif-info { background:var(--color-primary-light); color:var(--color-primary); }
 .notif-warn { background:var(--color-warning-light); color:var(--color-warning); }
 .notif-success { background:var(--color-success-light); color:var(--color-success); }
