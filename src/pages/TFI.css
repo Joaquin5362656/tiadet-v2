@@ -21,3 +21,20 @@
 .tfi-recurso-link { display:block; padding:8px 0; font-size:13px; color:var(--color-primary); text-decoration:none; border-bottom:1px solid var(--color-border); }
 .tfi-recurso-link:hover { text-decoration:underline; }
 .tfi-recurso-link:last-child { border-bottom:none; }
+.tfi-sistema-eval { display:flex; flex-direction:column; gap:10px; }
+.tfi-eval-item { display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--color-text-secondary); line-height:1.6; }
+.tfi-asistencia { font-size:13px; color:var(--color-text-secondary); margin-top:8px; padding-top:8px; border-top:1px solid var(--color-border); }
+.tfi-rubrica-section { margin-top:16px; }
+.tfi-rubrica-toggle { width:100%; font-size:13px; text-align:center; padding:10px; }
+.tfi-rubrica-tabla-wrapper { overflow-x:auto; margin-top:12px; }
+.tfi-rubrica-tabla { width:100%; border-collapse:collapse; font-size:12px; }
+.tfi-rubrica-tabla th,
+.tfi-rubrica-tabla td { border:1px solid var(--color-border); padding:8px 10px; text-align:left; vertical-align:top; }
+.tfi-rubrica-tabla th { background:var(--color-bg-secondary); font-weight:600; color:var(--color-text-primary); white-space:nowrap; }
+.tfi-rubrica-criterio { font-weight:600; color:var(--color-primary); min-width:180px; }
+.tfi-rubrica-desc { color:var(--color-text-secondary); line-height:1.5; font-size:11px; }
+.tfi-acreditacion-section { margin-top:20px; }
+.tfi-acreditacion-lista { display:flex; flex-direction:column; gap:10px; }
+.tfi-acred-item { display:flex; flex-direction:column; gap:4px; padding:10px 12px; border:1px solid var(--color-border); border-radius:6px; }
+.tfi-acred-nivel { font-weight:600; font-size:13px; color:var(--color-primary); }
+.tfi-acred-desc { font-size:12px; color:var(--color-text-secondary); line-height:1.5; }

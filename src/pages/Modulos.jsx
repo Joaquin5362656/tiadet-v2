@@ -86,6 +86,65 @@ export function ModuloDetalle() {
 
         <div className="mod-detalle-grid">
           <div className="mod-detalle-main">
+            {m.horas_sincronicas != null && (
+              <section className="mod-section mod-info-bar">
+                <div className="mod-info-item">
+                  <span className="mod-info-label">Carga horaria</span>
+                  <span className="mod-info-value">{m.horas_sincronicas + m.horas_asincronicas}h totales</span>
+                </div>
+                <div className="mod-info-item">
+                  <span className="mod-info-label">Sincrónicas</span>
+                  <span className="mod-info-value">{m.horas_sincronicas}h</span>
+                </div>
+                <div className="mod-info-item">
+                  <span className="mod-info-label">Asincrónicas</span>
+                  <span className="mod-info-value">{m.horas_asincronicas}h</span>
+                </div>
+              </section>
+            )}
+
+            {m.objetivo && (
+              <section className="mod-section">
+                <h2 className="section-label">Objetivo</h2>
+                <div className="card mod-resumen-card">
+                  <p className="mod-resumen-p">{m.objetivo}</p>
+                </div>
+              </section>
+            )}
+
+            <section className="mod-section">
+              <h2 className="section-label">Resumen del módulo</h2>
+              <div className="card mod-resumen-card">
+                {m.resumen.split('\n\n').map((p, i) => <p key={i} className="mod-resumen-p">{p}</p>)}
+              </div>
+            </section>
+
+            {m.contenidos && m.contenidos.length > 0 && (
+              <section className="mod-section">
+                <h2 className="section-label">Contenidos</h2>
+                <div className="card mod-contenidos-card">
+                  <ul className="mod-contenidos-ul">
+                    {m.contenidos.map((c, i) => (
+                      <li key={i} className="mod-contenido-li">{c}</li>
+                    ))}
+                  </ul>
+                </div>
+              </section>
+            )}
+
+            {m.actividades_desc && m.actividades_desc.length > 0 && (
+              <section className="mod-section">
+                <h2 className="section-label">Actividades del módulo</h2>
+                <div className="card mod-actividades-card">
+                  <ul className="mod-actividades-ul">
+                    {m.actividades_desc.map((a, i) => (
+                      <li key={i} className="mod-actividad-li">{a}</li>
+                    ))}
+                  </ul>
+                </div>
+              </section>
+            )}
+
             {videos.length > 0 && (
               <section className="mod-section">
                 <h2 className="section-label">Videos</h2>
@@ -99,13 +158,6 @@ export function ModuloDetalle() {
                 ))}
               </section>
             )}
-
-            <section className="mod-section">
-              <h2 className="section-label">Resumen del módulo</h2>
-              <div className="card mod-resumen-card">
-                {m.resumen.split('\n\n').map((p, i) => <p key={i} className="mod-resumen-p">{p}</p>)}
-              </div>
-            </section>
 
             {otros.length > 0 && (
               <section className="mod-section">

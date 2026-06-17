@@ -13,8 +13,8 @@ export default function Home() {
     <>
       <Navbar />
       <div className="page-content">
-        <h1>Inicio</h1>
-        <p>Bienvenido, {usuario?.nombre}</p>
+        <h1>Taller Interactivo Avanzado en Enseñanza a Distancia con Tecnologías</h1>
+        <p>Bienvenido, {usuario?.nombre} — una experiencia formativa con visión <strong>MAS-TEIDE-LANIN</strong></p>
 
         {!esInvitado && (
           <section style={{ marginTop: 32 }}>
@@ -33,10 +33,13 @@ export default function Home() {
           <h2 className="section-label">Novedades</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 12 }}>
             {NOVEDADES.map(n => (
-              <a key={n.id} href={n.url} target="_blank" rel="noreferrer" className="card" style={{ textDecoration: 'none', color: 'inherit' }}>
-                <p style={{ fontWeight: 600, marginBottom: 4 }}>{n.titulo}</p>
-                <p style={{ fontSize: 13, color: 'var(--color-text-secondary)', marginBottom: 8 }}>{n.resumen}</p>
-                <p style={{ fontSize: 12, color: 'var(--color-text-tertiary)' }}>{n.fuente} • {n.fecha}</p>
+              <a key={n.id} href={n.url} target="_blank" rel="noreferrer" className="card novedad-card" style={{ textDecoration: 'none', color: 'inherit' }}>
+                {n.imagen && <img src={n.imagen} alt={n.titulo} className="novedad-img" />}
+                <div className="novedad-body">
+                  <p className="novedad-titulo">{n.titulo}</p>
+                  <p className="novedad-resumen">{n.resumen}</p>
+                  <p className="novedad-meta">{n.fuente} • {n.fecha}</p>
+                </div>
               </a>
             ))}
           </div>
@@ -48,7 +51,7 @@ export default function Home() {
             {MODULOS.map(m => (
               <div
                 key={m.id}
-                className="card"
+                className="card modulo-card"
                 onClick={() => m.estado !== 'bloqueado' && navigate(`/modulos/${m.id}`)}
                 style={{
                   cursor: m.estado !== 'bloqueado' ? 'pointer' : 'not-allowed',

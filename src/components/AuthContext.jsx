@@ -3,8 +3,8 @@ import { USUARIOS_INICIALES } from '../data/datos'
 
 const AuthContext = createContext(null)
 
-const LS_KEY_USUARIOS = 'tiadet_usuarios'
-const LS_KEY_SESSION  = 'tiadet_usuario'
+const LS_KEY_USUARIOS = 'tiaedit_usuarios'
+const LS_KEY_SESSION  = 'tiaedit_usuario'
 
 function cargarUsuarios() {
   try {

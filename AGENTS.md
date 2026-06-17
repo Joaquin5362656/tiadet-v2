@@ -1,4 +1,4 @@
-# TIADET — Agent Instructions
+# TIA-EDiT — Agent Instructions
 
 ## Stack
 
@@ -18,7 +18,7 @@ No lint, typecheck, or test commands exist.
 
 - Entry: `src/main.jsx` → `src/App.jsx` (routes + auth wrapper)
 - Router: `BrowserRouter` with public/login route and 7 private routes
-- Auth: `AuthContext.jsx` — stores users in `localStorage` (key `tiadet_usuarios`), session in `tiadet_usuario`. Exposes `login`, `loginInvitado`, `register`, `logout`, `actualizarFoto`.
+- Auth: `AuthContext.jsx` — stores users in `localStorage` (key `tiaedit_usuarios`), session in `tiaedit_usuario`. Exposes `login`, `loginInvitado`, `register`, `logout`, `actualizarFoto`.
 - Styling: CSS custom properties in `src/styles/variables.css`, loaded via `global.css`. Each component has its own CSS file alongside the JSX (e.g. `Login.jsx` + `Login.css`).
 - Guest mode: users with `rol: 'invitado'` see only "Modo invitado" label in navbar (no nav links).
 
