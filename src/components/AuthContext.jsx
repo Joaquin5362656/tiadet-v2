@@ -4,7 +4,7 @@ import { USUARIOS_INICIALES } from '../data/datos'
 const AuthContext = createContext(null)
 
 const LS_KEY_USUARIOS = 'tiaedit_usuarios'
-const LS_KEY_SESSION  = 'tiaedit_usuario'
+const SS_KEY_SESSION  = 'tiaedit_usuario'
 
 function cargarUsuarios() {
   try {
@@ -23,7 +23,7 @@ export function AuthProvider({ children }) {
   const [usuarios, setUsuarios] = useState(cargarUsuarios)
   const [usuario, setUsuario] = useState(() => {
     try {
-      const s = localStorage.getItem(LS_KEY_SESSION)
+      const s = sessionStorage.getItem(SS_KEY_SESSION)
       return s ? JSON.parse(s) : null
     } catch {
       return null
@@ -34,7 +34,7 @@ export function AuthProvider({ children }) {
     const u = usuarios.find(u => u.dni === dni.trim() && u.password === password.trim())
     if (u) {
       setUsuario(u)
-      localStorage.setItem(LS_KEY_SESSION, JSON.stringify(u))
+      sessionStorage.setItem(SS_KEY_SESSION, JSON.stringify(u))
       return true
     }
     return false
@@ -43,7 +43,7 @@ export function AuthProvider({ children }) {
   function loginInvitado() {
     const invitado = { id: 'guest', nombre: 'Visitante', rol: 'invitado', foto: null }
     setUsuario(invitado)
-    localStorage.setItem(LS_KEY_SESSION, JSON.stringify(invitado))
+    sessionStorage.setItem(SS_KEY_SESSION, JSON.stringify(invitado))
   }
 
   function register({ nombre, dni, email, password }) {
@@ -66,19 +66,19 @@ export function AuthProvider({ children }) {
     setUsuarios(lista)
     guardarUsuarios(lista)
     setUsuario(nuevo)
-    localStorage.setItem(LS_KEY_SESSION, JSON.stringify(nuevo))
+    sessionStorage.setItem(SS_KEY_SESSION, JSON.stringify(nuevo))
     return { ok: true }
   }
 
   function logout() {
     setUsuario(null)
-    localStorage.removeItem(LS_KEY_SESSION)
+    sessionStorage.removeItem(SS_KEY_SESSION)
   }
 
   function actualizarFoto(dataUrl) {
     const actualizado = { ...usuario, foto: dataUrl }
     setUsuario(actualizado)
-    localStorage.setItem(LS_KEY_SESSION, JSON.stringify(actualizado))
+    sessionStorage.setItem(SS_KEY_SESSION, JSON.stringify(actualizado))
     const lista = usuarios.map(u => (u.id === usuario.id ? { ...u, foto: dataUrl } : u))
     setUsuarios(lista)
     guardarUsuarios(lista)
