@@ -76,6 +76,32 @@ export const MODULOS = [
       { tipo: 'link', label: 'Community of Inquiry framework', url: 'https://coi.athabascau.ca/' },
       { tipo: 'link', label: 'Quality Matters Rubric', url: 'https://www.qualitymatters.org/' },
     ],
+    recorridoSemanal: [
+      {
+        semana: 1,
+        tema: 'El docente virtual como facilitador',
+        contenidos: 'Rol del docente virtual como facilitador, mediador y mentor. Diferencias entre educación presencial y a distancia.',
+        actividad: 'Participación en foro de presentación y debate sobre rol docente.',
+      },
+      {
+        semana: 2,
+        tema: 'Estrategias motivacionales y CoI',
+        contenidos: 'Community of Inquiry framework (Garrison, Anderson y Archer). Estrategias para fomentar autonomía y comunidades de aprendizaje.',
+        actividad: 'Reflexión guiada sobre experiencia previa en EaD (entrega Semana 3).',
+      },
+      {
+        semana: 3,
+        tema: 'Estándares de calidad internacional',
+        contenidos: 'Quality Matters Rubric, E-xcellence EUA, Harvard HIDL/HILT. Análisis de casos de éxito global como HarvardX.',
+        actividad: 'Análisis de caso: HarvardX — identificación de estándares de calidad.',
+      },
+      {
+        semana: 4,
+        tema: 'Guía TEIDE y cierre del módulo',
+        contenidos: 'Introducción a la Guía TEIDE para estructurar proyectos educativos. Integración de estándares en el contexto del taller.',
+        actividad: 'Foro estructurado de intercambio sobre desafíos y estrategias personales.',
+      },
+    ],
   },
   {
     id: 2, numero: '02',
@@ -107,6 +133,32 @@ export const MODULOS = [
     recursos: [
       { tipo: 'pdf', label: 'Oubiña - TFI Taller 7 EDET: Visión LANIN (2024)', url: '#' },
       { tipo: 'link', label: 'Rubistar — generador de rúbricas', url: 'https://rubistar.4teachers.org' },
+    ],
+    recorridoSemanal: [
+      {
+        semana: 1,
+        tema: 'Evaluación en EaD',
+        contenidos: 'Diseño de evaluación formativa y sumativa en entornos virtuales. Retroalimentación constructiva y monitoreo de progreso.',
+        actividad: 'Lectura de materiales sobre evaluación digital y participación en foro.',
+      },
+      {
+        semana: 2,
+        tema: 'Estrategia LANIN',
+        contenidos: 'Fundamentos de LANIN (Los Alumnos Necesitan Incluir Narrativas). Construcción de relatos para aprendizaje significativo.',
+        actividad: 'Taller virtual: diseño de mini-narrativa LANIN para caso de ETT.',
+      },
+      {
+        semana: 3,
+        tema: 'Narrativas basadas en problemas',
+        contenidos: 'Aplicación práctica en Enfermedades Tropicales Transmisibles. Análisis crítico y solución de casos reales en formato narrativo.',
+        actividad: 'Creación de mini-narrativa LANIN para un caso clínico (entrega Semana 4).',
+      },
+      {
+        semana: 4,
+        tema: 'Rúbricas y cierre',
+        contenidos: 'Diseño de rúbricas analíticas con criterios LANIN y TEIDE. Gestión del tiempo y evaluación continua.',
+        actividad: 'Diseño de rúbrica formativa con criterios LANIN y TEIDE.',
+      },
     ],
   },
   {
@@ -142,6 +194,32 @@ export const MODULOS = [
       { tipo: 'pdf', label: 'Radianti et al. - Systematic review of VR in higher education (2020)', url: '#' },
       { tipo: 'link', label: 'CoSpaces Edu', url: 'https://cospaces.io/edu/' },
     ],
+    recorridoSemanal: [
+      {
+        semana: 1,
+        tema: 'Fundamentos de gamificación',
+        contenidos: 'Conceptos básicos, tipos de elementos gamificados (puntos, insignias, tableros). Beneficios en motivación y retención.',
+        actividad: 'Exploración de ejemplos de gamificación en plataformas educativas.',
+      },
+      {
+        semana: 2,
+        tema: 'Realidad Virtual, Aumentada y Mixta',
+        contenidos: 'VR, AR y XR: características, diferencias y aplicaciones en enseñanza médica. Limitaciones actuales.',
+        actividad: 'Simulación práctica con entorno XR básico.',
+      },
+      {
+        semana: 3,
+        tema: 'Imágenes 360° y plataformas',
+        contenidos: 'Uso de imágenes y videos en 360° para inmersión. Plataformas CoSpaces Edu y Oculus Education.',
+        actividad: 'Diseño colaborativo de un recurso gamificado para ETT.',
+      },
+      {
+        semana: 4,
+        tema: 'Diseño instruccional gamificado',
+        contenidos: 'Integración de recursos gamificados en el currículo virtual. Medición de impacto y evaluación.',
+        actividad: 'Evaluación y discusión sobre la experiencia inmersiva (encuesta).',
+      },
+    ],
   },
   {
     id: 4, numero: '04',
@@ -175,6 +253,32 @@ export const MODULOS = [
       { tipo: 'pdf', label: 'Seale - E-learning and Disability in Higher Education (2014)', url: '#' },
       { tipo: 'link', label: 'W3C - WCAG 2.1', url: 'https://www.w3.org/TR/WCAG21/' },
       { tipo: 'link', label: 'W3C - WCAG 2.2', url: 'https://www.w3.org/TR/WCAG22/' },
+    ],
+    recorridoSemanal: [
+      {
+        semana: 1,
+        tema: 'Normativas WCAG',
+        contenidos: 'Introducción a WCAG 2.1/2.2. Principios de accesibilidad web: perceptible, operable, comprensible y robusto.',
+        actividad: 'Testeo de recurso propio con lector de pantalla (NVDA o VoiceOver).',
+      },
+      {
+        semana: 2,
+        tema: 'Tecnologías asistivas',
+        contenidos: 'Lectores de pantalla, subtítulos automáticos, audiodescripción y alternativas táctiles para discapacidad visual y auditiva.',
+        actividad: 'Adaptación de material audiovisual con subtítulos y audiodescripción.',
+      },
+      {
+        semana: 3,
+        tema: 'Diseño Universal para el Aprendizaje',
+        contenidos: 'Principios del DUA: múltiples formas de representación, acción/expresión y participación. Creación de contenidos navegables y comprensibles.',
+        actividad: 'Análisis de accesibilidad de un módulo de la METT.',
+      },
+      {
+        semana: 4,
+        tema: 'Estrategias inclusivas y cierre',
+        contenidos: 'Estrategias didácticas inclusivas. Adaptaciones en materiales, evaluación y comunicación. Casos aplicados a salud tropical.',
+        actividad: 'Diseño de plan de accesibilidad integral para un módulo específico.',
+      },
     ],
   },
   {
@@ -210,6 +314,32 @@ export const MODULOS = [
       { tipo: 'pdf', label: 'Holmes et al. - AI in Education (UNESCO 2021)', url: '#' },
       { tipo: 'link', label: 'UNESCO - AI in Education', url: 'https://www.unesco.org/en/digital-education/artificial-intelligence' },
     ],
+    recorridoSemanal: [
+      {
+        semana: 1,
+        tema: 'Fundamentos de IA Generativa',
+        contenidos: 'Definición de IAGen. Diferencias entre IA tradicional y generativa. Ejemplos prácticos actuales en educación.',
+        actividad: 'Lectura de materiales introductorios y debate en foro.',
+      },
+      {
+        semana: 2,
+        tema: 'Aplicaciones en diseño pedagógico',
+        contenidos: 'Creación de contenidos educativos con IA. Generación automática de evaluaciones y materiales didácticos.',
+        actividad: 'Experimento con herramienta de IA Gen (ChatGPT, Claude, Gemini).',
+      },
+      {
+        semana: 3,
+        tema: 'Tutorías inteligentes y personalización',
+        contenidos: 'Personalización del aprendizaje con IA. Rutas formativas adaptativas según progreso y perfil del alumno.',
+        actividad: 'Diseño conceptual de un asistente docente basado en IA.',
+      },
+      {
+        semana: 4,
+        tema: 'Ética y futuro de la IA en educación',
+        contenidos: 'Consideraciones éticas: privacidad, sesgos algorítmicos y transparencia. Tendencias y futuro de la educación con IA.',
+        actividad: 'Debate ético sobre beneficios y riesgos de IA en educación.',
+      },
+    ],
   },
 ]
 
@@ -218,8 +348,8 @@ export const ACTIVIDADES_INICIALES = [
   { id: 2, titulo: 'Mini-narrativa LANIN: caso clínico de ETT', tipo: 'tarea', modulo: 2, vencimiento: '2026-06-22', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Creá una mini-narrativa para un caso clínico de una enfermedad tropical transmisible aplicando la metodología LANIN. Extensión: 500-800 palabras.' },
   { id: 3, titulo: 'Diseño de recurso gamificado', tipo: 'tarea', modulo: 3, vencimiento: '2026-06-29', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Diseñá colaborativamente un recurso gamificado para una temática de enfermedades tropicales transmisibles. Podés usar Genially, Kahoot u otra herramienta.' },
   { id: 4, titulo: 'Encuesta de experiencia inmersiva', tipo: 'encuesta', modulo: 3, vencimiento: '2026-07-16', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Evaluá tu experiencia con la simulación XR y los recursos gamificados del módulo.', preguntas: [
-    { id: 'q1', texto: '¿Qué tan útiles considerás las tecnologías XR para la enseñanza de enfermedades tropicales?', opciones: ['Muy útiles','Útiles','Poco útiles','No son útiles'], respuestaCorrecta: null },
-    { id: 'q2', texto: '¿Qué herramienta te resultó más interesante?', opciones: ['Realidad Virtual','Realidad Aumentada','Video 360°','Gamificación'], respuestaCorrecta: null },
+    { id: 'q1', texto: '¿En qué medida considerás que la visión MAS-TEIDE-LANIN aporta un enfoque innovador para la educación a distancia en enfermedades tropicales?', opciones: ['Significativamente innovador','Moderadamente innovador','Poco innovador','No aporta innovación'], respuestaCorrecta: null },
+    { id: 'q2', texto: '¿Qué componente del taller te resultó más valioso para tu práctica docente?', opciones: ['Narrativas LANIN y casos del NOA/NEA','Tecnologías XR y gamificación','Diseño universal y accesibilidad','IA Generativa aplicada a la educación'], respuestaCorrecta: null },
   ]},
   { id: 5, titulo: 'Plan de accesibilidad integral', tipo: 'tarea', modulo: 4, vencimiento: '2026-07-06', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Diseñá un plan de accesibilidad integral para un módulo específico de la METT, incluyendo subtítulos, audiodescripción y alternativas táctiles.' },
   { id: 6, titulo: 'Experimento con IA Generativa', tipo: 'tarea', modulo: 5, vencimiento: '2026-07-13', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Usá una herramienta de IA Gen (ChatGPT, Claude, Gemini) para generar un plan de clase o material educativo. Reflexioná sobre los resultados obtenidos.' },

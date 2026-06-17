@@ -14,7 +14,7 @@ const ESTADO_CFG = {
   pendiente:  { badge:'badge-warning',   label:'Pendiente' },
   proximo:    { badge:'badge-gray',   label:'Proximo' },
 }
-const FILTROS = ['Todas', 'Pendiente', 'Completada', 'Proximo']
+const FILTROS = ['Todas', 'Pendiente', 'Completada']
 
 export default function Actividades() {
   const [acts, setActs]       = useState(ACTIVIDADES_INICIALES)
