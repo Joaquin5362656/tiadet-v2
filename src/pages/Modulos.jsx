@@ -132,6 +132,27 @@ export function ModuloDetalle() {
               </section>
             )}
 
+            {m.recorridoSemanal && m.recorridoSemanal.length > 0 && (
+              <section className="mod-section">
+                <h2 className="section-label">Recorrido semanal</h2>
+                <div className="rs-grid">
+                  {m.recorridoSemanal.map(s => (
+                    <div key={s.semana} className="card rs-card">
+                      <div className="rs-card-head">
+                        <span className="rs-semana">Semana {s.semana}</span>
+                        <span className="rs-tema">{s.tema}</span>
+                      </div>
+                      <p className="rs-contenidos">{s.contenidos}</p>
+                      <div className="rs-actividad">
+                        <span className="rs-act-label">Actividad</span>
+                        <span className="rs-act-texto">{s.actividad}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+
             {m.actividades_desc && m.actividades_desc.length > 0 && (
               <section className="mod-section">
                 <h2 className="section-label">Actividades del módulo</h2>
