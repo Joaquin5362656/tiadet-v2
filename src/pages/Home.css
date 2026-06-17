@@ -24,6 +24,10 @@ section {
 .novedad-card {
   overflow: hidden;
   padding: 0;
+  transition: border-color .15s;
+}
+.novedad-card:hover {
+  border-color: var(--color-primary);
 }
 .novedad-img {
   width: 100%;
