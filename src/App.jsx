@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import { AuthProvider, useAuth } from './components/AuthContext'
 import Login from './pages/Login'
 import Home from './pages/Home'
@@ -20,9 +21,17 @@ function PublicRoute({ children }) {
   return !usuario ? children : <Navigate to="/inicio" replace />
 }
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+  return null
+}
+
 function AppRoutes() {
   return (
-    <Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
       <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
       <Route path="/inicio" element={<PrivateRoute><Home /></PrivateRoute>} />
       <Route path="/modulos" element={<PrivateRoute><ModulosList /></PrivateRoute>} />
@@ -35,6 +44,7 @@ function AppRoutes() {
       <Route path="/extras" element={<PrivateRoute><Extras /></PrivateRoute>} />
       <Route path="*" element={<Navigate to="/inicio" replace />} />
     </Routes>
+    </>
   )
 }
 
