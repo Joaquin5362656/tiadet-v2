@@ -1,6 +1,6 @@
 # Plan: Migrar secciones de tiadet-v2 al proyecto principal (tiadet-v3)
 
-> **Proyecto:** TIADET (tiadet-v3)
+> **Proyecto:** TIA-EDiT (tiadet-v3)
 > **Fecha:** 14 de junio de 2026
 > **Estado:** Pendiente
 

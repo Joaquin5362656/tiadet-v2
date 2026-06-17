@@ -1,9 +1,9 @@
-# PLAN: Implementar el contenido real del Taller (según TIADET.md)
+# PLAN: Implementar el contenido real del Taller (según TIA-EDIT.md)
 
 ## Contexto
 
 El prototipo actual en `src/data/datos.js` contiene módulos genéricos de EaD.
-El TIADET.md (secciones 5.3 a 5.3.6) define un taller completamente distinto:
+El TIA-EDIT.md (secciones 5.3 a 5.3.6) define un taller completamente distinto:
 un **Taller Interactivo Avanzado en Enseñanza a Distancia con Tecnologías**
 con enfoque **MAS-TEIDE-LANIN**, orientado a docentes de la METT
 (Maestría en Enfermedades Tropicales Transmisibles).
@@ -296,7 +296,7 @@ ACTIVIDADES_INICIALES = [
 
 ```js
 export const TFI_ENUNCIADO = {
-  titulo: 'Trabajo Final Integrador — TIADET 2026',
+  titulo: 'Trabajo Final Integrador — TIA-EDiT 2026',
   subtitulo: 'Rediseño de un módulo de la METT con enfoque MAS-TEIDE-LANIN',
   fecha_entrega: '22 de agosto de 2026',
   descripcion: 'El Trabajo Final Integrador consiste en el rediseño completo de un módulo de la Maestría en Enfermedades Tropicales Transmisibles (METT), integrando todos los elementos del taller:\n\n• Gamificación y/o Realidad Extendida (XR)\n• Accesibilidad universal (WCAG 2.1/2.2)\n• IA Generativa para diseño pedagógico\n• Narrativas LANIN para aprendizaje significativo\n\nEl trabajo debe demostrar la capacidad de transitar desde un rol de "mapa" al de "brújula cognitiva", integrando la Misión-Acción-Servicio (MAS) con tecnologías disruptivas en el campo de las Enfermedades Tropicales Transmisibles.',
@@ -501,7 +501,7 @@ Dentro del componente `ModuloDetalle`, en el `<div className="mod-detalle-main">
 
 ### Qué hacer
 
-Agregar contenido con mini-cursos y recursos opcionales reales mencionados en el TIADET:
+Agregar contenido con mini-cursos y recursos opcionales reales mencionados en el TIA-EDIT:
 - Mini-curso: "IA en el diagnóstico médico"
 - Mini-curso: "Telemedicina y salud global"
 - Webinars internacionales (HarvardX, UNESCO, OPS)

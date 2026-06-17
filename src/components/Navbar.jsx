@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="navbar-container">
         {/* Logo */}
         <div className="navbar-brand">
-          <span className="navbar-sigla">TIADET</span>
+          <span className="navbar-sigla">TIA-EDiT</span>
           <span className="navbar-sep">|</span>
           <span className="navbar-full">Taller Interactivo Avanzado en EaD</span>
         </div>

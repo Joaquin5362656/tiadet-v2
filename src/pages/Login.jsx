@@ -57,7 +57,7 @@ export default function Login() {
       <div className="login-container">
         <div className="login-box">
           <div className="login-header">
-            <h1 className="login-title">TIADET</h1>
+            <h1 className="login-title">TIA-EDiT</h1>
             <p className="login-subtitle">
               Taller Interactivo Avanzado en Enseñanza a Distancia con Tecnologías
             </p>
