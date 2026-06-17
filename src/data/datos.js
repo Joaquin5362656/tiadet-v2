@@ -1,3 +1,7 @@
+import imgNovedad1 from '../assets/novedad1.png'
+import imgNovedad2 from '../assets/novedad2.png'
+import imgNovedad3 from '../assets/novedad3.png'
+
 export const USUARIOS_INICIALES = [
   { id: 1, dni: '12345678', email: 'mgarcia@mail.com', password: '1234', nombre: 'María García', rol: 'alumno', foto: null, legajo: 'DOC-001' },
   { id: 2, dni: '87654321', email: 'clopez@mail.com', password: '1234', nombre: 'Carlos López', rol: 'alumno', foto: null, legajo: 'DOC-002' },
@@ -33,10 +37,9 @@ export const ANUNCIOS = [
 ]
 
 export const NOVEDADES = [
-  { id: 1, titulo: 'OMS lanza nuevo protocolo de formación médica a distancia', fuente: 'OMS', fecha: '9 jul 2026', resumen: 'Marco de referencia para estandarizar educación médica continua en entornos digitales.', url: 'https://www.who.int', categoria: 'Educación médica' },
-  { id: 2, titulo: 'IA en diagnóstico: resultados del estudio MEDAI-2026', fuente: 'The Lancet', fecha: '6 jul 2026', resumen: 'Modelos de IA alcanzan sensibilidad diagnóstica equivalente a especialistas en cardiología.', url: 'https://www.thelancet.com', categoria: 'Tecnología' },
-  { id: 3, titulo: 'Argentina: 3 millones de consultas virtuales en 2026', fuente: 'Ministerio de Salud', fecha: '3 jul 2026', resumen: 'Consolidación de telemedicina con crecimiento del 42% respecto a 2023.', url: 'https://www.argentina.gob.ar', categoria: 'Salud pública' },
-  { id: 4, titulo: 'Simulación clínica virtual: nuevos estándares para residencias', fuente: 'ACGME', fecha: '1 jul 2026', resumen: 'Simulación virtual incorporada como requisito en 18 especialidades médicas.', url: 'https://www.acgme.org', categoria: 'Educación médica' },
+  { id: 1, titulo: 'OPS lanza plataforma inmersiva de Realidad Virtual para capacitar a técnicos de laboratorios de salud pública', fuente: 'OPS', fecha: 'Feb 2026', resumen: 'Plataforma VR para estandarizar la vigilancia segura de dengue, influenza y otros patógenos con potencial epidémico en América Latina y el Caribe.', url: 'https://www.paho.org/en/news/6-2-2026-paho-launches-virtual-reality-laboratory-build-capacity-respiratory-virus', categoria: 'Educación médica', imagen: imgNovedad1 },
+  { id: 2, titulo: 'NIAID actualiza PathogenAR: app de Realidad Aumentada para estudiar patógenos en 3D', fuente: 'NIAID', fecha: '2026', resumen: 'Aplicación AR de libre acceso para estudiar estructura tridimensional de patógenos, replicación del virus hepatitis B y simulación de toma de muestras nasofaríngeas.', url: 'https://www.niaid.nih.gov/research/pathogenar-mobile-app', categoria: 'Tecnología', imagen: imgNovedad2 },
+  { id: 3, titulo: 'Manual de buenas prácticas para el uso de la Inteligencia Artificial en Medicina', fuente: 'OMC España', fecha: '2026', resumen: 'Guía imprescindible para la correcta praxis médica en tiempos de IA Gen, coordinada por María Isabel Moya García y José Antonio Trujillo Ruiz.', url: 'https://www.cgcom.es/publicaciones/manual_OMC_buenas_practicas_IA', categoria: 'Salud pública', imagen: imgNovedad3 },
 ]
 
 export const MODULOS = [
