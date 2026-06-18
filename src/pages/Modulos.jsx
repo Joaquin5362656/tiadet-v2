@@ -8,7 +8,7 @@ const ESTADO_CFG = {
   en_curso:   { cls: 'badge-primary', label: 'En curso' },
   pendiente:  { cls: 'badge-gray',    label: 'Disponible' },
 }
-const ICONO_REC = { video: '▶', pdf: '📄', link: '🔗' }
+
 
 function linkify(texto) {
   const urlRegex = /(https?:\/\/[^\s]+)/g
@@ -72,9 +72,6 @@ export function ModuloDetalle() {
       </>
     )
   }
-
-  const videos = m.recursos.filter(r => r.tipo === 'video')
-  const otros  = m.recursos.filter(r => r.tipo !== 'video')
 
   return (
     <>
@@ -142,26 +139,7 @@ export function ModuloDetalle() {
               </section>
             )}
 
-            {m.recorridoSemanal && m.recorridoSemanal.length > 0 && (
-              <section className="mod-section">
-                <h2 className="section-label">Recorrido semanal</h2>
-                <div className="rs-grid">
-                  {m.recorridoSemanal.map(s => (
-                    <div key={s.semana} className="card rs-card">
-                      <div className="rs-card-head">
-                        <span className="rs-semana">Semana {s.semana}</span>
-                        <span className="rs-tema">{s.tema}</span>
-                      </div>
-                      <p className="rs-contenidos">{s.contenidos}</p>
-                      <div className="rs-actividad">
-                        <span className="rs-act-label">Actividad</span>
-                        <span className="rs-act-texto">{s.actividad}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
+
 
             {m.modus_operandi && (
               <section className="mod-section">
@@ -226,49 +204,13 @@ export function ModuloDetalle() {
               </section>
             )}
 
-            {videos.length > 0 && (
-              <section className="mod-section">
-                <h2 className="section-label">Videos</h2>
-                {videos.map((v, i) => (
-                  <div key={i} className="mod-video-blk">
-                    <p className="mod-video-label">{v.label}</p>
-                    <div className="mod-video-ratio">
-                      <iframe src={v.url} title={v.label} frameBorder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowFullScreen />
-                    </div>
-                  </div>
-                ))}
-              </section>
-            )}
 
-            {otros.length > 0 && (
-              <section className="mod-section">
-                <h2 className="section-label">Recursos</h2>
-                <div className="mod-recursos-lista">
-                  {otros.map((r, i) => (
-                    <a key={i} href={r.url} target="_blank" rel="noreferrer" className="card mod-recurso-row">
-                      <span className="mod-rec-icono">{ICONO_REC[r.tipo]}</span>
-                      <div className="mod-rec-body">
-                        <span className="mod-rec-label">{r.label}</span>
-                        <span className="badge badge-gray mod-rec-tipo">{r.tipo.toUpperCase()}</span>
-                      </div>
-                      <span className="mod-rec-arrow">→</span>
-                    </a>
-                  ))}
-                </div>
-              </section>
-            )}
+
+
           </div>
 
           <aside className="mod-detalle-aside">
-            <div className="card">
-              <h2 className="section-label">Temas</h2>
-              <ul className="mod-temas-ul">
-                {m.temas.map(t => (
-                  <li key={t} className="mod-tema-li"><span className="mod-tema-dot" />{t}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="card" style={{ marginTop: 14 }}>
+            <div className="card" style={{ marginTop: 0 }}>
               <h2 className="section-label">Ir a módulo</h2>
               {MODULOS.map(mod => (
                 <button key={mod.id}
