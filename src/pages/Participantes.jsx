@@ -10,20 +10,25 @@ export default function Participantes() {
   const [letraSeleccionada, setLetra] = useState('Todos')
   const [busqueda, setBusqueda] = useState('')
 
+  function apellido(u) {
+    const partes = u.nombre.split(' ')
+    return partes[partes.length - 1]
+  }
+
   let filtrados = usuarios
   if (letraSeleccionada !== 'Todos') {
-    filtrados = filtrados.filter(u => u.nombre.toUpperCase().startsWith(letraSeleccionada))
+    filtrados = filtrados.filter(u => apellido(u).toUpperCase().startsWith(letraSeleccionada))
   }
   if (busqueda) {
     filtrados = filtrados.filter(u =>
-      u.nombre.toLowerCase().includes(busqueda.toLowerCase()) ||
+      apellido(u).toLowerCase().includes(busqueda.toLowerCase()) ||
       u.dni.includes(busqueda)
     )
   }
 
   const porLetra = {}
   filtrados.forEach(u => {
-    const letra = u.nombre[0].toUpperCase()
+    const letra = apellido(u)[0].toUpperCase()
     if (!porLetra[letra]) porLetra[letra] = []
     porLetra[letra].push(u)
   })
@@ -44,7 +49,7 @@ export default function Participantes() {
         <div className="card" style={{ marginBottom: 20, padding: 12 }}>
           <input
             type="text"
-            placeholder="Buscar por nombre o DNI..."
+            placeholder="Buscar por apellido o DNI..."
             value={busqueda}
             onChange={e => setBusqueda(e.target.value)}
             style={{ marginBottom: 0 }}
