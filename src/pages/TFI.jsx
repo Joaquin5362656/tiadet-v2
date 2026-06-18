@@ -51,6 +51,15 @@ export default function TFI() {
 
               <hr className="divider" />
 
+              <h2 className="section-label">Criterios generales</h2>
+              <ul className="tfi-criterios-generales">
+                {tfi.criterios_generales.map((c,i)=>(
+                  <li key={i} className="tfi-cg-item">{c}</li>
+                ))}
+              </ul>
+
+              <hr className="divider" />
+
               <h2 className="section-label">Sistema de evaluación</h2>
               <div className="tfi-sistema-eval">
                 <div className="tfi-eval-item">
@@ -66,6 +75,9 @@ export default function TFI() {
                   <span>{tfi.sistema_evaluacion.proyecto_integrador.descripcion}</span>
                 </div>
                 <p className="tfi-asistencia">Asistencia obligatoria: <strong>{tfi.sistema_evaluacion.asistencia_obligatoria}</strong></p>
+                <p className="tfi-aprobacion" style={{fontSize:13,color:'var(--color-text-secondary)',marginTop:10,lineHeight:1.5}}>
+                  {tfi.sistema_evaluacion.aprobacion}
+                </p>
               </div>
 
               <hr className="divider" />
@@ -92,10 +104,10 @@ export default function TFI() {
                         <thead>
                           <tr>
                             <th>Criterio</th>
-                            <th>Excelente</th>
-                            <th>Competente</th>
-                            <th>En Desarrollo</th>
-                            <th>Insuficiente</th>
+                            <th style={{backgroundColor:'#B3F2EA'}}>Excelente</th>
+                            <th style={{backgroundColor:'#ACED8E'}}>Competente</th>
+                            <th style={{backgroundColor:'#EBF283'}}>En Desarrollo</th>
+                            <th style={{backgroundColor:'#F29483'}}>Insuficiente</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -103,7 +115,9 @@ export default function TFI() {
                             <tr key={i}>
                               <td className="tfi-rubrica-criterio">{r.criterio}</td>
                               {r.niveles.map((n, j) => (
-                                <td key={j} className="tfi-rubrica-desc">{n.descripcion}</td>
+                                <td key={j} className="tfi-rubrica-desc" style={{
+                                  backgroundColor: ['#B3F2EA','#ACED8E','#EBF283','#F29483'][j]
+                                }}>{n.descripcion}</td>
                               ))}
                             </tr>
                           ))}

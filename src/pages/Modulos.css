@@ -97,3 +97,18 @@
 .mod-nav-active .mod-nav-num { color:var(--color-accent); }
 .mod-nav-tit { font-size:13px; color:var(--color-text-secondary); line-height:1.3; }
 .mod-nav-active .mod-nav-tit { color:var(--color-text-primary); font-weight:500; }
+
+/* ---- LINKS EN ACTIVIDADES ---- */
+.mod-act-link { color:var(--color-accent); text-decoration:underline; word-break:break-all; }
+.mod-act-link:hover { color:var(--color-primary); }
+
+/* ---- BIBLIOGRAFÍA ---- */
+.mod-bibliografia-card { padding:18px 22px; }
+.mod-bibliografia-ul { list-style:none; display:flex; flex-direction:column; gap:8px; }
+.mod-bibliografia-li { font-size:13px; color:var(--color-text-secondary); line-height:1.6; padding-left:18px; position:relative; }
+.mod-bibliografia-li::before { content:'•'; position:absolute; left:4px; color:var(--color-accent); font-weight:700; }
+.mod-bib-link { color:var(--color-accent); text-decoration:underline; word-break:break-all; }
+.mod-bib-link:hover { color:var(--color-primary); }
+.mod-ref-grupo { margin-bottom:16px; }
+.mod-ref-grupo:last-child { margin-bottom:0; }
+.mod-ref-subtema { font-size:13px; font-weight:600; color:var(--color-text-primary); margin-bottom:6px; padding-left:2px; }
