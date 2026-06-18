@@ -30,9 +30,9 @@ export const USUARIOS_INICIALES = [
 ]
 
 export const ANUNCIOS = [
-  { id: 1, tipo: 'warning', texto: 'Próxima semana vence la mini-narrativa LANIN del Módulo 2. Revisá los requisitos en la guía del taller.' },
+  { id: 1, tipo: 'warning', texto: 'Próxima semana vence la mini-narrativa LANIN del Módulo 2. Revisá los requisitos en la guía del Taller.' },
   { id: 2, tipo: 'success', texto: 'Nuevo material disponible en Módulo 3: herramientas Kahoot.it, Genially, Arloopa y Frame VR para gamificación y XR.' },
-  { id: 3, tipo: 'danger', texto: 'Recordá que el 80% de asistencia a sincrónicos es obligatorio para aprobar el taller.' },
+  { id: 3, tipo: 'danger', texto: 'Recordá que el 80% de asistencia a sincrónicos es obligatorio para aprobar el Taller.' },
 ]
 
 export const NOVEDADES = [
@@ -506,12 +506,12 @@ function puntajeAMedalla(puntaje, puntajeMax) {
 }
 
 export const ACTIVIDADES_INICIALES = [
-  { id: 1, titulo: 'Reflexión guiada sobre experiencia docente en EaD', tipo: 'tarea', modulo: 1, vencimiento: '2026-06-15', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Ensayo breve (400-600 palabras) reflexionando sobre tu experiencia previa en educación a distancia. Identificá fortalezas, debilidades y expectativas para el taller.' },
+  { id: 1, titulo: 'Reflexión guiada sobre experiencia docente en EaD', tipo: 'tarea', modulo: 1, vencimiento: '2026-06-15', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Ensayo breve (400-600 palabras) reflexionando sobre tu experiencia previa en educación a distancia. Identificá fortalezas, debilidades y expectativas para el Taller.' },
   { id: 2, titulo: 'Mini-narrativa LANIN: caso clínico de ETT', tipo: 'tarea', modulo: 2, vencimiento: '2026-06-22', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Creá una mini-narrativa para un caso clínico de una enfermedad tropical transmisible aplicando la metodología LANIN. Extensión: 500-800 palabras.' },
   { id: 3, titulo: 'Diseño de recurso gamificado', tipo: 'tarea', modulo: 3, vencimiento: '2026-06-29', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Diseñá colaborativamente un recurso gamificado para una temática de enfermedades tropicales transmisibles. Podés usar Genially, Kahoot u otra herramienta.' },
   { id: 4, titulo: 'Encuesta de experiencia inmersiva', tipo: 'encuesta', modulo: 3, vencimiento: '2026-07-16', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Evaluá tu experiencia con la simulación XR y los recursos gamificados del módulo.', preguntas: [
     { id: 'q1', texto: '¿En qué medida considerás que la visión MAS-TEIDE-LANIN aporta un enfoque innovador para la educación a distancia en enfermedades tropicales?', opciones: ['Significativamente innovador','Moderadamente innovador','Poco innovador','No aporta innovación'], respuestaCorrecta: null },
-    { id: 'q2', texto: '¿Qué componente del taller te resultó más valioso para tu práctica docente?', opciones: ['Narrativas LANIN y casos del NOA/NEA','Tecnologías XR y gamificación','Diseño universal y accesibilidad','IA Generativa aplicada a la educación'], respuestaCorrecta: null },
+    { id: 'q2', texto: '¿Qué componente del Taller te resultó más valioso para tu práctica docente?', opciones: ['Narrativas LANIN y casos del NOA/NEA','Tecnologías XR y gamificación','Diseño universal y accesibilidad','IA Generativa aplicada a la educación'], respuestaCorrecta: null },
   ]},
   { id: 5, titulo: 'Plan de accesibilidad integral', tipo: 'tarea', modulo: 4, vencimiento: '2026-07-06', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Diseñá un plan de accesibilidad integral para un módulo específico de la METT, incluyendo subtítulos, audiodescripción y alternativas táctiles.' },
   { id: 6, titulo: 'Experimento con IA Generativa', tipo: 'tarea', modulo: 5, vencimiento: '2026-07-13', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Usá una herramienta de IA Gen (ChatGPT, Claude, Gemini) para generar un plan de clase o material educativo. Reflexioná sobre los resultados obtenidos.' },
@@ -522,10 +522,10 @@ export const ACTIVIDADES_INICIALES = [
 ].map(a => ({ ...a, medalla: puntajeAMedalla(a.puntaje, a.puntajeMax) }))
 
 export const FOROS_INICIALES = [
-  { id: 'general', titulo: 'Foro General', descripcion: 'Espacio abierto para consultas, intercambios y comentarios generales del taller.', tipo: 'general', acceso: 'todos', mensajes: [
+  { id: 'general', titulo: 'Foro General', descripcion: 'Espacio abierto para consultas, intercambios y comentarios generales del Taller.', tipo: 'general', acceso: 'todos', mensajes: [
     { id: 1, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '8 jun', texto: 'Bienvenidos al Taller Interactivo Avanzado en EaD con Tecnologías. En este recorrido exploraremos la visión MAS-TEIDE-LANIN para transformar la educación a distancia en el ámbito de las enfermedades tropicales transmisibles. Este espacio es de todos — úsenlo para cualquier consulta o intercambio.' },
     { id: 2, autor: 'María García', avatar: 'MG', fecha: '9 jun', texto: 'Gracias! Una pregunta: los materiales quedan disponibles despues de que cierra cada modulo?' },
-    { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '9 jun', texto: 'Si, todo el material queda accesible durante todo el cuatrimestre y 30 dias despues del cierre del taller.' },
+    { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '9 jun', texto: 'Si, todo el material queda accesible durante todo el cuatrimestre y 30 dias despues del cierre del Taller.' },
   ]},
   { id: 'mod1', titulo: 'Foro Módulo 1', descripcion: 'Discusión sobre el rol del docente virtual, estándares de calidad y marco TEIDE.', tipo: 'modulo', moduloId: 1, acceso: 'todos', mensajes: [
     { id: 1, autor: 'Carlos Lopez', avatar: 'CL', fecha: '12 jun', texto: 'Me parece muy interesante el concepto de "brújula cognitiva" vs "mapa". En mi práctica actual soy más mapa que brújula. Como empiezo a cambiar eso?' },
@@ -553,7 +553,7 @@ export const FOROS_INICIALES = [
   { id: 'tfi-general', titulo: 'TFI — General', descripcion: 'Espacio de consultas generales sobre el Trabajo Final Integrador.', tipo: 'tfi', acceso: 'todos', mensajes: [
     { id: 1, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '1 jul', texto: 'El TFI consiste en el rediseño completo de un módulo de la METT integrando gamificación/XR + accesibilidad + IA + narrativas LANIN. La rúbrica con 6 criterios y 4 niveles ya está disponible. Cualquier consulta, acá o en el foro privado.' },
     { id: 2, autor: 'Jorge Perez', avatar: 'JP', fecha: '2 jul', texto: 'Puede ser sobre cualquier enfermedad tropical o tiene que ser una en particular?' },
-    { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '2 jul', texto: 'Puede ser cualquier enfermedad tropical transmisible que se aborda en la METT. Lo importante es que integre los 4 ejes del taller: XR/gamificación, accesibilidad, IA y narrativas LANIN.' },
+    { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '2 jul', texto: 'Puede ser cualquier enfermedad tropical transmisible que se aborda en la METT. Lo importante es que integre los 4 ejes del Taller: XR/gamificación, accesibilidad, IA y narrativas LANIN.' },
   ]},
   { id: 'tfi-grupos', titulo: 'TFI — Mi Grupo', descripcion: 'Coordinacion interna del grupo de trabajo para el TFI.', tipo: 'tfi-grupo', acceso: 'todos', mensajes: [
     { id: 1, autor: 'Maria Garcia', avatar: 'MG', fecha: '12 jun', texto: 'Hola grupo! Arrancamos con una reunion por Zoom esta semana para definir qué modulo de la METT vamos a rediseñar?' },
@@ -562,8 +562,8 @@ export const FOROS_INICIALES = [
   { id: 'tfi-privado', titulo: 'TFI — Consulta Privada', descripcion: 'Canal privado entre vos y la docente para consultas sobre tu TFI.', tipo: 'tfi-privado', acceso: 'privado', mensajes: [
     { id: 1, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '9 jun', texto: 'Este espacio es tuyo para consultas privadas sobre el TFI. En qué módulo de la METT pensás basar tu rediseño?' },
   ]},
-  { id: 'admin', titulo: 'Consultas Administrativas', descripcion: 'Espacio para consultas sobre inscripción, certificados, plazos, cursada y trámites del taller.', tipo: 'general', acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '8 jun', texto: 'Bienvenidos al foro de consultas administrativas. Aquí pueden preguntar sobre plazos de entrega, certificados, inscripción y cualquier tema administrativo relacionado con el taller.' },
+  { id: 'admin', titulo: 'Consultas Administrativas', descripcion: 'Espacio para consultas sobre inscripción, certificados, plazos, cursada y trámites del Taller.', tipo: 'general', acceso: 'todos', mensajes: [
+    { id: 1, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '8 jun', texto: 'Bienvenidos al foro de consultas administrativas. Aquí pueden preguntar sobre plazos de entrega, certificados, inscripción y cualquier tema administrativo relacionado con el Taller.' },
   ]},
   { id: 'bitacora', titulo: 'Foro de Bitácora', descripcion: 'Recursos, links y temas de interes por fuera de los modulos obligatorios.', tipo: 'extra', acceso: 'todos', mensajes: [
     { id: 1, autor: 'Laura Martinez', avatar: 'LM', fecha: '10 jun', texto: 'Comparto este articulo sobre el impacto de la IA en diagnostico medico, muy relevante para el Módulo 5: https://www.thelancet.com' },
@@ -575,11 +575,11 @@ export const TFI_ENUNCIADO = {
   titulo: 'Trabajo Final Integrador — TIA-EDiT 2026',
   subtitulo: 'Rediseño de un módulo de la METT con enfoque MAS-TEIDE-LANIN',
   fecha_entrega: '7 de agosto de 2026',
-  descripcion: 'El Trabajo Final Integrador consiste en el rediseño completo de un módulo de la Maestría en Enfermedades Tropicales Transmisibles (METT), integrando todos los elementos del taller:\n\n• Gamificación y/o Realidad Extendida (XR)\n• Accesibilidad universal (WCAG 2.1/2.2)\n• IA Generativa para diseño pedagógico\n• Narrativas LANIN para aprendizaje significativo\n\nEl trabajo debe demostrar la capacidad de transitar desde un rol de "mapa" al de "brújula cognitiva", integrando la Misión-Acción-Servicio (MAS) con tecnologías disruptivas en el campo de las Enfermedades Tropicales Transmisibles.',
+  descripcion: 'El Trabajo Final Integrador consiste en el rediseño completo de un módulo de la Maestría en Enfermedades Tropicales Transmisibles (METT), integrando todos los elementos del Taller:\n\n• Gamificación y/o Realidad Extendida (XR)\n• Accesibilidad universal (WCAG 2.1/2.2)\n• IA Generativa para diseño pedagógico\n• Narrativas LANIN para aprendizaje significativo\n\nEl trabajo debe demostrar la capacidad de transitar desde un rol de "mapa" al de "brújula cognitiva", integrando la Misión-Acción-Servicio (MAS) con tecnologías disruptivas en el campo de las Enfermedades Tropicales Transmisibles.',
   sistema_evaluacion: {
     asistencia_obligatoria: '80% de los encuentros sincrónicos',
     evaluacion_continua: { peso: '60%', descripcion: 'Actividades por módulo evaluadas con rúbricas según criterios Quality Matters. Entregables: narrativas, rúbricas, diseños gamificados, planos de accesibilidad.' },
-    portafolio_docente: { peso: '20%', descripcion: 'Compilación reflexiva de todos los productos del taller.' },
+    portafolio_docente: { peso: '20%', descripcion: 'Compilación reflexiva de todos los productos del Taller.' },
     proyecto_integrador: { peso: '20%', descripcion: 'Rediseño completo de un módulo de la METT + defensa sincrónica con heteroevaluación por pares.' },
     aprobacion: '70% o más del puntaje máximo. Certificado por la institución Universitaria, acreditada por la CONEAU y que actualmente cuenta con un Sistema Institucional de Educación a Distancia (SIED) validado. En función del número de horas que corresponden a este Taller (60), el mismo otorgará 4 créditos a quienes lo aprueben.',
   },
@@ -699,5 +699,5 @@ export const EVENTOS = [
   // --- Agosto ---
   { id: 17, titulo: 'Vence: Entrega TFI escrito', fecha: '2026-08-07', tipo: 'entrega' },
   { id: 18, titulo: 'Defensas orales sincrónicas TFI', fecha: '2026-08-28', tipo: 'examen' },
-  { id: 19, titulo: 'Cierre del taller', fecha: '2026-08-31', tipo: 'clase' },
+  { id: 19, titulo: 'Cierre del Taller', fecha: '2026-08-31', tipo: 'clase' },
 ]
