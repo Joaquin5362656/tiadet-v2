@@ -497,6 +497,14 @@ export const MODULOS = [
   },
 ]
 
+function puntajeAMedalla(puntaje, puntajeMax) {
+  if (puntaje == null || puntajeMax == null) return null
+  const pct = puntaje / puntajeMax
+  if (pct >= 0.9) return 'oro'
+  if (pct >= 0.7) return 'plata'
+  return 'bronce'
+}
+
 export const ACTIVIDADES_INICIALES = [
   { id: 1, titulo: 'Reflexión guiada sobre experiencia docente en EaD', tipo: 'tarea', modulo: 1, vencimiento: '2026-06-15', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Ensayo breve (400-600 palabras) reflexionando sobre tu experiencia previa en educación a distancia. Identificá fortalezas, debilidades y expectativas para el taller.' },
   { id: 2, titulo: 'Mini-narrativa LANIN: caso clínico de ETT', tipo: 'tarea', modulo: 2, vencimiento: '2026-06-22', estado: 'pendiente', puntaje: null, puntajeMax: 10, descripcion: 'Creá una mini-narrativa para un caso clínico de una enfermedad tropical transmisible aplicando la metodología LANIN. Extensión: 500-800 palabras.' },
@@ -511,7 +519,7 @@ export const ACTIVIDADES_INICIALES = [
   { id: 8, titulo: 'Análisis de caso: HarvardX', tipo: 'tarea', modulo: 1, vencimiento: '2026-06-12', estado: 'completada', puntaje: 8, puntajeMax: 10, descripcion: 'Analizá un caso de éxito en educación a distancia identificando los estándares de calidad aplicados y cómo podrían transferirse a la METT.', retroalimentacion: 'Muy buen análisis. Identificaste correctamente los estándares Quality Matters. Para profundizar, sugiero revisar cómo alinear esos estándares con el contexto específico del NOA/NEA.' },
   { id: 9, titulo: 'Diseño de rúbrica formativa', tipo: 'tarea', modulo: 2, vencimiento: '2026-06-14', estado: 'completada', puntaje: 9, puntajeMax: 10, descripcion: 'Diseñá una rúbrica analítica para evaluar una actividad de tu especialidad, incorporando criterios LANIN y TEIDE.', retroalimentacion: 'Excelente rúbrica. Los criterios LANIN están bien integrados y los niveles de desempeño son claros. Te recomiendo agregar un nivel "ejemplar" para incentivar la excelencia por encima del estándar.' },
   { id: 10, titulo: 'Testeo con lector de pantalla', tipo: 'tarea', modulo: 4, vencimiento: '2026-06-14', estado: 'completada', puntaje: 7, puntajeMax: 10, descripcion: 'Probá un recurso educativo propio con un lector de pantalla (NVDA o VoiceOver) y documentá los problemas de accesibilidad encontrados.', retroalimentacion: 'Buen trabajo inicial. El informe documenta los problemas principales, pero faltó incluir soluciones concretas para cada barrera identificada. Revisá la guía WCAG 2.1 para proponer alternativas viables.' },
-]
+].map(a => ({ ...a, medalla: puntajeAMedalla(a.puntaje, a.puntajeMax) }))
 
 export const FOROS_INICIALES = [
   { id: 'general', titulo: 'Foro General', descripcion: 'Espacio abierto para consultas, intercambios y comentarios generales del taller.', tipo: 'general', acceso: 'todos', mensajes: [

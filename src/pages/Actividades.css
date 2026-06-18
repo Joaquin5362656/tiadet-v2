@@ -1,3 +1,18 @@
+:root {
+  --medal-oro: #d4a017;
+  --medal-plata: #8a8a8a;
+  --medal-bronce: #b87333;
+}
+
+/* Layout two-column */
+.act-layout { display:flex; gap:24px; align-items:flex-start; }
+.act-col-main { flex:1; min-width:0; }
+.act-sidebar { width:340px; flex-shrink:0; position:sticky; top:20px; }
+@media (max-width:900px) {
+  .act-layout { flex-direction:column; }
+  .act-sidebar { width:100%; position:static; }
+}
+
 .act-resumen { display:flex; align-items:center; gap:24px; margin-bottom:20px; padding:16px 22px; flex-wrap:wrap; }
 .act-stat-blk { display:flex; flex-direction:column; align-items:center; gap:2px; min-width:60px; }
 .act-stat-num { font-size:29px; font-weight:700; line-height:1; }
@@ -23,15 +38,21 @@
 .act-meta { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
 .act-mod-tag,.act-venc { font-size:15px; color:var(--color-text-tertiary); }
 .act-right { display:flex; align-items:center; gap:10px; flex-shrink:0; }
-.act-pts { font-size:19px; font-weight:700; color:var(--color-success); }
-.act-pts-max { font-size:15px; color:var(--color-text-tertiary); font-weight:400; }
+.act-medalla { font-size:22px; line-height:1; }
 .act-chevron { font-size:11px; color:var(--color-text-tertiary); }
 .act-body { padding:0 18px 18px; border-top:1px solid var(--color-border); padding-top:14px; display:flex; flex-direction:column; gap:10px; }
 .act-descripcion { font-size:15px; color:var(--color-text-secondary); line-height:1.6; }
-.nota-bar { display:flex; align-items:center; gap:12px; }
-.nota-label { font-size:15px; color:var(--color-text-secondary); white-space:nowrap; }
-.nota-num { font-size:15px; color:var(--color-success); font-weight:600; white-space:nowrap; }
+
+/* Medal display in body */
+.medalla-bar { display:flex; align-items:center; gap:14px; background:var(--color-bg); border-radius:var(--radius-md); padding:14px 16px; border:1px solid var(--color-border); }
+.medalla-premio { font-size:36px; line-height:1; flex-shrink:0; }
+.medalla-info { display:flex; flex-direction:column; gap:2px; }
+.medalla-label { font-size:17px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; }
+.medalla-desc { font-size:14px; color:var(--color-text-secondary); line-height:1.4; }
+
 .act-proximo-msg { font-size:15px; color:var(--color-text-tertiary); font-style:italic; }
+
+/* Encuesta */
 .encuesta-blk { display:flex; flex-direction:column; gap:16px; background:var(--color-bg); border-radius:var(--radius-md); padding:16px; border:1px solid var(--color-border); }
 .encuesta-pregunta { display:flex; flex-direction:column; gap:10px; padding:12px 0; border-bottom:1px solid var(--color-border); }
 .encuesta-pregunta:last-child { border-bottom:none; padding-bottom:0; }
@@ -50,3 +71,19 @@
 .retro-label { font-size:15px; font-weight:600; color:var(--color-primary); text-transform:uppercase; letter-spacing:.04em; }
 .retro-texto { font-size:15px; color:var(--color-text-secondary); line-height:1.6; margin:0; }
 .retro-firma { font-size:15px; color:var(--color-text-tertiary); font-style:italic; }
+
+/* Sidebar */
+.act-sidebar-card { padding:0; overflow:hidden; }
+.act-lanin-fig { margin:0; }
+.act-lanin-img { width:100%; height:auto; display:block; object-fit:cover; aspect-ratio:16/9; }
+.act-lanin-caption { padding:10px 16px 14px; font-size:14px; color:var(--color-text-tertiary); text-align:center; font-style:italic; line-height:1.5; border-bottom:1px solid var(--color-border); }
+.act-lanin-caption strong { color:var(--color-text-secondary); }
+.act-leyenda { padding:16px; }
+.act-leyenda-titulo { font-size:17px; font-weight:700; color:var(--color-text-primary); margin:0 0 8px; }
+.act-leyenda-intro { font-size:14px; color:var(--color-text-tertiary); line-height:1.5; margin:0 0 16px; }
+.act-leyenda-item { display:flex; gap:12px; padding:10px 0; border-bottom:1px solid var(--color-border); }
+.act-leyenda-item:last-child { border-bottom:none; padding-bottom:0; }
+.act-leyenda-emoji { font-size:28px; line-height:1; flex-shrink:0; margin-top:2px; }
+.act-leyenda-texto { flex:1; }
+.act-leyenda-texto strong { display:block; font-size:14px; color:var(--color-text-primary); margin-bottom:2px; }
+.act-leyenda-texto p { font-size:13px; color:var(--color-text-tertiary); line-height:1.5; margin:0; }
