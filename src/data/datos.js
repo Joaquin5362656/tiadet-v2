@@ -59,24 +59,43 @@ export const MODULOS = [
       'Guía TEIDE'
     ],
     contenidos: [
-      'El docente virtual como facilitador/mediador/mentor del aprendizaje: cambio del rol tradicional hacia el acompañamiento personalizado, orientación en recursos digitales y promoción del pensamiento crítico.',
-      'Diferencias entre educación presencial y a distancia: análisis de la interacción, tiempo y espacios diferenciados, rol clave de la comunicación en la virtualidad.',
-      'Estrategias motivacionales: cómo fomentar la autonomía del estudiante, mantener su compromiso y crear comunidades de aprendizaje colaborativo (CoI framework de Garrison, Anderson y Archer).',
-      'Estándares de calidad educativa: revisión de Quality Matters Rubric, E-xcellence del European Association for Quality Assurance y Harvard Initiative for Digital Learning (HIDL) y Harvard Initiative for Teaching and Learning (HILT).',
-      'Introducción a TEIDE: aplicación de la guía teórico-metodológica para estructurar proyectos educativos con base en investigación y desarrollo docente.'
+      'El docente virtual como facilitador / mediador / mentor del aprendizaje: El cambio del rol tradicional hacia el acompañamiento personalizado, orientación en recursos digitales y promoción del pensamiento crítico. Diferencias entre educación presencial y distancia: Análisis de la interacción, tiempo y espacios diferenciados, y el rol clave de la comunicación en la virtualidad.',
+      'Estrategias motivacionales: Cómo fomentar la autonomía del estudiante, mantener su compromiso y crear comunidades de aprendizaje colaborativo (CoI framework).',
+      'Estándares de calidad educativa: Revisión exhaustiva de Quality Matters (QM) Rubric, E-xcellence de la European Association for Quality Assurance y la Harvard Initiative for Digital Learning (HIDL) & Harvard Initiative for Teaching and Learning (HILT) para asegurar prácticas de excelencia. Sustento académico-pedagógico de las siguientes Recomendaciones: utilización de E-xcellence para diseñar la estrategia institucional y su gobernanza; adopción de QM para validar y certificar cursos individuales dentro de dicha estrategia; incorporación de principios HIDL/HILT para la innovación pedagógica, la investigación aplicada y el desarrollo docente continuo.',
+      'Introducción al enfoque TEIDE: Aplicación de la guía teórico-metodológica para estructurar proyectos educativos sustentados en la investigación y el desarrollo docente, incluyendo la evaluación constante de herramientas y resultados.'
     ],
+    modus_operandi: 'En el encuentro sincrónico se realizará una breve reseña comparativa de las diversas métricas de calidad educativa y su recomendación de uso según el Objetivo, el Alcance, el Diseño y los Resultados del Aprendizaje, la Evaluación y la Retroalimentación, la Accesibilidad, la Inclusión y el Diseño Universal (DUA), la Tecnología y su impacto en el entorno de aprendizaje y se analizarán videos breves con situaciones representativas para reflexionar y propender a procesos metacognitivos.',
     actividades_desc: [
-      'Evaluación censal diagnóstica de la experiencia docente individual respecto a los estándares de calidad educativa en la EaD utilizando un Formulario de Google.',
-      'Creación de una nube de palabras de fortalezas y debilidades mediante Mentimeter.',
-      'Análisis estadístico de resultados de la evaluación censal.',
-      'Análisis de casos de éxito a nivel global (incluyendo HarvardX) y de los cursantes utilizando las métricas de excelencia pertinentes.',
+      'Evaluación censal diagnóstica de la experiencia docente individual respecto a los estándares de calidad educativa en la EaD utilizando un Formulario de Google. Creación de una nube de palabras de fortalezas y debilidades mediante Mentimeter. Análisis estadístico.',
+      'Análisis de casos de éxito a nivel global (incluyendo HarvardX) y de los cursantes utilizando las métricas de excelencia pertinentes, seleccionadas para cada caso.',
       'Foro estructurado de intercambio sobre desafíos y estrategias personales.'
     ],
+    bibliografia_imprescindible: [
+      { texto: 'Barboza Norbis, L. (2021). Guía teórico-metodológica TEIDE.' },
+      { texto: 'Bates, A. W. (Tony). (2019). Teaching in a digital age: Guidelines for designing teaching and learning (2nd ed.). Tony Bates Associates Ltd.' },
+    ],
+    referencias_profundizar: [
+      { subtema: 'Quality Matters (QM)', items: [
+        { texto: 'Legon, R., & Runyon, J. (2018). Research on the Quality Matters rubric: A history and review of research. Quality Matters.' },
+        { texto: 'Lowenthal, P. R., & Hodges, C. B. (2015). In search of quality: Using Quality Matters to analyze the quality of online courses. International Review of Research in Open and Distributed Learning, 16(5), 85-101.', url: 'https://doi.org/10.19173/irrodl.v16i5.2348' },
+        { texto: 'Quality Matters. (2023). Higher education rubric (7th ed.). Maryland Online.' },
+      ]},
+      { subtema: 'E-xcellence (ENQA / EADTU)', items: [
+        { texto: 'Ossiannilsson, E., Williams, K., Camilleri, A. F., & Brown, M. (2015). Quality models in online and open education around the globe: State of the art and recommendations. International Council for Open and Distance Education (ICDE).' },
+        { texto: 'Williams, K., Kear, K., & Rosewell, J. (2016). E-xcellence: Quality assessment for e-learning (3rd ed.). European Association of Distance Teaching Universities (EADTU).' },
+      ]},
+      { subtema: 'Harvard (HIDL & HILT)', items: [
+        { texto: 'Bok, D. (2020). Higher education in America (Revised ed.). Princeton University Press.' },
+        { texto: 'Ho, A. D., Chuang, I., Reich, J., Coleman, C. A., Jordon, J., Cattaneo, M. D., McKinney, J., & Petersen, L. H. (2015). HarvardX and MITx: Two years of open online courses fall 2012-summer 2014 (HarvardX Working Paper No. 10). Harvard University.', url: 'https://doi.org/10.2139/ssrn.2586847' },
+      ]},
+      { subtema: 'Integración y mejora continua (enfoque mixto)', items: [
+        { texto: 'Picciano, A. G. (2017). Theories and frameworks for online education: Seeking an integrated model. Online Learning, 21(3), 166-190.', url: 'https://doi.org/10.24059/olj.v21i3.1225' },
+        { texto: 'Zawacki-Richter, O., & Qayyum, A. (Eds.). (2019). The open and distance education anthology: Quality in open and distance learning. Springer.', url: 'https://doi.org/10.1007/978-981-13-7740-2' },
+      ]},
+    ],
     recursos: [
-      { tipo: 'pdf', label: 'Barboza Norbis - Guía TEIDE (2021)', url: '#' },
-      { tipo: 'pdf', label: 'Bates - Teaching in a Digital Age (2019)', url: '#' },
-      { tipo: 'link', label: 'Quality Matters Rubric 7th ed.', url: 'https://www.qualitymatters.org/' },
       { tipo: 'link', label: 'Community of Inquiry framework', url: 'https://coi.athabascau.ca/' },
+      { tipo: 'link', label: 'Quality Matters', url: 'https://www.qualitymatters.org/' },
       { tipo: 'link', label: 'E-xcellence - EADTU', url: 'https://e-xcellencelabel.eadtu.eu/' },
       { tipo: 'link', label: 'UNESCO - ICDE quality models', url: 'https://icde.org/' },
     ],
@@ -124,22 +143,48 @@ export const MODULOS = [
       'Gestión del tiempo y monitoreo virtual'
     ],
     contenidos: [
-      'Diseño de evaluación en EaD: diferenciación entre evaluación diagnóstica, formativa y sumativa digital, retroalimentación constructiva.',
-      'La clase invertida (flipped classroom) y el Aprendizaje Basado en Problemas/Proyectos (ABP) de McMaster, Ontario, Canadá. Su implementación en la era de la IA: esfuerzo productivo del educando y andamiaje de la IA, con alternancia temporal de fases de encendido y apagado.',
-      'Fenómeno de la dependencia algorítmica (nunca habilidad). Configuración de LLM como cotutores socráticos (ej. LearnLM).',
-      'Guía LANIN: importancia de las narrativas para que los alumnos construyan sentido y relevancia educativa, transformando contenido en experiencias de aprendizaje significativas.',
-      'Narrativas basadas en problemas: aplicación práctica en el área de enfermedades tropicales transmisibles, promoviendo análisis crítico y solución de casos reales en formato narrativo.',
-      'Gestión del tiempo y evaluación continua: cómo monitorear progresos virtualmente y ajustar estrategias pedagógicas.'
+      'Diseño de evaluación en EaD: Diferenciación entre evaluación diagnóstica, formativa y sumativa digital y retroalimentación constructiva.',
+      'La clase invertida (flipped classroom) y el aprendizaje basado en Problemas/Proyectos (ABP) de McMaster, Ontario, Canadá. Su implementación en la era de la IA: esfuerzo productivo del educando y andamiaje de la IA, con alternancia temporal de fases de encendido y apagado.',
+      'Fenómeno de la dependencia algorítmica (nunca habilidad). Configuración de LLM como cotutores socráticos. Ejemplo: LearnLM.',
+      'Guía LANIN: Importancia de las narrativas para que los alumnos construyan sentido y relevancia educativa, transformando contenido en experiencias de aprendizaje significativos.',
+      'Narrativas basadas en problemas: Aplicación práctica en el área de enfermedades tropicales transmisibles, promoviendo análisis crítico y solución de casos reales en formato narrativo.',
+      'Gestión del tiempo y evaluación continua: Cómo monitorear progresos virtualmente y ajustar estrategias pedagógicas.'
     ],
+    modus_operandi: 'Durante el encuentro sincrónico se expondrán clases invertidas cocreadas por los educandos, las que serán sometidas al proceso de heteroevaluación por pares.',
     actividades_desc: [
-      'Creación de mini-narrativas por equipos para un caso clínico de una misma enfermedad tropical transmisible. Clase invertida (flipped classroom). Modelo ABP. Heteroevaluación por pares.',
-      'Exposición infográfica del Diseño individual de rúbricas adaptadas a la evaluación formativa de educandos en la asignatura a cargo de cada profesor en la METT.',
-      'Foro virtual para elaboración de instrumentos evaluativos con criterios MAS-TEIDE y LANIN con monitoreo y retroalimentación del docente Tutor.'
+      'Creación de mini-narrativas por equipos para un caso clínico de una misma enfermedad tropical transmisible. Clase invertida (flipped classroom). Modelo ABP (Aprendizaje basado en Problemas/Proyectos). Heteroevaluación por pares.',
+      'Exposición infográfica del Diseño individual de rúbricas adaptadas a la evaluación formativa de educandos en la asignatura a cargo de cada Profesor en la METT.',
+      'Foro virtual para elaboración de instrumentos evaluativos con criterios MAS-TEIDE y LANIN con monitoreo y retroalimentación del docente Tutor para promover la mejora continua de los productos en elaboración.'
+    ],
+    bibliografia_imprescindible: [
+      { texto: 'Barrows, H. S., & Bennett, K. (1972). The diagnostic (problem solving) reasoning of the medical student. Medical Education, 6(1), 8-16.', url: 'https://doi.org/10.1111/j.1365-2923.1972.tb01783.x' },
+      { texto: 'Neufeld, V. R., & Barrows, H. S. (1974). The "McMaster Philosophy": An approach to medical education. Journal of Medical Education, 49(11), 1040-1050.', url: 'https://doi.org/10.1097/00001888-197411000-00004' },
+      { texto: 'Oubiña, J.R. (2024). TFI del Taller 7 – EDET, cohorte 2024. La visión LANIN: Los Alumnos Necesitan Incluir Narrativas.' },
+    ],
+    referencias_profundizar: [
+      { subtema: 'El Trabajo Fundacional de la Universidad de McMaster', items: [
+        { texto: 'Barrows, H. S. (1996). Problem-based learning in medicine and beyond: A brief overview. New Directions for Teaching and Learning, 1996(68), 3-12.', url: 'https://doi.org/10.1002/tl.37219966804' },
+        { texto: 'Barrows, H. S., & Tamblyn, R. M. (1980). Problem-based learning: An approach to medical education. Springer Publishing Company.' },
+      ]},
+      { subtema: 'La Transición y la Aplicación a la Educación a Distancia (EaD / dPBL)', items: [
+        { texto: 'Barrows, H. S. (2002). Is it truly possible to have such a thing as dPBL? Distance Education, 23(1), 119-122.', url: 'https://doi.org/10.1080/01587910220124026' },
+        { texto: 'Donnelly, R. (2010). Harmonizing technology with pedagogy in Blended Problem-Based Learning. Interdisciplinary Journal of Problem-Based Learning, 4(1), 29-61.', url: 'https://doi.org/10.7771/1541-5015.1112' },
+        { texto: 'Savin-Baden, M. (2007). A practical guide to problem-based learning online. Routledge.' },
+      ]},
+      { subtema: 'La Era de la Inteligencia Artificial Generativa (2024-2026)', items: [
+        { texto: 'Abidi, S. H., et al. (2026). AI-supported case-based learning in medical education: a comprehensive scoping review. Frontiers in Medicine, 13, 1798097.' },
+        { texto: 'Boman, M. (2025). Scaffolding for success: Blending learning with and about Generative AI in medical education. Medical Teacher, 47(3), 280-286.' },
+        { texto: 'Corral-Gudino, L., et al. (2025). Integrating Generative Artificial Intelligence (AI) in Medical Education: A Framework for Preserving Clinical Reasoning. Applied Sciences, 15(12), 5946.' },
+      ]},
+      { subtema: 'Revisiones Sistemáticas y Meta-Análisis', items: [
+        { texto: 'Albanese, M. A., & Mitchell, S. (1993). Problem-based learning: A review of literature on its outcomes and program implementation issues. Academic Medicine, 68(1), 52-81.', url: 'https://doi.org/10.1097/00001888-199301000-00012' },
+        { texto: 'Colliver, J. A. (2000). Effectiveness of problem-based learning curricula: Research and theory. Academic Medicine, 75(3), 259-266.', url: 'https://doi.org/10.1097/00001888-200003000-00017' },
+        { texto: 'Dochy, F., Segers, M., Van den Bossche, P., & Gijbels, D. (2003). Effects of problem-based learning: A meta-analysis. Learning and Instruction, 13(5), 533-568.', url: 'https://doi.org/10.1016/S0959-4752(02)00025-7' },
+        { texto: 'Leary, H., Walker, A., Shelton, B. E., & Fitt, M. H. (2013). Exploring the Relationships Between Tutor Background, Tutor Training, and Student Learning: A Problem-based Learning Meta-Analysis. Interdisciplinary Journal of Problem-Based Learning, 7(1), 103-125.', url: 'https://doi.org/10.7771/1541-5015.1331' },
+        { texto: 'Loyens, S. M. M., Wijnia, L., Van der Sluijs-Duker, I., & Rikers, R. M. J. P. (2020). Problem-Based Learning. En Oxford Research Encyclopedia of Education. Oxford University Press.', url: 'https://doi.org/10.1093/acrefore/9780190264093.013.861' },
+      ]},
     ],
     recursos: [
-      { tipo: 'pdf', label: 'Barrows & Bennett - Diagnostic reasoning (1972)', url: '#' },
-      { tipo: 'pdf', label: 'Neufeld & Barrows - The McMaster Philosophy (1974)', url: '#' },
-      { tipo: 'pdf', label: 'Oubiña - TFI Taller 7 EDET: Visión LANIN (2024)', url: '#' },
       { tipo: 'link', label: 'Rubistar — generador de rúbricas', url: 'https://rubistar.4teachers.org' },
       { tipo: 'link', label: 'LearnLM - Google', url: 'https://ai.google/discover/learnlm/' },
     ],
@@ -187,26 +232,63 @@ export const MODULOS = [
       'Diseño instruccional gamificado'
     ],
     contenidos: [
-      'Fundamentos de gamificación: conceptos básicos, tipos de elementos gamificados, beneficios en motivación y retención.',
-      'Introducción a Realidad Virtual (VR), Aumentada (AR) y Mixta (XR): características, aplicaciones educativas y limitaciones actuales.',
-      'Uso de imágenes y videos en 360°: creación y aprovechamiento para inmersión y entendimiento espacial.',
-      'Software y plataformas recomendadas: CoSpaces, Oculus Education, Kahoot.it, Genially, Arloopa y OBS Studio (Frame VR).',
-      'Diseño instruccional gamificado: cómo integrar estos recursos en el currículo virtual y medir su impacto.'
+      'Fundamentos de la gamificación: Conceptos básicos, tipos de elementos gamificados y beneficios en la motivación y retención.',
+      'Tecnologías emergentes: Introducción a Realidad Virtual (VR), Aumentada (AR) y Mixta (XR): Características, aplicaciones educativas y limitaciones actuales.',
+      'Uso de imágenes y vídeos en 360°: Creación y aprovechamiento para inmersión y entendimiento espacial.',
+      'Software y plataformas recomendadas: Presentación de herramientas amigables como CoSpaces, Oculus Education y similares.',
+      'Diseño instructivo gamificado: Cómo integrar estos recursos en el currículo virtual y medir su impacto.',
+      'Introducción al uso de plataformas tales como Kahoot.it, Genially, Arloopa y OBS Studio (Frame VR).'
     ],
+    modus_operandi: '1er. Encuentro sincrónico: Presentación de las herramientas más frecuentemente utilizadas en gamificación y en realidades inmersivas.\n\n2° y 3° encuentro sincrónicos: Puesta en común, reflexión y debate analítico, comparado y metacognitivo sobre los instrumentos didácticos utilizados y su contribución genuina a la transformación educativa.',
     actividades_desc: [
-      'Evaluación por equipos de un ejemplo pedagógico elaborado en OBS Studio Frame VR: https://framevr.io/viral-science-of-the-music#',
-      'Contribuciones individuales para la optimización de la obra creada, seguidas de heteroevaluación por pares.',
+      'Evaluación por equipos de un ejemplo pedagógico elaborado en OBS Studio Frame VR por el autor de este TFI durante el curso de la EDET-2024: https://framevr.io/viral-science-of-the-music#',
+      'Contribuciones individuales para la optimización de la obra creada, seguidas de una heteroevaluación por pares.',
       'Diseño y simulación práctica individual en un entorno XR básico a elección, según la asignatura a cargo de cada docente.',
-      'Diseño colaborativo de un recurso gamificado empleando Kahoot.it (ciencias básicas) o Genially (materias clínicas).',
-      'Evaluación por equipos de un ejemplo pedagógico elaborado en Kahoot según rúbricas — PIN: 04935041.',
+      'Evaluación y discusión sobre la experiencia inmersiva, seguida de heteroevaluación por pares.',
+      'Diseño colaborativo de un recurso gamificado para una temática específica según la asignatura a dictar en la METT, empleando la plataforma Kahoot.it quienes dictan materias de las ciencias básicas y Genially, quienes lo hacen en materias clínicas.',
+      'Evaluación por equipos de un ejemplo pedagógico elaborado en Kahoot según rúbricas previamente elaboradas. PIN: 04935041 — https://kahoot.it/challenge/04935041?challenge-id=214d1bd3-9421-469f-bbc9-1248e5b43b41_1781613719821',
+    ],
+    bibliografia_imprescindible: [
+      { texto: 'Rosenthal, A., Toscano, L. Apuntes. Curso EDET. Seminario 5. 2024.' },
+      { texto: 'Christopoulos, A., Mystakidis S. Gamification in Education. Chapter 4. Encyclopedia 2023, 3, 1223–1243.', url: 'https://doi.org/10.3390/encyclopedia3040089' },
+      { texto: 'Nunes Pozzo, D., Gutiérrez Roa, I., González Beleño, C. A., Arévalo Fajardo, B. Y., Herrera Cantillo, C. P., Cudris Guerrero, V. (2024). "Perspectives and applications of virtual reality in higher education: An analysis of Latin America\'s publications". Procedia Computer Science 238: 962-967.' },
+    ],
+    referencias_profundizar: [
+      { subtema: 'Gamificación', items: [
+        { texto: 'BID. Los videojuegos no son un juego. Los desconocidos éxitos de los estudios de América Latina y el Caribe. Cap. 14: Aprender jugando: videojuegos y educación en la era digital. Pg. 193.' },
+        { texto: 'Bonwell, C. C., & Eison, J. A. (1991). Active learning: Creating excitement in the classroom. ASHE-ERIC Higher Education Report No. 1. George Washington University.' },
+        { texto: 'Caillois R. (1967). Los juegos y los hombres. La máscara y el vértigo. Fondo de Cultura Económica, México. 286 p.' },
+        { texto: 'Csikszentmihalyi, M. (1990). Flow: The psychology of optimal experience. Harper & Row.' },
+        { texto: 'Deci, E. L., & Ryan, R. M. (1985). Intrinsic motivation and self-determination in human behavior. Springer.' },
+        { texto: 'Egenfeldt-Nielsen, S., Smith, J. H., & Tosca, S. P. (2020). Understanding video games: The essential introduction (4th ed.). Routledge. 402 p.' },
+        { texto: 'Esnaola Horacek, G. y Ansó MB. (2019). Competencias digitales lúdicas y enseñanza. REIDOCREA, 8, 399–410.' },
+        { texto: 'Gee, J. P. (2004). Lo que nos enseñan los videojuegos sobre el aprendizaje y el alfabetismo (J. M. Pomares, Trad.). Málaga: Ediciones Aljibe. 264 p.' },
+        { texto: 'Graesser, A., Chipman, P., Leeming, F., & Biedenbach, S. (2009). "Deep learning and emotion in serious games". En "Serious games: Mechanisms and effects", 81-100.' },
+        { texto: 'Gros Salvat, B. (2014). Revista Interuniversitaria de Formación del Profesorado, 79(28.1): 115-128.' },
+        { texto: 'Kapp, K. M. (2012). The gamification of learning and instruction: game-based methods and strategies for training and education. Pfeiffer.' },
+        { texto: 'Michael, D.R., Chen S. (2005). Serious Games: Games That Educate, Train, and Inform. 1st edition.' },
+        { texto: 'Muriel, D., & Crawford, G. (2018). Video games as culture: Considering the role and importance of video games in contemporary society. Routledge.' },
+        { texto: 'Nicol, D. J., & Macfarlane-Dick, D. (2006). Formative assessment and self-regulated learning: A model and seven principles of good feedback practice. Studies in Higher Education, 31(2), 199-218.' },
+        { texto: 'Radianti, J., Majchrzak, T.A., Fromm, J., Wohlgenannt I. (2020). A systematic review of immersive virtual reality applications for higher education: Design elements, lessons learned, and research agenda. Computers & Education, 147.', url: 'https://doi.org/10.1016/j.compedu.2019.10377' },
+        { texto: 'Scolari, Carlos A. (ed.) (2013). Homo Videoludens 2.0. De Pacman a la gamification. Col·lecció Transmedia XXI. Universitat de Barcelona.' },
+        { texto: 'Vygotsky, L.S. (1978). La mente en la sociedad: El desarrollo de los procesos psicológicos superiores. Harvard University Press.' },
+        { texto: 'Zichermann, G., and Cunningham, C. Gamification by Design. Implementing Game Mechanics in Web and Mobile Apps.' },
+      ]},
+      { subtema: 'Tecnologías emergentes (VR, AR, XR)', items: [
+        { texto: 'Bacca, J., Baldiris, S., Fabregat, R., Graf, S., & Kinshuk. (2014). "Augmented reality trends in education: A systematic review of research and applications." Educational Technology & Society, 17(4), 133-149.' },
+        { texto: 'Cruz Morales, M. A.; Morales Cárdenas, A. y Ayala Ruiz, Á. (2006). Diseño de productos asistidos por realidad virtual inmersiva. Ingeniería Mecánica. Tecnología y Desarrollo, 2(3), 93-100.' },
+        { texto: 'De Freitas, S., Neumann, T. (2009). "The use of exploratory learning for supporting immersive learning in virtual environments." Computers & Education, 52(2), 343-352.' },
+        { texto: 'Dede, C. (2009). "Immersive interfaces for engagement and learning." Science, 323(5910), 66-69.' },
+        { texto: 'Lerma García, L., et al. (2020). "Realidad virtual como técnica de enseñanza en Educación Superior: perspectiva del usuario." Enseñanza & Teaching, 38:111-123.' },
+        { texto: 'Merchant, Z., Goetz, E. T., Cifuentes, L., Keeney-Kennicutt, W., Davis, T. J. (2014). "Effectiveness of virtual reality-based instruction on students\' learning outcomes in K-12 and higher education: A meta-analysis." Computers & Education, 70, 29-40.' },
+      ]},
     ],
     recursos: [
-      { tipo: 'pdf', label: 'Rosenthal & Toscano - Apuntes EDET (2024)', url: '#' },
-      { tipo: 'pdf', label: 'Christopoulos & Mystakidis - Gamification in Education (2023)', url: '#' },
-      { tipo: 'pdf', label: 'Radianti et al. - Systematic review of VR in higher education (2020)', url: '#' },
       { tipo: 'link', label: 'CoSpaces Edu', url: 'https://cospaces.io/edu/' },
       { tipo: 'link', label: 'Kahoot! — PIN: 04935041', url: 'https://kahoot.it/' },
       { tipo: 'link', label: 'Genially', url: 'https://genially.com/' },
+      { tipo: 'link', label: 'Arloopa', url: 'https://arloopa.com/' },
+      { tipo: 'link', label: 'OBS Studio Frame VR', url: 'https://framevr.io/' },
     ],
     recorridoSemanal: [
       {
@@ -236,34 +318,57 @@ export const MODULOS = [
     horas_sincronicas: 4,
     horas_asincronicas: 8,
     estado: 'pendiente',
-    objetivo: 'Garantizar una educación inclusiva mediante prácticas y tecnologías que respondan a las necesidades de estudiantes con discapacidades sensoriales mediante diseño universal.',
-    resumen: 'Normativas internacionales WCAG 2.1/2.2 para accesibilidad en plataformas educativas. Tecnologías asistivas: lectores de pantalla, subtítulos automáticos, audiodescripción y alternativas táctiles. Diseño Universal para el Aprendizaje (DUA). Estrategias didácticas para una inclusión plena. Ejemplos aplicados al diseño de cursos sobre salud tropical.',
+    objetivo: 'Garantizar una educación inclusiva e integradora mediante prácticas y tecnologías que responden a las necesidades de estudiantes con discapacidades sensoriales mediante diseño universal.',
+    resumen: 'Normativas internacionales WCAG 2.1/2.2/3 para accesibilidad en plataformas educativas. Tecnologías asistivas: lectores de pantalla, subtítulos automáticos, audiodescripción y alternativas táctiles. Diseño Universal para el Aprendizaje (DUA). Estrategias didácticas para una inclusión plena. Ejemplos aplicados al diseño de cursos sobre salud tropical.',
     temas: [
-      'WCAG 2.1/2.2',
+      'WCAG 2.1/2.2/3',
       'Tecnologías asistivas (lector de pantalla, subtítulos)',
       'Diseño Universal para el Aprendizaje (DUA)',
       'Audiodescripción',
       'Estrategias didácticas inclusivas'
     ],
     contenidos: [
-      'Normativas y estándares de accesibilidad: revisión de WCAG 2.1/2.2 y protocolos internacionales en educación digital.',
+      'Normativas y estándares de accesibilidad: Revisión de WCAG (Web Content Accessibility Pautas) 2.1 / 2.2 / 3 y protocolos internacionales en educación digital.',
       'Diferencia entre inclusión e integración de la persona con discapacidad sensorial.',
-      'Tecnologías asistivas: software lector de pantalla, subtítulos automáticos, audiodescripción y alternativas táctiles.',
-      'Diseño universal: creación de contenidos y plataformas navegables, comprensibles y usables para todos.',
-      'Estrategias didácticas inclusivas: adaptaciones en materiales, evaluación y comunicación.',
-      'Análisis de casos: accesibilidad aplicada en cursos de salud tropical y su impacto en la participación.'
+      'Tecnologías asistivas: Software lector de pantalla, subtítulos automáticos, audiodescripción y alternativas táctiles.',
+      'Diseño universal: Creación de contenidos y plataformas que sean navegables, comprensibles y utilizables para todos.',
+      'Estrategias didácticas inclusivas: Adaptaciones en materiales, evaluación y comunicación.',
+      'Análisis de casos: Accesibilidad aplicada en cursos de salud tropical y su impacto en la participación.'
     ],
+    modus_operandi: 'En el encuentro sincrónico se planteará la diferencia entre la mera inclusión y la integración de la persona con discapacidad sensorial, así como los instrumentos disponibles y las posibles estrategias a adoptar con el objetivo de lograr la última realidad mencionada en el ámbito educativo.',
     actividades_desc: [
       'Testeo de recursos con lector de pantalla.',
       'Adaptación de material audiovisual con subtítulos y audiodescripción.',
-      'Análisis del libro electrónico: "E-BOOK DE REFERENCIA. Diseño de Materiales accesibles" — https://drive.google.com/file/d/1Zy0RBLuNHul48O0fm1BpdReaAvYFwV6x/view',
-      'Discusión grupal: ¿Se puede incluir material escaneado en un audiolibro? ¿Por qué? ¿Es conveniente la utilización de imágenes múltiples de Pptx sin epígrafes? ¿Es conveniente utilizar columna única o doble en cada página?',
-      'Diseño individual de un plan de accesibilidad integral para un módulo específico de la asignatura a cargo del educando.'
+      'Análisis del libro electrónico elaborado por el equipo del autor en la EDET-2024: "E-BOOK DE REFERENCIA. Diseño de Materiales accesibles". — https://drive.google.com/file/d/1Zy0RBLuNHul48O0fm1BpdReaAvYFwV6x/view?usp=sharing',
+      'Discusión grupal: ¿Se puede incluir material escaneado en un audiolibro como el analizado? ¿Por qué? ¿Es conveniente la utilización de imágenes múltiples de Pptx sin epígrafes al pie de las mismas en un audiolibro? ¿Por qué? ¿Es conveniente la utilización de columna única o doble en cada página?',
+      'Diseño individual de un plan de accesibilidad integral para un módulo específico de la asignatura a cargo del educando (docente de la METT).'
+    ],
+    bibliografia_imprescindible: [
+      { texto: 'Cobo C. Contenido, contenedor y contexto en la transformación de la educación. Cap. 2.', url: 'http://www.edaddeplata.org/pdf/areaeducativacristobal_cobo.pdf' },
+      { texto: 'Seale, J. (2014). E-learning and Disability in Higher Education: Accessibility Research and Practice. Routledge.' },
+      { texto: 'World Wide Web Consortium (W3C). (2018). Web Content Accessibility Guidelines (WCAG) 2.1.' },
+      { texto: 'Lion C. Los desafíos de aprender en un mundo algorítmico. Cap. 1. En: Aprendizaje y Tecnologías. Habilidades del presente, proyecciones de futuro. Carina Lion (Comp). Ed. Noveduc. 2020.', url: 'https://moodle4vz.unsl.edu.ar/moodle/pluginfile.php/37260/mod_resource/content/1/capitulo%201%20libro%20aprendizajes.pdf' },
+      { texto: 'Naciones Unidas. Objetivos de desarrollo sostenible. Objetivo 4: Garantizar una educación inclusiva, equitativa y de calidad.', url: 'https://www.un.org/sustainabledevelopment/es/education/' },
+    ],
+    referencias_profundizar: [
+      { subtema: 'Referencias seleccionadas', items: [
+        { texto: 'Bullrich Esteban & Sánchez Zinny Gabriel. Ahora...Calidad. Apuntes para el debate sobre política educativa en la Argentina. 1ª ed. Buenos Aires: Pensar Fundación 2011. Cap. 8. P 165-181.' },
+        { texto: 'Coll C, Monereo C. Psicología de la educación virtual: aprender y enseñar con las tecnologías de la información y la comunicación. Madrid - Morata. 2008.' },
+        { texto: 'Fernández Zalazar D, Jofre CM. Sociedad del conocimiento y accesibilidad para la educación inclusiva. Iberoamérica Social. Revista Red de Estudios Sociales. XII: 9-11, 2019.', url: 'https://iberoamericasocial.com/ojs/index.php/IS/article/view/367' },
+        { texto: 'Fernández Zalazar D. Hablemos de discapacidad. En: Articulaciones de los materiales con el escenario contemporáneo.', url: 'https://campus.citep.rec.uba.ar/mod/page/view.php?id=28671' },
+        { texto: 'Fundación Visibilia. Lectura Fácil.', url: 'https://fundacionvisibilia.org/lectura-facil.html' },
+        { texto: 'Información para todos. Las reglas europeas para hacer información fácil de leer y comprender.', url: 'https://biblioteca.fundaciononce.es/publicaciones/otras-editoriales/informacion-para-todos-las-reglas-europeas-para-hacer-informacion' },
+        { texto: 'Jofre MC. Lineamientos de estilo para creación de documentos accesibles. 2020.', url: 'https://www.campusvirtual.psi.uba.ar/wp/wp-content/uploads/2020/03/Lineamientos-de-estilo-para-creaci%C3%B3n-de-documentos-accesibles.pdf' },
+        { texto: 'Nomura M, Nielsen GS, Trombacke B. Guidelines for easy-to-read materials (IFLA Professional Report 120).', url: 'https://repository.ifla.org/bitstream/123456789/637/1/ifla-professional-reports-nr-120-es.pdf' },
+        { texto: 'Odetti V. De lo hipermedial a lo performativo: El devenir de los materiales didácticos digitales. Cap. 4. En: Las Tecnologías en (y para) la educación. FLACSO Editorial. Uruguay. 2020.', url: 'https://www.flacso.edu.uy/publicaciones/edutic2020/garcia_garcia_tecnologias_en_y_para_la_educacion.pdf' },
+        { texto: 'Onrubia J. Aprender y enseñar en entornos virtuales: actividad conjunta, ayuda pedagógica y construcción del conocimiento. RED. Revista de Educación a Distancia.', url: 'http://www.um.es/ead/red/M2/' },
+        { texto: 'Pardo Kuklinski H, Cobo C. Expandir la universidad más allá de la enseñanza remota: de la emergencia hacia un modelo híbrido post-pandemia. Outliers School. Barcelona. 2020.' },
+        { texto: 'Scolari CA. Las leyes de la interfaz. 144 pp. Barcelona: Gedisa. 2018.' },
+        { texto: 'Scolari CA. Narrativas transmedia. Cuando todos los medios cuentan. Barcelona: Deusto S.A. Ediciones. 2013.' },
+        { texto: 'Universal Design for Learning. CAST.', url: 'https://www.cast.org/impact/universal-design-for-learning-udl' },
+      ]},
     ],
     recursos: [
-      { tipo: 'pdf', label: 'Cobo - Contenido, contenedor y contexto (2016)', url: '#' },
-      { tipo: 'pdf', label: 'Seale - E-learning and Disability in Higher Education (2014)', url: '#' },
-      { tipo: 'pdf', label: 'Lion - Los desafíos de aprender en un mundo algorítmico (2020)', url: '#' },
       { tipo: 'link', label: 'W3C - WCAG 2.1', url: 'https://www.w3.org/TR/WCAG21/' },
       { tipo: 'link', label: 'W3C - WCAG 2.2', url: 'https://www.w3.org/TR/WCAG22/' },
       { tipo: 'link', label: 'UN SDG Goal 4 — Educación inclusiva', url: 'https://www.un.org/sustainabledevelopment/es/education/' },
@@ -303,7 +408,7 @@ export const MODULOS = [
     horas_sincronicas: 8,
     horas_asincronicas: 8,
     estado: 'pendiente',
-    objetivo: 'Conocer el potencial y limitaciones de la IA Generativa para el diseño pedagógico, creación de contenidos y seguimiento personalizado en EaD en pos de la optimización de la eficiencia.',
+    objetivo: 'Conocer el potencial y limitaciones de la IAGen para el diseño pedagógico, creación de contenidos y seguimiento personalizado en EaD en pos de la optimización de la eficiencia.',
     resumen: 'Introducción a la IA Generativa (IAGen): definición y ejemplos prácticos en educación. Aplicaciones en la enseñanza: creación de contenidos, generación automática de evaluaciones, tutorías inteligentes. Personalización del aprendizaje con IA. Consideraciones éticas: privacidad, sesgos y transparencia. Futuro de la educación con IA.',
     temas: [
       'Fundamentos de IA Generativa',
@@ -313,31 +418,61 @@ export const MODULOS = [
       'Futuro de la educación con IA'
     ],
     contenidos: [
-      'Conceptos de IA generativa: definición y ejemplos prácticos actuales en educación.',
-      'Aplicaciones en la enseñanza: creación de contenidos, generación automática de evaluaciones y tutorías inteligentes.',
-      'Personalización del aprendizaje: uso de IA para adaptar rutas formativas según progreso y perfil de cada alumno.',
-      'Técnicas de construcción y evaluación de Prompts eficientes. Diseño de asistentes personalizados (Gems). ChatGPT Extensions, Google Deep Research, Perplexity Spaces.',
-      'Herramientas de transformación conceptual (Mapify), representación visual (Napkin), asistencia integral para estudio (NotebookLM), gestión inteligente de referencias (Zotero, Research Rabbit, Elicit, PubTator).',
-      'Las cinco estrategias de Freire para la educación crítica. Los cinco principios pedagógicos críticos de Costa y Murphy.',
-      'Buenas prácticas para la IA en Medicina (Manual OMC).',
-      'Consideraciones éticas: privacidad, sesgos y transparencia en el uso de IA en contextos educativos.',
-      'Educación crítica como práctica de humanización (no automatización). Futuro de la educación con IA: tendencias y recomendaciones.'
+      'Conceptos de IA generativa: Definición y ejemplos prácticos actuales en educación.',
+      'Aplicaciones en la enseñanza: Creación de contenidos, generación automática de evaluaciones y tutorías inteligentes.',
+      'Personalización del aprendizaje: Uso de IA para adaptar rutas formativas según el progreso y perfil de cada alumno.',
+      'Consideraciones éticas: Privacidad, sesgos y transparencia en el uso de IA en contextos educativos.',
+      'Ética en el uso de la IA. Educación crítica como práctica de humanización (no automatización).',
+      'Las cinco estrategias de Freire en pos de la educación crítica. Los cinco principios pedagógicos críticos de Costa y Murphy.',
+      'Buenas prácticas para la IA en Medicina.',
+      'Futuro de la educación con IA: Tendencias y recomendaciones.',
+      'Uso de plataformas según el objetivo a alcanzar respectivamente en la docencia y en la investigación científica.'
     ],
+    modus_operandi: '1er. Encuentro sincrónico: se explorará el uso de chatbots basados en diferentes modelos de lenguaje (LLM), como ChatGPT, Google Gemini, Grok y Microsoft Copilot. Se abordarán mediante ejemplificación práctica las siguientes temáticas: técnicas para la construcción y evaluación de Prompts eficientes, diseño de asistentes personalizados (Gems), uso de extensiones para el procesamiento de imágenes, gráficos y generación de contenidos (ChatGPT Extensions), funciones especializadas para la búsqueda, análisis y presentación de información (Google Deep Research), y uso colaborativo de IA para potenciar el rendimiento de equipos de trabajo en el ámbito científico (Perplexity Spaces).\n\n2do. y 3er. encuentro sincrónicos: mediante casos prácticos, se incorporarán herramientas de transformación conceptual del conocimiento (Mapify), representación visual (Napkin), asistencia integral para el estudio (NotebookLM), gestión inteligente de artículos y referencias bibliográficas (Zotero, Research Rabbit, Elicit, PubTator), integración y automatización de flujos (n8n), y plataformas computacionales Low Code/No Code orientadas a la construcción de entornos de investigación reproducibles (Vercel V0, Google Colab, Galaxy). Finalmente, se explorará una plataforma de Código Abierto (Hugging Face) y se presentará una aplicación de referencia en clínica médica (Diagnóstico Diferencial).',
     actividades_desc: [
-      'Experimentos grupales con herramientas básicas de distintas plataformas de IA generativa: exposición de textos a detectores de plagio y uso de IA Gen. Comparación de resultados y heteroevaluación por pares.',
+      'Experimentos grupales con herramientas básicas de distintas plataformas de IA generativa: exposición de párrafos pre-elaborados por equipos de docentes a diversos detectores de plagio y uso de la IA Gen. Comparación de resultados y heteroevaluación de los mismos por pares.',
       'Resolución de problemas con selección grupal de las plataformas más apropiadas para cada caso.',
-      'Debate ético en foros sobre beneficios y riesgos del uso de IA Gen en educación de posgrado, según experiencias personales.',
+      'Debate ético en foros sobre los beneficios y los riesgos del uso de la IA Gen en la educación de posgrado, según las experiencias personales (y de los alumnos a su cargo) de su aplicación.',
       'Diseño conceptual de un asistente docente basado en IA.'
     ],
+    bibliografia_imprescindible: [
+      { texto: 'Andreoli, S., Aubert, E., Cherbavaz, M.C., Perillo, L. "Entre humanos y algoritmos: percepciones docentes sobre la exploración con IAG en la Enseñanza del Nivel Superior," pp. 63-77.' },
+      { texto: 'Costa, C., & Murphy, M. Critical education, generative artificial intelligence and the tyranny of freedom: a critique of modern technocracy. Technology, Pedagogy and Education, 35:3, 547-563.', url: 'https://doi.org/10.1080/1475939X.2025.2547728' },
+      { texto: 'Holmes, W., et al. (2021). Artificial Intelligence in Education. Promises and Implications for Teaching and Learning. UNESCO.' },
+      { texto: 'León XIV (2026). Carta Encíclica Magnifica Humanitas sobre la custodia de la persona humana en el tiempo de la inteligencia artificial.', url: 'https://www.vatican.va/content/leo-xiv/es/encyclicals/documents/20260515-magnifica-humanitas.html' },
+      { texto: 'Lion, C., Bravo Aravena, S., Torres M.E. La Inteligencia Artificial en la educación. Salir de la caja negra. Educación, Lenguaje y Sociedad, Vol. XXIII Nº 23 (Junio 2024) pp. 1-26.', url: 'http://dx.doi.org/10.19137/els-2024-232303' },
+      { texto: 'Moya García, M. I., & Trujillo Ruiz, J.A. (2026). Manual de Buenas Prácticas para la Inteligencia Artificial en Medicina. Organización Médica Colegial de España.', url: 'https://www.cgcom.es/publicaciones/manual_OMC_buenas_practicas_IA' },
+      { texto: 'Sadin, É. (2026). El desierto de nosotros mismos. El giro intelectual y creativo de la Inteligencia Artificial. Ed. Caja Negra. Colección: FUTUROS PRÓXIMOS.' },
+    ],
+    referencias_profundizar: [
+      { subtema: 'Referencias seleccionadas', items: [
+        { texto: 'Abdulnour, R.-E. E., Gin, B., & Boscardin, C. K. (2025). Educational strategies for clinical supervision of artificial intelligence use. The New England Journal of Medicine, 393(8), 786–797.', url: 'https://doi.org/10.1056/NEJMra2503232' },
+        { texto: 'Basavaraja, M. T., & Rajashekara, S. N. (2025). Navigating scholarly literature with ResearchRabbit: A comprehensive analysis. Journal of Science & Technology Metrics, 6(1), 1–9.', url: 'https://doi.org/10.6025/jstm/2025/6/1/1-9' },
+        { texto: 'Bisong, E. (2019). Google Colaboratory. En Building Machine Learning and Deep Learning Models on Google Cloud Platform (pp. 59–64). Apress.' },
+        { texto: 'Clark, A. (2025). Extending Minds with Generative AI. Nature Comm, 16:4627, 1-4.' },
+        { texto: 'Fernández Enguita, M. (2024). Esta vez sí: con la IA nada será igual en la Universidad. Papeles de economía española Nº 180.' },
+        { texto: 'Ferrarelli, M. y Lion, C. (2025). "Espejos y espejismos: diálogos entre enseñanza, aprendizajes e IAG". Propuesta Educativa, 34(63), pp 12-24.' },
+        { texto: 'Flynn, I. T. W., & Peters, S. I. (2025). The usefulness of NotebookLM\'s audio overview for planetary scientists. Perspectives of Earth and Space Scientists, 6.', url: 'https://doi.org/10.1029/2025CN000282' },
+        { texto: 'Kosmyna, N., et al. Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an Assistant for Essay Writing Task.' },
+        { texto: 'Lau, M.S.Y., et al. (2026). Toward AI foundation models for epidemics: Promise, challenges, and paths forward. PNAS, 123(13), e2526192123.', url: 'https://doi.org/10.1073/pnas.2526192123' },
+        { texto: 'Lee, P., Bubeck, S., & Petro, J. (2023). Benefits, limits, and risks of GPT-4 as an AI chatbot for medicine. The New England Journal of Medicine, 388(13), 1233–1239.', url: 'https://doi.org/10.1056/NEJMsr2214184' },
+        { texto: 'Tufino, E. (2025). NotebookLM: An LLM with RAG for active learning and collaborative tutoring. arXiv.', url: 'https://arxiv.org/abs/2504.09720' },
+        { texto: 'Von Platen, P., et al. (2022). The Hugging Face Hub as a platform for machine learning collaboration. NeurIPS 2022.' },
+        { texto: 'Wei, C.-H., et al. (2024). PubTator 3.0: An AI-powered literature resource for unlocking biomedical knowledge. arXiv.', url: 'https://arxiv.org/abs/2401.11048' },
+        { texto: 'Yang, L., et al. (2026). AI agents and epidemiological intelligence for respiratory infectious diseases. Journal of Medical Internet Research, 28, e86936.', url: 'https://doi.org/10.2196/86936' },
+      ]},
+    ],
     recursos: [
-      { tipo: 'pdf', label: 'Holmes et al. - AI in Education (UNESCO 2021)', url: '#' },
-      { tipo: 'pdf', label: 'Costa & Murphy - Critical education and GenAI (2025)', url: '#' },
-      { tipo: 'pdf', label: 'Lion et al. - IA en la educación (2024)', url: '#' },
       { tipo: 'link', label: 'UNESCO - AI in Education', url: 'https://www.unesco.org/en/digital-education/artificial-intelligence' },
-      { tipo: 'link', label: 'León XIV - Magnifica Humanitas (2026)', url: 'https://www.vatican.va/content/leo-xiv/es/encyclicals/documents/20260515-magnifica-humanitas.html' },
-      { tipo: 'link', label: 'Manual OMC - Buenas prácticas IA en Medicina (2026)', url: 'https://www.cgcom.es/publicaciones/manual_OMC_buenas_practicas_IA' },
       { tipo: 'link', label: 'NotebookLM - Google', url: 'https://notebooklm.google.com/' },
       { tipo: 'link', label: 'Zotero', url: 'https://www.zotero.org/' },
+      { tipo: 'link', label: 'Research Rabbit', url: 'https://www.researchrabbit.ai/' },
+      { tipo: 'link', label: 'Elicit', url: 'https://elicit.com/' },
+      { tipo: 'link', label: 'Mapify', url: 'https://mapify.so/' },
+      { tipo: 'link', label: 'Napkin', url: 'https://napkin.ai/' },
+      { tipo: 'link', label: 'Perplexity Spaces', url: 'https://www.perplexity.ai/' },
+      { tipo: 'link', label: 'Hugging Face', url: 'https://huggingface.co/' },
+      { tipo: 'link', label: 'Google Colab', url: 'https://colab.research.google.com/' },
     ],
     recorridoSemanal: [
       {

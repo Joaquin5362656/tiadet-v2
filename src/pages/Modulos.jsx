@@ -10,6 +10,16 @@ const ESTADO_CFG = {
 }
 const ICONO_REC = { video: '▶', pdf: '📄', link: '🔗' }
 
+function linkify(texto) {
+  const urlRegex = /(https?:\/\/[^\s]+)/g
+  const parts = texto.split(urlRegex)
+  return parts.map((part, i) =>
+    urlRegex.test(part)
+      ? <a key={i} href={part} target="_blank" rel="noreferrer" className="mod-act-link">{part}</a>
+      : part
+  )
+}
+
 export function ModulosList() {
   const navigate = useNavigate()
   return (
@@ -153,15 +163,65 @@ export function ModuloDetalle() {
               </section>
             )}
 
+            {m.modus_operandi && (
+              <section className="mod-section">
+                <h2 className="section-label">Modus operandi</h2>
+                <div className="card mod-resumen-card">
+                  {m.modus_operandi.split('\n\n').map((p, i) => <p key={i} className="mod-resumen-p">{p}</p>)}
+                </div>
+              </section>
+            )}
+
             {m.actividades_desc && m.actividades_desc.length > 0 && (
               <section className="mod-section">
                 <h2 className="section-label">Actividades del módulo</h2>
                 <div className="card mod-actividades-card">
                   <ul className="mod-actividades-ul">
                     {m.actividades_desc.map((a, i) => (
-                      <li key={i} className="mod-actividad-li">{a}</li>
+                      <li key={i} className="mod-actividad-li">{linkify(a)}</li>
                     ))}
                   </ul>
+                </div>
+              </section>
+            )}
+
+            {m.bibliografia_imprescindible && m.bibliografia_imprescindible.length > 0 && (
+              <section className="mod-section">
+                <h2 className="section-label">Bibliografía imprescindible</h2>
+                <div className="card mod-bibliografia-card">
+                  <ul className="mod-bibliografia-ul">
+                    {m.bibliografia_imprescindible.map((b, i) => (
+                      <li key={i} className="mod-bibliografia-li">
+                        {b.url
+                          ? <a href={b.url} target="_blank" rel="noreferrer" className="mod-bib-link">{b.texto}</a>
+                          : b.texto
+                        }
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </section>
+            )}
+
+            {m.referencias_profundizar && m.referencias_profundizar.length > 0 && (
+              <section className="mod-section">
+                <h2 className="section-label">Referencias seleccionadas para profundizar</h2>
+                <div className="card mod-bibliografia-card">
+                  {m.referencias_profundizar.map((grupo, gi) => (
+                    <div key={gi} className="mod-ref-grupo">
+                      <h3 className="mod-ref-subtema">{grupo.subtema}</h3>
+                      <ul className="mod-bibliografia-ul">
+                        {grupo.items.map((item, ii) => (
+                          <li key={ii} className="mod-bibliografia-li">
+                            {item.url
+                              ? <a href={item.url} target="_blank" rel="noreferrer" className="mod-bib-link">{item.texto}</a>
+                              : item.texto
+                            }
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </div>
               </section>
             )}
@@ -182,7 +242,7 @@ export function ModuloDetalle() {
 
             {otros.length > 0 && (
               <section className="mod-section">
-                <h2 className="section-label">Bibliografía y recursos</h2>
+                <h2 className="section-label">Recursos</h2>
                 <div className="mod-recursos-lista">
                   {otros.map((r, i) => (
                     <a key={i} href={r.url} target="_blank" rel="noreferrer" className="card mod-recurso-row">
