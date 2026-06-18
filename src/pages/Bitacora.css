@@ -1,44 +1,92 @@
-.aprender-card {
+.juego-grupo {
+  border-radius: var(--radius-md);
   overflow: hidden;
-  padding: 0;
-  transition: border-color .15s;
-  cursor: pointer;
+  border: 1px solid var(--color-border);
+  transition: box-shadow .2s;
 }
-.aprender-card:hover {
-  border-color: var(--color-primary);
+.juego-grupo:hover {
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
 }
-.aprender-header {
-  padding: 18px;
+.juego-grupo-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: .3px;
 }
-.aprender-header::after {
-  content: '▼';
-  font-size: 12px;
-  color: var(--color-text-tertiary);
-  transition: transform .2s;
+.juego-grupo-icono {
+  font-size: 18px;
+  line-height: 1;
 }
-.aprender-card.abierto .aprender-header::after {
-  transform: rotate(180deg);
+.juego-grupo-nombre {
+  text-transform: uppercase;
 }
-.aprender-body {
-  padding: 0 18px 18px;
+.juego-grupo-body {
+  padding: 10px 14px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.aprender-link {
-  display: block;
-  padding: 10px 14px;
-  background: var(--color-bg);
-  border-radius: var(--radius-md);
+.juego-item {
+  display: flex;
+  flex-direction: column;
+}
+.juego-link {
   text-decoration: none;
-  color: var(--color-text-secondary);
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  transition: background .15s;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.juego-link:hover {
+  background: var(--color-primary-light);
+}
+.juego-link-nombre {
+  font-weight: 600;
   font-size: 14px;
+  color: var(--color-text-primary);
+  transition: color .15s;
+}
+.juego-link:hover .juego-link-nombre {
+  color: var(--color-primary);
+}
+.juego-desc {
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+  line-height: 1.4;
+}
+.juego-pin {
+  font-size: 12px;
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  padding: 2px 8px;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+.juego-subitems {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+  margin-left: 16px;
+  padding-left: 12px;
+  border-left: 2px solid var(--color-border);
+}
+.juego-sub-link {
+  text-decoration: none;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  padding: 6px 10px;
+  border-radius: var(--radius-md);
   transition: background .15s, color .15s;
 }
-.aprender-link:hover {
+.juego-sub-link:hover {
   background: var(--color-primary-light);
   color: var(--color-primary);
 }
