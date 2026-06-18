@@ -1,6 +1,18 @@
+import { useState } from 'react'
 import Navbar from '../components/Navbar'
+import './Bitacora.css'
+
+const JUEGOS = [
+  { nombre: 'Alimentación Saludable — Plato interactivo', url: '#' },
+  { nombre: 'Sistema Digestivo — Juego de arrastrar y soltar', url: '#' },
+  { nombre: 'Carrera de Hábitos Saludables', url: '#' },
+  { nombre: 'Sopa de Letras — Enfermedades Tropicales', url: '#' },
+  { nombre: 'Memotest — Salud Global', url: '#' },
+]
 
 export default function Bitacora() {
+  const [abierto, setAbierto] = useState(false)
+
   return (
     <>
       <Navbar />
@@ -9,6 +21,20 @@ export default function Bitacora() {
         <p className="page-subtitle">Novedades, eventos y recursos para la formación humana integral.</p>
 
         <div style={{display:'flex',flexDirection:'column',gap:14,marginTop:20}}>
+          <div className={`card aprender-card${abierto ? ' abierto' : ''}`} onClick={() => setAbierto(!abierto)}>
+            <div className="aprender-header">
+              <h2 className="section-label" style={{margin:0}}>Aprender Jugando</h2>
+            </div>
+            {abierto && (
+              <div className="aprender-body">
+                {JUEGOS.map((j, i) => (
+                  <a key={i} href={j.url} target="_blank" rel="noreferrer" className="aprender-link">
+                    {j.nombre}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
           <div className="card" style={{padding:18}}>
             <h2 className="section-label">Laboratorios de Narrativas de Salud Global</h2>
             <p style={{fontSize:14,color:'var(--color-text-secondary)',lineHeight:1.6,marginTop:8}}>
