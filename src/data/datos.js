@@ -419,6 +419,9 @@ export const FOROS_INICIALES = [
   { id: 'tfi-privado', titulo: 'TFI — Consulta Privada', descripcion: 'Canal privado entre vos y la docente para consultas sobre tu TFI.', tipo: 'tfi-privado', acceso: 'privado', mensajes: [
     { id: 1, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '9 jun', texto: 'Este espacio es tuyo para consultas privadas sobre el TFI. En qué módulo de la METT pensás basar tu rediseño?' },
   ]},
+  { id: 'admin', titulo: 'Consultas Administrativas', descripcion: 'Espacio para consultas sobre inscripción, certificados, plazos, cursada y trámites del taller.', tipo: 'general', acceso: 'todos', mensajes: [
+    { id: 1, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '8 jun', texto: 'Bienvenidos al foro de consultas administrativas. Aquí pueden preguntar sobre plazos de entrega, certificados, inscripción y cualquier tema administrativo relacionado con el taller.' },
+  ]},
   { id: 'bitacora', titulo: 'Foro de Bitácora', descripcion: 'Recursos, links y temas de interes por fuera de los modulos obligatorios.', tipo: 'extra', acceso: 'todos', mensajes: [
     { id: 1, autor: 'Laura Martinez', avatar: 'LM', fecha: '10 jun', texto: 'Comparto este articulo sobre el impacto de la IA en diagnostico medico, muy relevante para el Módulo 5: https://www.thelancet.com' },
     { id: 2, autor: 'Jorge Perez', avatar: 'JP', fecha: '10 jun', texto: 'Gracias Laura! Tambien recomiendo el simulador de brotes epidemicos de la OPS, muy util para pensar narrativas LANIN: https://www.paho.org' },
