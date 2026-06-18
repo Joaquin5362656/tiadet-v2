@@ -34,7 +34,7 @@ export default function Participantes() {
       <Navbar />
       <div className="page-content">
         <div style={{ marginBottom: 24 }}>
-          <h1>Participantes del taller</h1>
+          <h1>Participantes del Taller</h1>
           <p style={{ color: 'var(--color-text-tertiary)', marginTop: 4 }}>
             Total: {usuarios.length} alumnos inscriptos
           </p>
