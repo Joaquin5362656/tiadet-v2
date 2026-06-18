@@ -65,6 +65,26 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        {/* Criterios de Evaluación del Taller */}
+        <section style={{ marginTop: 32 }}>
+          <h2 className="section-label">Criterios de Evaluación del Taller</h2>
+          <div className="card" style={{ padding: 20 }}>
+            <p style={{ fontSize: 15, color: 'var(--color-text-secondary)', marginBottom: 16 }}>
+              Su estructura se fundamenta en los criterios de excelencia de la Harvard Initiative for Digital Learning y los marcos <strong>TEIDE</strong> (Transformación Educativa basada en Investigación y Desarrollo Docente) y <strong>LANIN</strong> (Los Alumnos Necesitan Incluir Narrativas). El instrumento evalúa la capacidad de cada participante del Taller para transitar el camino desde un rol de &laquo;mapa&raquo; al de &laquo;brújula cognitiva&raquo;, integrando la Misión-Acción-Servicio (MAS) con tecnologías disruptivas en el campo de las Enfermedades Tropicales Transmisibles.
+            </p>
+
+            <h3 className="evaluacion-subtitulo">Evaluación del Taller</h3>
+            <ul className="evaluacion-lista">
+              <li><strong>Asistencia obligatoria:</strong> 80% de los encuentros sincrónicos.</li>
+              <li><strong>Evaluación continua (60% de la calificación final):</strong> Actividades por módulo con rúbricas según criterios QM (Quality Matters). Entregables: narrativas, rúbricas, diseños gamificados, planos de accesibilidad.</li>
+              <li><strong>Portafolio Docente Digital (20%):</strong> Compilación reflexiva de todos los productos.</li>
+              <li><strong>Proyecto Integrador Final + Defensa (20%):</strong> Rediseño completo de un módulo de la Maestría integrando todos los elementos (gamificación/XR + accesibilidad + IA + narrativas). Presentación sincrónica y heteroevaluación por pares (peer-review).</li>
+              <li><strong>Criterios generales:</strong> Calidad técnica, alineación con estándares, aplicabilidad a Salud Global, reflexión crítica e innovación ética.</li>
+              <li><strong>Aprobación:</strong> 70% o más del puntaje máximo. Certificado por la institución Universitaria, acreditada por la CONEAU y que actualmente cuenta con un Sistema Institucional de Educación a Distancia (SIED) validado. En función del número de horas que corresponden a este Taller (60), el mismo otorgará 4 créditos a quienes lo aprueben.</li>
+            </ul>
+          </div>
+        </section>
       </div>
     </>
   )
