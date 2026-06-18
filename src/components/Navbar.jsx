@@ -9,7 +9,7 @@ const NAV_ITEMS = [
   { to: '/tfi',           label: 'TFI' },
   { to: '/area-personal', label: 'Área Personal' },
   { to: '/participantes', label: 'Participantes' },
-  { to: '/extras',        label: 'Extras' },
+  { to: '/bitacora',      label: 'Bitácora' },
 ]
 
 export default function Navbar() {

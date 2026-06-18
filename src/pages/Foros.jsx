@@ -109,7 +109,7 @@ export default function Foros() {
           <button className={`foro-filtro-btn ${filtroTipo==='general'?'foro-filtro-active':''}`} onClick={()=>setFiltro('general')}>General</button>
           <button className={`foro-filtro-btn ${filtroTipo==='modulo'?'foro-filtro-active':''}`} onClick={()=>setFiltro('modulo')}>Modulos</button>
           <button className={`foro-filtro-btn ${filtroTipo==='tfi'?'foro-filtro-active':''}`} onClick={()=>setFiltro('tfi')}>TFI</button>
-          <button className={`foro-filtro-btn ${filtroTipo==='extra'?'foro-filtro-active':''}`} onClick={()=>setFiltro('extra')}>Extras</button>
+          <button className={`foro-filtro-btn ${filtroTipo==='extra'?'foro-filtro-active':''}`} onClick={()=>setFiltro('extra')}>Bitácora</button>
         </div>
 
         <div className="foros-lista">

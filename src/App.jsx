@@ -8,7 +8,7 @@ import Foros from './pages/Foros'
 import Actividades from './pages/Actividades'
 import TFI from './pages/TFI'
 import AreaPersonal from './pages/AreaPersonal'
-import Extras from './pages/Extras'
+import Bitacora from './pages/Bitacora'
 import Participantes from './pages/Participantes'
 
 function PrivateRoute({ children }) {
@@ -41,7 +41,7 @@ function AppRoutes() {
       <Route path="/tfi" element={<PrivateRoute><TFI /></PrivateRoute>} />
       <Route path="/area-personal" element={<PrivateRoute><AreaPersonal /></PrivateRoute>} />
       <Route path="/participantes" element={<PrivateRoute><Participantes /></PrivateRoute>} />
-      <Route path="/extras" element={<PrivateRoute><Extras /></PrivateRoute>} />
+      <Route path="/bitacora" element={<PrivateRoute><Bitacora /></PrivateRoute>} />
       <Route path="*" element={<Navigate to="/inicio" replace />} />
     </Routes>
     </>
