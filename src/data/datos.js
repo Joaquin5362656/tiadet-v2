@@ -32,7 +32,7 @@ export const USUARIOS_INICIALES = [
 export const ANUNCIOS = [
   { id: 1, tipo: 'warning', texto: 'Próxima semana vence la mini-narrativa LANIN del Módulo 2. Revisá los requisitos en la guía del Taller.' },
   { id: 2, tipo: 'success', texto: 'Nuevo material disponible en Módulo 3: herramientas Kahoot.it, Genially, Arloopa y Frame VR para gamificación y XR.' },
-  { id: 3, tipo: 'danger', texto: 'Recordá que el 80% de asistencia a sincrónicos es obligatorio para aprobar el Taller.' },
+  { id: 3, tipo: 'danger', texto: 'Recordá que se requiere al menos un 80% de asistencia a los encuentros sincrónicos obligatorios para alcanzar la condición de Alumno Regular en el Taller.' },
 ]
 
 export const NOVEDADES = [
@@ -59,9 +59,9 @@ export const MODULOS = [
       'Guía TEIDE'
     ],
     contenidos: [
-      'El docente virtual como facilitador / mediador / mentor del aprendizaje: El cambio del rol tradicional hacia el acompañamiento personalizado, orientación en recursos digitales y promoción del pensamiento crítico. Diferencias entre educación presencial y distancia: Análisis de la interacción, tiempo y espacios diferenciados, y el rol clave de la comunicación en la virtualidad.',
+      'El docente virtual como facilitador / mediador / mentor del aprendizaje: El cambio del rol tradicional hacia el acompañamiento personalizado, orientación en recursos digitales y promoción del pensamiento crítico. Diferencias entre educación presencial y a distancia: Análisis de la interacción, tiempo y espacios diferenciados, y el rol clave de la comunicación en la virtualidad.',
       'Estrategias motivacionales: Cómo fomentar la autonomía del estudiante, mantener su compromiso y crear comunidades de aprendizaje colaborativo (CoI framework).',
-      'Estándares de calidad educativa: Revisión exhaustiva de Quality Matters (QM) Rubric, E-xcellence de la European Association for Quality Assurance y la Harvard Initiative for Digital Learning (HIDL) & Harvard Initiative for Teaching and Learning (HILT) para asegurar prácticas de excelencia. Sustento académico-pedagógico de las siguientes Recomendaciones: utilización de E-xcellence para diseñar la estrategia institucional y su gobernanza; adopción de QM para validar y certificar cursos individuales dentro de dicha estrategia; incorporación de principios HIDL/HILT para la innovación pedagógica, la investigación aplicada y el desarrollo docente continuo.',
+      'Estándares de calidad educativa: Revisión exhaustiva de Quality Matters (QM) Rubric, E-xcellence de la European Association for Quality Assurance y la Harvard Initiative for Digital Learning (HIDL) & Harvard Initiative for Learning and Teaching (HILT) para asegurar prácticas de excelencia. Sustento académico-pedagógico de las siguientes Recomendaciones: utilización de E-xcellence para diseñar la estrategia institucional y su gobernanza; adopción de QM para validar y certificar cursos individuales dentro de dicha estrategia; incorporación de principios HIDL/HILT para la innovación pedagógica, la investigación aplicada y el desarrollo docente continuo.',
       'Introducción al enfoque TEIDE: Aplicación de la guía teórico-metodológica para estructurar proyectos educativos sustentados en la investigación y el desarrollo docente, incluyendo la evaluación constante de herramientas y resultados.'
     ],
     modus_operandi: 'En el encuentro sincrónico se realizará una breve reseña comparativa de las diversas métricas de calidad educativa y su recomendación de uso según el Objetivo, el Alcance, el Diseño y los Resultados del Aprendizaje, la Evaluación y la Retroalimentación, la Accesibilidad, la Inclusión y el Diseño Universal (DUA), la Tecnología y su impacto en el entorno de aprendizaje y se analizarán videos breves con situaciones representativas para reflexionar y propender a procesos metacognitivos.',
@@ -533,17 +533,17 @@ export const FOROS_INICIALES = [
     { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '13 jun', texto: 'Exacto, Paula. Quality Matters proporciona un marco concreto. En el Módulo 2 veremos cómo las narrativas LANIN pueden ayudar a construir esa brújula.' },
   ]},
   { id: 'mod2', titulo: 'Foro Módulo 2', descripcion: 'Debate sobre evaluación formativa, rúbricas y narrativas LANIN en ETT.', tipo: 'modulo', moduloId: 2, acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Roberto Rodriguez', avatar: 'RR', fecha: '19 jun', texto: 'La estrategia LANIN me parece poderosa para conectar la teoría con la realidad del Impenetrable. Estoy pensando en una narrativa sobre un brote de dengue en una comunidad rural.' },
-    { id: 2, autor: 'Maria Garcia', avatar: 'MG', fecha: '19 jun', texto: 'Me pregunto cómo evaluar las narrativas de manera objetiva. Una rúbrica bien diseñada sería clave para eso.' },
-    { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '20 jun', texto: 'Buena observación, Maria. En la actividad de diseño de rúbrica vamos justamente a trabajar eso: criterios claros para evaluar narrativas LANIN.' },
+    { id: 1, autor: 'Roberto Rodríguez', avatar: 'RR', fecha: '19 jun', texto: 'La estrategia LANIN me parece poderosa para conectar la teoría con la realidad del Impenetrable. Estoy pensando en una narrativa sobre un brote de dengue en una comunidad rural.' },
+    { id: 2, autor: 'María García', avatar: 'MG', fecha: '19 jun', texto: 'Me pregunto cómo evaluar las narrativas de manera objetiva. Una rúbrica bien diseñada sería clave para eso.' },
+    { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '20 jun', texto: 'Buena observación, María. En la actividad de diseño de rúbrica vamos justamente a trabajar eso: criterios claros para evaluar narrativas LANIN.' },
   ]},
   { id: 'mod3', titulo: 'Foro Módulo 3', descripcion: 'Intercambio sobre gamificación, VR, AR y XR aplicados a la enseñanza médica.', tipo: 'modulo', moduloId: 3, acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Ana Gomez', avatar: 'AG', fecha: '26 jun', texto: 'Probé CoSpaces para modelar el ciclo del vector del dengue. La visualización en 3D ayuda mucho a entender la transmisión. Alguien más lo probo?' },
-    { id: 2, autor: 'Jorge Perez', avatar: 'JP', fecha: '27 jun', texto: 'Todavia no, pero me interesa. Que tal es la curva de aprendizaje de CoSpaces?' },
-    { id: 3, autor: 'Ana Gomez', avatar: 'AG', fecha: '27 jun', texto: 'Es bastante intuitivo. En una tarde ya tenes algo funcional. Lo recomiendo.' },
+    { id: 1, autor: 'Ana Gómez', avatar: 'AG', fecha: '26 jun', texto: 'Probé CoSpaces para modelar el ciclo del vector del dengue. La visualización en 3D ayuda mucho a entender la transmisión. Alguien más lo probo?' },
+    { id: 2, autor: 'Jorge Pérez', avatar: 'JP', fecha: '27 jun', texto: 'Todavia no, pero me interesa. Que tal es la curva de aprendizaje de CoSpaces?' },
+    { id: 3, autor: 'Ana Gómez', avatar: 'AG', fecha: '27 jun', texto: 'Es bastante intuitivo. En una tarde ya tenes algo funcional. Lo recomiendo.' },
   ]},
   { id: 'mod4', titulo: 'Foro Módulo 4', descripcion: 'Discusión sobre accesibilidad WCAG, tecnologías asistivas y DUA.', tipo: 'modulo', moduloId: 4, acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Laura Martinez', avatar: 'LM', fecha: '3 jul', texto: 'Nunca habia usado un lector de pantalla. Probar NVDA con mis propios materiales fue revelador — casi nada es accesible. Por donde arrancar?' },
+    { id: 1, autor: 'Laura Martínez', avatar: 'LM', fecha: '3 jul', texto: 'Nunca habia usado un lector de pantalla. Probar NVDA con mis propios materiales fue revelador — casi nada es accesible. ¿Por dónde arrancar?' },
     { id: 2, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '4 jul', texto: 'Arrancá por lo básico: estructura de encabezados, textos alternativos en imágenes y subtitulado de videos. WCAG 2.1 nivel A es un buen primer objetivo.' },
   ]},
   { id: 'mod5', titulo: 'Foro Módulo 5', descripcion: 'Debate sobre IA Generativa en educación: aplicaciones, ética y sesgos.', tipo: 'modulo', moduloId: 5, acceso: 'todos', mensajes: [
@@ -556,7 +556,7 @@ export const FOROS_INICIALES = [
     { id: 3, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '2 jul', texto: 'Puede ser cualquier enfermedad tropical transmisible que se aborda en la METT. Lo importante es que integre los 4 ejes del Taller: XR/gamificación, accesibilidad, IA y narrativas LANIN.' },
   ]},
   { id: 'tfi-grupos', titulo: 'TFI — Mi Grupo', descripcion: 'Coordinacion interna del grupo de trabajo para el TFI.', tipo: 'tfi-grupo', acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Maria Garcia', avatar: 'MG', fecha: '12 jun', texto: 'Hola grupo! Arrancamos con una reunion por Zoom esta semana para definir qué modulo de la METT vamos a rediseñar?' },
+    { id: 1, autor: 'María García', avatar: 'MG', fecha: '12 jun', texto: 'Hola grupo! Arrancamos con una reunion por Zoom esta semana para definir qué modulo de la METT vamos a rediseñar?' },
     { id: 2, autor: 'Carlos Lopez', avatar: 'CL', fecha: '12 jun', texto: 'Me parece bien. Propongo el jueves 12 a las 19hs. Les queda?' },
   ]},
   { id: 'tfi-privado', titulo: 'TFI — Consulta Privada', descripcion: 'Canal privado entre vos y la docente para consultas sobre tu TFI.', tipo: 'tfi-privado', acceso: 'privado', mensajes: [
@@ -566,7 +566,7 @@ export const FOROS_INICIALES = [
     { id: 1, autor: 'Dra. Ana Méndez', avatar: 'AM', fecha: '8 jun', texto: 'Bienvenidos al foro de consultas administrativas. Aquí pueden preguntar sobre plazos de entrega, certificados, inscripción y cualquier tema administrativo relacionado con el Taller.' },
   ]},
   { id: 'bitacora', titulo: 'Foro de Bitácora', descripcion: 'Recursos, links y temas de interes por fuera de los modulos obligatorios.', tipo: 'extra', acceso: 'todos', mensajes: [
-    { id: 1, autor: 'Laura Martinez', avatar: 'LM', fecha: '10 jun', texto: 'Comparto este articulo sobre el impacto de la IA en diagnostico medico, muy relevante para el Módulo 5: https://www.thelancet.com' },
+    { id: 1, autor: 'Laura Martínez', avatar: 'LM', fecha: '10 jun', texto: 'Comparto este articulo sobre el impacto de la IA en diagnostico medico, muy relevante para el Módulo 5: https://www.thelancet.com' },
     { id: 2, autor: 'Jorge Perez', avatar: 'JP', fecha: '10 jun', texto: 'Gracias Laura! Tambien recomiendo el simulador de brotes epidemicos de la OPS, muy util para pensar narrativas LANIN: https://www.paho.org' },
   ]},
 ]

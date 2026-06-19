@@ -190,7 +190,7 @@ export default function TFI() {
 
             <div className="card" style={{marginTop:14}}>
               <h2 className="section-label">Recursos de apoyo</h2>
-              <a href="#" className="tfi-recurso-link">Guia y rubrica del TFI</a>
+              <a href="#" className="tfi-recurso-link">Guía y rúbrica del TFI</a>
               <a href="#" className="tfi-recurso-link">Plantilla de programa de curso</a>
               <a href="#" className="tfi-recurso-link">Ejemplos de TFI de ediciones anteriores</a>
             </div>
